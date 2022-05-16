@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { TrackOrdersComponent } from './Components/track-orders/track-orders.com
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './Components/login/login.component';
+import { SignupComponent } from './Components/signup/signup.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -30,8 +33,10 @@ import { LoginComponent } from './Components/login/login.component';
     AdminProductsComponent,
     AdminOrdersComponent,
     LoginComponent,
+    SignupComponent,
+    AboutUsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })
