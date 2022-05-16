@@ -11,15 +11,18 @@
 }
 
 .collapse.navbar-collapse {
-  margin-left: 40px;
   justify-content: flex-end;
   margin-right: 35px;
+  font-weight: 500;
 }
 
 .collapse.navbar-collapse a {
   color: black;
+  margin-left: 15px;
 }
 
-.nav-item.dropdown {
-  background-color: aquamarine;
+.dropdown-menu li a {
+  background-color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  margin-left: 1px;
 }
