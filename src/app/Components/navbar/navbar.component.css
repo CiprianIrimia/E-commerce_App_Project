@@ -1,0 +1,25 @@
+.navbar-brand span {
+  font-size: larger;
+  font-weight: bold;
+  font-family: "Merriweather Sans", sans-serif;
+  margin-left: 25px;
+}
+
+.navbar-brand span .register-mark {
+  font-size: small;
+  margin: 0 auto;
+}
+
+.collapse.navbar-collapse {
+  margin-left: 40px;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+
+.collapse.navbar-collapse a {
+  color: black;
+}
+
+.nav-item.dropdown {
+  background-color: aquamarine;
+}
