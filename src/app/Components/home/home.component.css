@@ -12,3 +12,8 @@
   display: flex;
   justify-content: center;
 }
+
+.home-redirect {
+  text-decoration: none;
+  float: right;
+}
