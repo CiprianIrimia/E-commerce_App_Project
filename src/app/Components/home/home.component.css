@@ -1,0 +1,14 @@
+.h1-main-register {
+  color: rgb(0, 0, 0);
+  font-size: small;
+}
+
+.h1-main {
+  display: flex;
+  justify-content: center;
+}
+
+.h5-main {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,21 @@
+.img-1-about-us {
+  width: 70%;
+  margin-top: 40px;
+  float: right;
+  border-radius: 20px;
+}
+.img-2-about-us {
+  width: 70%;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-redirect {
+  text-decoration: none;
+  align-self: flex-end;
+}

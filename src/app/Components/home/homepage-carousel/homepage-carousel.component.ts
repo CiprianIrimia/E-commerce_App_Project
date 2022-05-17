@@ -5,9 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './homepage-carousel.component.html',
 })
 export class HomepageCarouselComponent {
-  images = [944, 1011, 984].map(
-    (n) => `https://picsum.photos/id/${n}/1600/600`
-  );
+  images = [107, 337, 165].map((n) => `https://picsum.photos/id/${n}/1600/600`);
 
   constructor() {}
 
