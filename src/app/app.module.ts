@@ -18,6 +18,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { LoginComponent } from './Components/login/login.component';
 import { SignupComponent } from './Components/signup/signup.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { HomepageCarouselComponent } from './Components/home/homepage-carousel/homepage-carousel.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
     LoginComponent,
     SignupComponent,
     AboutUsComponent,
+    HomepageCarouselComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, RouterModule],
   providers: [],
