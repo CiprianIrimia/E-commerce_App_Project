@@ -8,12 +8,13 @@ import { AppComponent } from 'src/app/app.component';
 })
 export class NavbarComponent extends AppComponent {
   home: string = 'Home';
-
-  @Output() changeLang: EventEmitter<string> = new EventEmitter();
-
-  onClickLang() {
-    this.changeLang.emit();
-  }
+  aboutUs: string = 'About Us';
+  products: string = 'Products';
+  cart: string = 'Cart';
+  signUp: string = 'Sign Up';
+  login: string = 'Login';
+  googleAccount: string = 'Google account';
+  emailPassword: string = 'Email & Password';
 
   ngOnInit(): void {}
 }

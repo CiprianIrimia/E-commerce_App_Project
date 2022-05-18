@@ -1,5 +1,12 @@
 {
   "navbar": {
-    "home": "Home"
+    "home": "Home",
+    "aboutUs": "About Us",
+    "products": "Products",
+    "cart": "Cart",
+    "signUp": "Sign Up",
+    "login": "Login with...",
+    "googleAccount": "Google account",
+    "emailPassword": "Email & Password"
   }
 }

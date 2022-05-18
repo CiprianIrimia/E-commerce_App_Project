@@ -26,3 +26,16 @@
   font-family: "Merriweather Sans", sans-serif;
   margin-left: 1px;
 }
+
+.lang-button {
+  width: 30px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.lang-button:hover {
+  background-color: rgb(255, 255, 255);
+}

@@ -1,5 +1,12 @@
 {
   "navbar": {
-    "home": "Acasa"
+    "home": "Acasa",
+    "aboutUs": "Despre noi",
+    "products": "Produse",
+    "cart": "Cos",
+    "signUp": "Inregistrare",
+    "login": "Autentificare cu...",
+    "googleAccount": "Contul Google",
+    "emailPassword": "Email & parola"
   }
 }
