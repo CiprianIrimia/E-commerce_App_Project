@@ -19,6 +19,9 @@ import { LoginComponent } from './Components/login/login.component';
 import { SignupComponent } from './Components/signup/signup.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { HomepageCarouselComponent } from './Components/home/homepage-carousel/homepage-carousel.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,21 @@ import { HomepageCarouselComponent } from './Components/home/homepage-carousel/h
     AboutUsComponent,
     HomepageCarouselComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, RouterModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    RouterModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+        },
+        deps: [HttpClient],
+      },
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
