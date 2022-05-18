@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { AppComponent } from 'src/app/app.component';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent extends AppComponent {
+  home: string = 'Home';
 
-  constructor() { }
+  @Output() changeLang: EventEmitter<string> = new EventEmitter();
 
-  ngOnInit(): void {
+  onClickLang() {
+    this.changeLang.emit();
   }
 
+  ngOnInit(): void {}
 }

@@ -11,5 +11,15 @@ export class AppComponent {
 
   supportLanguages = ['en', 'ro'];
 
-  constructor(private translateService: TranslateService) {}
+  constructor(private translateService: TranslateService) {
+    this.translateService.addLangs(this.supportLanguages);
+    this.translateService.setDefaultLang('en');
+
+    // const browserLang: string = this.translateService.getBrowserLang()!;
+    // this.translateService.use(browserLang);
+  }
+
+  selectLang(lang: string) {
+    this.translateService.use(lang);
+  }
 }
