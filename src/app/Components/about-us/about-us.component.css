@@ -15,7 +15,27 @@
   flex-direction: column;
 }
 
-.about-us-redirect {
+.redirect-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-redirect-to-home {
   text-decoration: none;
-  align-self: flex-end;
+  color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 1px solid transparent;
+  background-color: #ffd774;
+  border-radius: 20px;
+  margin-top: 0;
+}
+
+.about-us-redirect-to-products {
+  text-decoration: none;
+  color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 1px solid transparent;
+  background-color: #ffd774;
+  border-radius: 20px;
+  margin-top: 0;
 }
