@@ -1,6 +1,7 @@
 .img-1-about-us {
-  width: 70%;
+  width: 65%;
   margin-top: 40px;
+  margin-left: 15px;
   float: right;
   border-radius: 20px;
 }
@@ -38,4 +39,8 @@
   background-color: #ffd774;
   border-radius: 20px;
   margin-top: 0;
+}
+
+.aboutUs-paragraph {
+  text-align: justify;
 }

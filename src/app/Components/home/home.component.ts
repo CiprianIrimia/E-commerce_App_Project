@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  subtitle: string = 'BORN FROM THE PURITY OF NATURE';
-  redirectAboutUs: string = 'About Us';
+  subtitle: string = '';
+  redirectAboutUs: string = '';
 
   constructor() {}
 

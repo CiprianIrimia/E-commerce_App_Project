@@ -20,5 +20,13 @@
   "home": {
     "subtitle": "CREATE DIN PURITATEA NATURII",
     "redirectAboutUs": "Despre noi"
+  },
+  "aboutUs": {
+    "ourStoryTitle": "Povestea noastra",
+    "ourStoryParagraph": "Povestea noastră începe în 1905 când bunicul Mihnea Manea se afla pe cea mai mare navă de război a Imperiului Potemkin rus. Îndurând cu greu condițiile de pe navă, întregul echipaj de 750 de oameni s-a răzvrătit împotriva regimului. În consecință, porturile le-au fost închise și după mai multe încercări eșuate de înțelegere au fost declarați trădători de către imperiul rus, acostând în portul Constanța. Atunci, România Mică, țara dintre imperii demonstrează cu pricepere prin atitudine (nu a existat un acord de extrădare cu Rusia) că este o țară europeană, care acceptă refugiați (nu predau-i țarului). Mihnea Manea a ajuns în sfârșit pe moșia boierului Mișu Leopold (Iași) găsindu-și de lucru ca mecanic la moara boierească. Își întemeiază o familie și rămâne pe meleagurile Moldovei. Moștenind tradiția cu renume impunător în domeniul morăritului, Petru Manea, în anul 1924, pornind de la moara mică, a reușit să se dezvolte într-un ritm dinamic, ajungând să dețină și să controleze mai multe mori în județul Iași. Ștafeta a fost preluată în 1994 de Ștefan Manea care împreună cu Ivan Siretean a susținut financiar și managerial dezvoltarea a ceea ce este astăzi Multipan-Bakery. Compania Multipan-Bakery imbina armonios calitatea cu traditia, oferind produse realizate prin procedeul local - cu maia fermentata - mobilate cu cel mai bun gust.",
+    "ourMissionTitle": "Misiunea noastra",
+    "ourMissionParagraph": "Pașii fundamentali în dezvoltarea durabilă a companiei sunt valorile noastre, care ne inspiră și ne susțin în a consolida identitatea companiei și anume: integritate, onestitate, respect și profesionalism.Înca de la primii pași, compania Multipan-Bakery a fost o poveste de succes. Fabrica de pâine este dotată cu utilaje moderne și performante, asigurând consumatorii ca toate produsele finite sunt controlate minuțios de personalul calificat, ajungând în piață conform cerințelor standardelor europene.Cu siguranță locuitorii județului Iași ne cunosc și ne apreciază, de aceea ne bucurăm de succesul produselor noastre. Prin grija și creativitatea talentaților brutari, compania noastră a reușit să-și mărească portofoliul de clienți care sunt interesați să consume produse gustoase și de calitate. Investim continuu în calitatea produselor si serviciilor oferite, fiind acreditata cu Sistemul de Management al Calitatii SR EN ISO 9001/2015, Sistemul de Management al Mediului SR EN ISO 14001:2015 și Sistemul de Management al Sigurantei SR EN ISO 22000/2018.",
+    "redirectHome": "Prima pagina",
+    "redirectProducts": "Produse"
   }
 }

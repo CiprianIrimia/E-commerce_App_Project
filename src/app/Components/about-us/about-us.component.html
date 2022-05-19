@@ -4,59 +4,25 @@
       class="img-1-about-us"
       src="./assets/images/carousel-images/carousel-2.jpg"
     />
-    <h4 style="margin-top: 40px">Our story</h4>
-    <p>
-      Our story begins in 1905 when Grandpa Mihnea Manea was on the largest
-      warship of the Russian Potemkin Empire. Hardly enduring the conditions on
-      the ship, the entire crew of 750 people rebelled against the regime.
-      Consequently, the ports were closed for them and after several failed
-      attempts at understanding they were declared traitors by the Russian
-      empire, docking in the port of Constanța. Then, Little Romania, the
-      country between empires, skillfully demonstrates by its attitude (there
-      was no extradition agreement with Russia) that it is a European country,
-      accepting refugees (not handing them over to the tsar). Mihnea Manea
-      finally arrived on the estate of the boyar Mişu Leopold (Iași) finding
-      work as a mechanic at the boyar's mill. He starts a family and stays in
-      the lands of Moldova. <br />
-      Inheriting the tradition with an imposing reputation in the milling field,
-      Petru Manea, in 1924, starting from the small mill, managed to keep up,
-      developing in a dynamic rhythm, reaching to own and control several mills
-      in Iași County. The relay was taken over in 1994 by Ștefan Manea who
-      together with Ivan Siretean supported financially and managerially
-      developing what is today Multipan-Bakery.
-      <br />The Multipan-Bakery company harmoniously combines quality with
-      tradition, offering products made by the local process - with fermented
-      mayonnaise - furnished with the best taste.
+    <h4 style="margin-top: 40px">{{ "aboutUs.ourStoryTitle" | translate }}</h4>
+    <p class="aboutUs-paragraph">
+      {{ "aboutUs.ourStoryParagraph" | translate }}
     </p>
     <img
       class="img-2-about-us"
       src="./assets/images/carousel-images/carousel-1.jpg"
     />
-    <h4>Our mission</h4>
-    <p>
-      The fundamental steps in the sustainable development of the company are
-      our values, which inspire and support us in consolidating the company's
-      identity, namely: integrity, honesty, respect and professionalism. From
-      the very first steps, the Multipan-Bakery company has been a success
-      story. The bread factory is equipped with modern and high-performance
-      equipment, ensuring consumers that all finished products are thoroughly
-      inspected by qualified personnel, reaching the market according to the
-      requirements of European standards. Certainly the people of Iași County
-      know and appreciate us, that's why we enjoy the success of our products.
-      Through the care and creativity of talented bakers, our company has
-      managed to grow its portfolio of customers who are interested in consuming
-      tasty and quality products.<br />
-      For the past two years, we have been researching globally what good health
-      means. We analyzed kinds of bread, raw materials and especially tastes. We
-      checked what a clean recipe means and how we can protect it and then give
-      it to those around us. I've traveled all over the world looking for a
-      recipe that doesn't contain E's, enhancers, additives.
+    <h4>{{ "aboutUs.ourMissionTitle" | translate }}</h4>
+    <p class="aboutUs-paragraph">
+      {{ "aboutUs.ourMissionParagraph" | translate }}
     </p>
   </div>
   <span class="redirect-buttons"
-    ><a class="about-us-redirect-to-home" href="/">&LeftArrow; Home </a>
+    ><a class="about-us-redirect-to-home" href="/"
+      >&LeftArrow; {{ "aboutUs.redirectHome" | translate }}</a
+    >
     <a class="about-us-redirect-to-products" href="/products"
-      >Products &RightArrow;</a
+      >{{ "aboutUs.redirectProducts" | translate }} &RightArrow;</a
     ></span
   >
 </div>

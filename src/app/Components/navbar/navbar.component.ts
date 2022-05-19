@@ -7,14 +7,14 @@ import { AppComponent } from 'src/app/app.component';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent extends AppComponent {
-  home: string = 'Home';
-  aboutUs: string = 'About Us';
-  products: string = 'Products';
-  cart: string = 'Cart';
-  signUp: string = 'Sign Up';
-  login: string = 'Login';
-  googleAccount: string = 'Google account';
-  emailPassword: string = 'Email & Password';
+  home: string = '';
+  aboutUs: string = '';
+  products: string = '';
+  cart: string = '';
+  signUp: string = '';
+  login: string = '';
+  googleAccount: string = '';
+  emailPassword: string = '';
 
   ngOnInit(): void {}
 }

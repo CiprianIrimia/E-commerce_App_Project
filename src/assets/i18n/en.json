@@ -20,5 +20,13 @@
   "home": {
     "subtitle": "BORN FROM THE PURITY OF NATURE",
     "redirectAboutUs": "About Us"
+  },
+  "aboutUs": {
+    "ourStoryTitle": "Our story",
+    "ourStoryParagraph": "Our story begins in 1905 when Grandpa Mihnea Manea was on the largest warship of the Russian Potemkin Empire. Hardly enduring the conditions on the ship, the entire crew of 750 people rebelled against the regime. Consequently, the ports were closed for them and after several failed attempts at understanding they were declared traitors by the Russian empire, docking in the port of Constanța. Then, Little Romania, the country between empires skillfully demonstrates by its attitude (there was no extradition agreement with Russia) that it is a European country, accepting refugees (not handing them over to the tsar). Mihnea Manea  finally arrived on the estate of the boyar Mişu Leopold (Iași)  finding work as a mechanic at the boyar's mill. He starts a family and stays in the lands of Moldova. Inheriting the tradition with an imposing reputation in the milling field Petru Manea, in 1924, starting from the small mill, managed to keep up developing in a dynamic rhythm, reaching to own and control several mills in Iași County. The relay was taken over in 1994 by Ștefan Manea who together with Ivan Siretean supported financially and managerially developing what is today Multipan-Bakery. The Multipan-Bakery company harmoniously combines quality with tradition, offering products made by the local process - with fermented mayonnaise - furnished with the best taste.",
+    "ourMissionTitle": "Our mission",
+    "ourMissionParagraph": "The fundamental steps in the sustainable development of the company are our values, which inspire and support us in consolidating the company's identity, namely: integrity, honesty, respect and professionalism. From the first steps, Multipan-Bakery has been a success story. The bread factory is equipped with modern and high-performance equipment, assuring consumers that all finished products are thoroughly inspected by qualified personnel, reaching the market according to the requirements of European standards. our. Through the care and creativity of talented bakers, our company has managed to grow its portfolio of customers who are interested in consuming tasty and quality products. We continuously invest in the quality of the products and services offered, being accredited with the SR EN ISO 9001/2015 Quality Management System, the SR EN ISO 14001: 2015 Environmental Management System and the SR EN ISO 22000/2018 Safety Management System.",
+    "redirectHome": "Home",
+    "redirectProducts": "Products"
   }
 }

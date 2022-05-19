@@ -3,13 +3,19 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.css']
+  styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent implements OnInit {
+  ourStoryTitle: string = '';
+  ourStoryParagraph: any = '';
 
-  constructor() { }
+  ourMissionTitle: string = '';
+  ourMissionParagraph: string = '';
 
-  ngOnInit(): void {
-  }
+  redirectHome: string = '';
+  redirectProducts: string = '';
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }
