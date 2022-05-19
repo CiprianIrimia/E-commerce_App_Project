@@ -5,8 +5,8 @@
         <img [src]="images[0]" alt="Random first slide" />
       </div>
       <div class="carousel-caption">
-        <h3>WE SEE THE LIGHT OF THE DAY</h3>
-        <p>Our wheat ears are born from the fertile land.</p>
+        <h3>{{ "homepageCarousel.image1H3" | translate }}</h3>
+        <p>{{ "homepageCarousel.image1P" | translate }}</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -14,8 +14,8 @@
         <img [src]="images[1]" alt="Random second slide" />
       </div>
       <div class="carousel-caption">
-        <h3>WE LOOK AT THE SUN</h3>
-        <p>They flatter themselves in the wind and caress the sun.</p>
+        <h3>{{ "homepageCarousel.image2H3" | translate }}</h3>
+        <p>{{ "homepageCarousel.image2P" | translate }}</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -23,11 +23,8 @@
         <img [src]="images[2]" alt="Random third slide" />
       </div>
       <div class="carousel-caption">
-        <h3>THE GREAT MOMENT HAS ARRIVED!</h3>
-        <p>
-          Follow the long road to the skilled hands of our bakers. Let's get to
-          know each other...
-        </p>
+        <h3>{{ "homepageCarousel.image3H3" | translate }}</h3>
+        <p>{{ "homepageCarousel.image3P" | translate }}</p>
       </div>
     </ng-template>
   </ngb-carousel>

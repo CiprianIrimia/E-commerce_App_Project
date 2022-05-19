@@ -8,5 +8,17 @@
     "login": "Login with...",
     "googleAccount": "Google account",
     "emailPassword": "Email & Password"
+  },
+  "homepageCarousel": {
+    "image1H3": "WE SEE THE LIGHT OF THE DAY",
+    "image1P": "Our wheat ears are born from the fertile land",
+    "image2H3": "WE LOOK AT THE SUN",
+    "image2P": "They flatter themselves in the wind and caress with the rays of the sun",
+    "image3H3": "THE GREAT MOMENT HAS ARRIVED!",
+    "image3P": "Follow the long road to the skilled hands of our bakers. Let's get to know each other...!"
+  },
+  "home": {
+    "subtitle": "BORN FROM THE PURITY OF NATURE",
+    "redirectAboutUs": "About Us"
   }
 }

@@ -8,5 +8,17 @@
     "login": "Autentificare cu...",
     "googleAccount": "Contul Google",
     "emailPassword": "Email & parola"
+  },
+  "homepageCarousel": {
+    "image1H3": "VEDEM LUMINA ZILEI",
+    "image1P": "Din pământul roditor se nasc spicele noastre de grâu",
+    "image2H3": "PRIVIM LA SOARE",
+    "image2P": "Se alinta in bataia vantului si se dezmierda cu razele soarelui",
+    "image3H3": "ZIUA CEA MARE A SOSIT!",
+    "image3P": "Urmeaza lungul drum către mâinile pricepute ale brutarilor noștri. Haideti sa ne cunoastem...!"
+  },
+  "home": {
+    "subtitle": "CREATE DIN PURITATEA NATURII",
+    "redirectAboutUs": "Despre noi"
   }
 }

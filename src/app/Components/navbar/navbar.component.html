@@ -89,7 +89,11 @@
           </ul>
         </li>
         <li>
-          <button class="lang-button" (click)="selectLang('en')">
+          <button
+            class="lang-button"
+            (click)="selectLang('en')"
+            title="English"
+          >
             <img
               class="lang-image"
               src="/assets/images/Flag_of_the_United_Kingdom.svg.png"
@@ -97,12 +101,16 @@
             />
           </button>
           <span><strong>|</strong></span>
-          <button class="lang-button" (click)="selectLang('ro')">
+          <button
+            class="lang-button"
+            (click)="selectLang('ro')"
+            title="Romanian"
+          >
             <img
               class="lang-image"
               src="/assets/images/tobias-Flag-of-Romania.svg"
               style="width: 30px; height: 25px; border-radius: 50%"
-            /><title>Romanian</title>
+            />
           </button>
         </li>
       </ul>
