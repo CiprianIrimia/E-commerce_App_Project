@@ -7,3 +7,8 @@
 .list-group-item {
   border: transparent;
 }
+
+.card-img-top {
+  width: 230px;
+  margin: 0 auto;
+}
