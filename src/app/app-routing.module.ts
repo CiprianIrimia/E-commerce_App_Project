@@ -8,13 +8,13 @@ import { CheckOutComponent } from './Components/check-out/check-out.component';
 import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { OrderSuccessComponent } from './Components/order-success/order-success.component';
-import { ProductsComponent } from './Components/products/products.component';
+import { ProductsDashboardComponent } from './Components/products-dashboard/products-dashboard.component';
 import { SignupComponent } from './Components/signup/signup.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
-  { path: 'products', component: ProductsComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'products-dashboard', component: ProductsDashboardComponent },
   { path: 'cart', component: CartComponent },
   { path: 'check-out', component: CheckOutComponent },
   { path: 'order-succes', component: OrderSuccessComponent },

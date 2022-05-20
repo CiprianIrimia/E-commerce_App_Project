@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
-import { ProductsComponent } from './Components/products/products.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { CheckOutComponent } from './Components/check-out/check-out.component';
 import { OrderSuccessComponent } from './Components/order-success/order-success.component';
@@ -22,6 +20,7 @@ import { HomepageCarouselComponent } from './Components/home/homepage-carousel/h
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ProductsDashboardComponent } from './Components/products-dashboard/products-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    ProductsComponent,
     CartComponent,
     CheckOutComponent,
     OrderSuccessComponent,
@@ -40,6 +38,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     SignupComponent,
     AboutUsComponent,
     HomepageCarouselComponent,
+    ProductsDashboardComponent,
   ],
   imports: [
     BrowserModule,
