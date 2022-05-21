@@ -21,6 +21,8 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { HomepageCarouselComponent } from './Components/home/homepage-carousel/homepage-carousel.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     AppRoutingModule,
     NgbModule,
     RouterModule,
-
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -55,6 +57,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         deps: [HttpClient],
       },
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
