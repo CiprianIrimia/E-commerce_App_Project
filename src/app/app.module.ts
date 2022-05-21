@@ -21,7 +21,6 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { HomepageCarouselComponent } from './Components/home/homepage-carousel/homepage-carousel.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -46,7 +45,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NgbModule,
     RouterModule,
-    HttpClientModule,
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
