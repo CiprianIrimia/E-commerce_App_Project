@@ -11,11 +11,22 @@ import { OrderSuccessComponent } from './Components/order-success/order-success.
 import { ProductsComponent } from './Components/products/products.component';
 import { SignupComponent } from './Components/signup/signup.component';
 import { ProductsNavbarComponent } from './Components/products/products-navbar/products-navbar.component';
+import { AddProductComponent } from './Components/products/add-product/add-product.component';
+import { EditProductComponent } from './Components/products/edit-product/edit-product.component';
+import { ViewProductComponent } from './Components/products/view-product/view-product.component';
+import { ProductManagerComponent } from './Components/products/product-manager/product-manager.component';
+import { PageNotFoundComponent } from './Components/products/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
-  { path: 'products-navbar', component: ProductsNavbarComponent },
+  { path: 'products/admin', component: ProductManagerComponent },
+  { path: 'products/products-navbar', component: ProductsNavbarComponent },
+  { path: 'products/add', component: AddProductComponent },
+  { path: 'products/edit/:productId', component: EditProductComponent },
+  { path: 'products/view/:productId', component: ViewProductComponent },
+  { path: '**', component: PageNotFoundComponent },
+
   { path: 'about-us', component: AboutUsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'check-out', component: CheckOutComponent },

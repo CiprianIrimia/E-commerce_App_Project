@@ -29,6 +29,7 @@ import { AddProductComponent } from './Components/products/add-product/add-produ
 import { EditProductComponent } from './Components/products/edit-product/edit-product.component';
 import { ViewProductComponent } from './Components/products/view-product/view-product.component';
 import { SpinnerComponent } from './Components/products/spinner/spinner.component';
+import { PageNotFoundComponent } from './Components/products/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { SpinnerComponent } from './Components/products/spinner/spinner.componen
     EditProductComponent,
     ViewProductComponent,
     SpinnerComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
