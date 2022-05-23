@@ -23,6 +23,12 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductsNavbarComponent } from './Components/products/products-navbar/products-navbar.component';
+import { ProductManagerComponent } from './Components/products/product-manager/product-manager.component';
+import { AddProductComponent } from './Components/products/add-product/add-product.component';
+import { EditProductComponent } from './Components/products/edit-product/edit-product.component';
+import { ViewProductComponent } from './Components/products/view-product/view-product.component';
+import { SpinnerComponent } from './Components/products/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +47,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SignupComponent,
     AboutUsComponent,
     HomepageCarouselComponent,
+    ProductsNavbarComponent,
+    ProductManagerComponent,
+    AddProductComponent,
+    EditProductComponent,
+    ViewProductComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,

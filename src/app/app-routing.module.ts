@@ -10,10 +10,12 @@ import { LoginComponent } from './Components/login/login.component';
 import { OrderSuccessComponent } from './Components/order-success/order-success.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { SignupComponent } from './Components/signup/signup.component';
+import { ProductsNavbarComponent } from './Components/products/products-navbar/products-navbar.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'products-navbar', component: ProductsNavbarComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'check-out', component: CheckOutComponent },
