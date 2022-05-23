@@ -1,0 +1,26 @@
+.h4.fw-bold.ms-5 {
+  color: brown;
+}
+.row {
+  justify-content: space-between;
+}
+.btn.btn-danger.btn-sm {
+  float: right;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 20%;
+}
+
+.card.list-group-item-primary {
+  background-color: rgb(240, 240, 240);
+}
+
+.col-sm-1 {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
