@@ -21,7 +21,6 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'products/admin', component: ProductManagerComponent },
-
   { path: 'products/add', component: AddProductComponent },
   { path: 'products/edit/:productId', component: EditProductComponent },
   { path: 'products/view/:productId', component: ViewProductComponent },
