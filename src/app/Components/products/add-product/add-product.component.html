@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<!-- Contact Form-->
+<!-- Add Contact Form-->
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -25,7 +25,7 @@
           <input type="text" class="form-control" placeholder="Assortment" />
         </div>
         <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Weight" />
+          <input type="number" class="form-control" placeholder="Weight" />
         </div>
         <div class="mb-2">
           <input type="text" class="form-control" placeholder="Description" />
@@ -35,18 +35,38 @@
         </div>
         <div class="mb-2">
           <input
-            type="text"
+            type="number"
             class="form-control"
             placeholder="Stock quantity"
           />
         </div>
         <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Price" />
+          <input type="number" class="form-control" placeholder="Price" />
+        </div>
+        <div class="mb-4">
+          <select class="form-control">
+            <option value="">Select category ID</option>
+          </select>
         </div>
         <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Category Id" />
+          <input
+            type="number"
+            class="btn btn-success mb-5"
+            value="Create"
+            type="submit"
+          />
+          <a class="btn btn-primary mb-5 ms-2" routerLink="/products"
+            >Close Form</a
+          >
         </div>
       </form>
+    </div>
+    <div class="col-sm-4">
+      <img
+        src="assets/images/Products images/franzela_alba_proaspata_300.jpg"
+        class="product-image"
+        alt=""
+      />
     </div>
   </div>
 </div>

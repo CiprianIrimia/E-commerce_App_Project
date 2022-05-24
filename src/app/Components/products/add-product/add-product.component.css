@@ -1,3 +1,9 @@
 .h4.fw-bold.ms-5 {
   color: brown;
 }
+
+.product-image {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 20%;
+}
