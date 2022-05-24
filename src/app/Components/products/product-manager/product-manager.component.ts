@@ -22,5 +22,9 @@ export class ProductManagerComponent implements OnInit {
       this.products = data;
       this.loading = false;
     });
+    // ,error:(error) => {
+    //   this.errorMessage = error;
+    //   this.loading = false
+    // });
   }
 }

@@ -75,7 +75,7 @@ export class ProductService {
       //server error
       errorMessage = `Status : ${error.status} \n Message: ${error.message}`;
     }
-    console.log(errorMessage);
+
     return throwError(errorMessage);
   }
 }
