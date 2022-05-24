@@ -30,6 +30,7 @@ import { EditProductComponent } from './Components/products/edit-product/edit-pr
 import { ViewProductComponent } from './Components/products/view-product/view-product.component';
 import { SpinnerComponent } from './Components/products/spinner/spinner.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { PageNotFoundComponent } from './Components/page-not-found/page-not-foun
     NgbModule,
     RouterModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
