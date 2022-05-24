@@ -72,9 +72,10 @@ export class ProductService {
       //client error
       errorMessage = `Error : ${error.error.message}`;
     } else {
-      //server error {
+      //server error
       errorMessage = `Status : ${error.status} \n Message: ${error.message}`;
     }
+    console.log(errorMessage);
     return throwError(errorMessage);
   }
 }

@@ -31,46 +31,56 @@
     </div>
   </div>
 </div>
-<pre>{{ products | json }}</pre>
 
 <!--Loading spinner-->
 <div *ngIf="loading">
   <app-spinner></app-spinner>
 </div>
 
+<!--Error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-danger fw-bold">{{errorMessage}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--Cards-->
 
-<div class="container mt-3 mb-4">
+<div class="container mt-3 mb-4" *ngIf="!loading && products.length > 0">
   <div class="row">
-    <div class="col-md-6">
-      <div class="card list-group-item-primary shadow-lg">
+    <div class="col-md-6" *ngFor="let product of products">
+      <div class="card list-group-item-primary shadow-lg my-3">
         <div class="card-body" style="border: 2px solid #ffbf1b">
           <div class="row align-items-center">
             <div class="col-sm-4">
-              <a
-                href="assets/images/Products images/franzela_alba_proaspata_300.jpg"
-                ><img
-                  class="product-image"
-                  src="assets/images/Products images/franzela_alba_proaspata_300.jpg"
+              <a [href]="product.image"
+                ><img class="product-image" [src]="product.image"
               /></a>
             </div>
 
             <div class="col-sm-6">
               <ul class="list-group">
                 <li class="list-group-item">
-                  Product name: <span class="fw-bold"> White loaf</span>
+                  Product name:
+                  <span class="fw-bold"> {{ product.productName }}</span>
                 </li>
                 <li class="list-group-item">
-                  Assortment: <span class="fw-bold"> Loaf</span>
+                  Assortment:
+                  <span class="fw-bold"> {{ product.assortment }}</span>
                 </li>
                 <li class="list-group-item">
-                  Weight: <span class="fw-bold"> 300 gr.</span>
+                  Weight: <span class="fw-bold"> {{ product.weight }} gr.</span>
                 </li>
                 <li class="list-group-item">
-                  Price: <span class="fw-bold"> 1.5 Lei</span>
+                  Price: <span class="fw-bold"> {{ product.price }} Lei</span>
                 </li>
                 <li class="list-group-item">
-                  Stock quantity: <span class="fw-bold"> 700 pcs.</span>
+                  Stock quantity:
+                  <span class="fw-bold"> {{ product.stockQuantity }} pcs.</span>
                 </li>
               </ul>
             </div>
