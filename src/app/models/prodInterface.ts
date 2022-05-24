@@ -6,7 +6,7 @@ export interface prodInterface {
   weight: string;
   description: string;
   image: string;
-  stocQuantity: string;
+  stockQuantity: string;
   price: string;
   categoryId: string;
 }
