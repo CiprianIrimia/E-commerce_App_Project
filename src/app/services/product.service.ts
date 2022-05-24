@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
+import { prodCategory } from '../models/prodCategory';
 import { prodInterface } from '../models/prodInterface';
 
 @Injectable({
@@ -46,6 +47,22 @@ export class ProductService {
     let dataUrl: string = `${this.serverUrl}/products/${productId}`;
     return this.httpClient
       .delete<{}>(dataUrl)
+      .pipe(catchError(this.handleError));
+  }
+
+  //GET All Groups
+  public getAllCategories(): Observable<prodCategory[]> {
+    let dataUrl: string = `${this.serverUrl}/categoryes`;
+    return this.httpClient
+      .get<prodCategory[]>(dataUrl)
+      .pipe(catchError(this.handleError));
+  }
+
+  //GET Single Group
+  public getCategory(product: prodCategory): Observable<prodCategory> {
+    let dataUrl: string = `${this.serverUrl}/categories/${product.categoryId}`;
+    return this.httpClient
+      .get<prodCategory>(dataUrl)
       .pipe(catchError(this.handleError));
   }
 

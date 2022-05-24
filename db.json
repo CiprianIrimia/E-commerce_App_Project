@@ -37,7 +37,7 @@
       "categoryId": 1
     }
   ],
-  "category": [
+  "categories": [
     {
       "id": "1",
       "categoryName": "fresh"
