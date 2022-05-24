@@ -52,7 +52,7 @@ export class ProductService {
 
   //GET All Groups
   public getAllCategories(): Observable<prodCategory[]> {
-    let dataUrl: string = `${this.serverUrl}/categoryes`;
+    let dataUrl: string = `${this.serverUrl}/categories`;
     return this.httpClient
       .get<prodCategory[]>(dataUrl)
       .pipe(catchError(this.handleError));

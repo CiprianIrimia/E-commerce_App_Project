@@ -39,11 +39,11 @@
   ],
   "categories": [
     {
-      "id": "1",
+      "categoryId": "1",
       "categoryName": "fresh"
     },
     {
-      "id": "2",
+      "categoryId": "2",
       "categoryName": "packaged"
     }
   ]
