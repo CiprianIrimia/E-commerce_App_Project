@@ -1,0 +1,13 @@
+{
+  "Products": [
+    {
+      "id": 1001,
+      "category": "fresh bread",
+      "flour": "white",
+      "assortment": "loaf",
+      "weight": "300",
+      "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
+      "image": "src/assets/images/Products images/franzela_alba_proaspata-300.jpg"
+    }
+  ]
+}
