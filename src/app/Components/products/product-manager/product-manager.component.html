@@ -33,6 +33,11 @@
 </div>
 <pre>{{ products | json }}</pre>
 
+<!--Loading spinner-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
 <!--Cards-->
 
 <div class="container mt-3 mb-4">
