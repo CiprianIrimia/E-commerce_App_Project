@@ -25,6 +25,30 @@ export class ProductService {
       .pipe(catchError(this.handleError));
   }
 
+  public createProduct(product: prodInterface): Observable<prodInterface> {
+    let dataUrl: string = `${this.serverUrl}/products`;
+    return this.httpClient
+      .post<prodInterface>(dataUrl, product)
+      .pipe(catchError(this.handleError));
+  }
+
+  public updateProduct(
+    product: prodInterface,
+    productId: string
+  ): Observable<prodInterface> {
+    let dataUrl: string = `${this.serverUrl}/products/${productId}`;
+    return this.httpClient
+      .put<prodInterface>(dataUrl, product)
+      .pipe(catchError(this.handleError));
+  }
+
+  public deleteProduct(productId: string): Observable<{}> {
+    let dataUrl: string = `${this.serverUrl}/products/${productId}`;
+    return this.httpClient
+      .delete<{}>(dataUrl)
+      .pipe(catchError(this.handleError));
+  }
+
   public handleError(error: HttpErrorResponse) {
     let errorMessage: string = '';
     if (error.error instanceof ErrorEvent) {
