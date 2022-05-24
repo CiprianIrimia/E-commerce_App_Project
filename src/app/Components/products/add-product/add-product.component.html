@@ -9,13 +9,28 @@
     </div>
   </div>
 </div>
-<pre>{{ product | json }}</pre>
+
+<!--Loading spinner-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<!--Error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-danger fw-bold">{{ errorMessage }}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Add Contact Form-->
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <form>
+      <form (submit)="createSubmit()">
         <div class="mb-2">
           <input
             required="true"
@@ -57,14 +72,14 @@
           />
         </div>
         <div class="mb-2">
-          <input
+          <textarea
             required="true"
             [(ngModel)]="product.description"
             name="description"
             type="text"
             class="form-control"
             placeholder="Description"
-          />
+          ></textarea>
         </div>
         <div class="mb-2">
           <input
@@ -97,6 +112,7 @@
           />
         </div>
         <div class="mb-4">
+          <label>Select category Id</label>
           <select
             required="true"
             [(ngModel)]="product.categoryId"
@@ -104,7 +120,6 @@
             class="form-control"
             *ngIf="categories.length > 0"
           >
-            <option value="">Select category ID</option>
             <option
               [value]="category.categoryId"
               *ngFor="let category of categories"
@@ -127,11 +142,11 @@
       </form>
     </div>
     <div class="col-sm-4">
-      <img
-        src="assets/images/Products images/franzela_alba_proaspata_300.jpg"
-        class="product-image"
-        alt=""
-      />
+      <img [src]="product.image" class="product-image" alt="" />
     </div>
   </div>
 </div>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore possimus,
+perferendis officia quis nemo veniam, eaque labore totam ab culpa delectus
+voluptates! Perspiciatis consequatur perferendis, molestiae officia libero
+eligendi accusantium.

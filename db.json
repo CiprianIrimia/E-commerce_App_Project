@@ -35,15 +35,39 @@
       "stockQuantity": 400,
       "price": 3.2,
       "categoryName": "fresh"
+    },
+    {
+      "productName": "Black bread",
+      "flourType": "black",
+      "assortment": "round",
+      "weight": 340,
+      "description": "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum",
+      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
+      "stockQuantity": 450,
+      "price": 2.9,
+      "categoryId": "1-fresh",
+      "id": 1004
+    },
+    {
+      "productName": "Breadstick",
+      "flourType": "white",
+      "assortment": "baguette",
+      "weight": 420,
+      "description": "Consectetur adipisicing elit. Inventore possimus, perferendis officia quis nemo veniam, eaque labore totam ab culpa delectus voluptates! Perspiciatis consequatur pe",
+      "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
+      "stockQuantity": 1240,
+      "price": 4.2,
+      "categoryId": "1-fresh",
+      "id": 1005
     }
   ],
   "categories": [
     {
-      "categoryId": "1",
+      "categoryId": "1-fresh",
       "categoryName": "fresh"
     },
     {
-      "categoryId": "2",
+      "categoryId": "2-packaged",
       "categoryName": "packaged"
     }
   ]
