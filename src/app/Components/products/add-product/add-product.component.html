@@ -9,6 +9,7 @@
     </div>
   </div>
 </div>
+<pre>{{ product | json }}</pre>
 
 <!-- Add Contact Form-->
 <div class="container">
@@ -16,38 +17,82 @@
     <div class="col-sm-4">
       <form>
         <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Product name" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Flour type" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Assortment" />
-        </div>
-        <div class="mb-2">
-          <input type="number" class="form-control" placeholder="Weight" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Description" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Image URL" />
+          <input
+            [(ngModel)]="product.productName"
+            name="productName"
+            type="text"
+            class="form-control"
+            placeholder="Product name"
+          />
         </div>
         <div class="mb-2">
           <input
+            [(ngModel)]="product.flourType"
+            name="flourType"
+            type="text"
+            class="form-control"
+            placeholder="Flour type"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.assortment"
+            name="assortment"
+            type="text"
+            class="form-control"
+            placeholder="Assortment"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.weight"
+            name="weight"
+            type="number"
+            class="form-control"
+            placeholder="Weight"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.description"
+            name="description"
+            type="text"
+            class="form-control"
+            placeholder="Description"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.image"
+            name="image"
+            type="text"
+            class="form-control"
+            placeholder="Image URL"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.stockQuantity"
+            name="stockQuantity"
             type="number"
             class="form-control"
             placeholder="Stock quantity"
           />
         </div>
         <div class="mb-2">
-          <input type="number" class="form-control" placeholder="Price" />
+          <input
+            [(ngModel)]="product.price"
+            name="price"
+            type="number"
+            class="form-control"
+            placeholder="Price"
+          />
         </div>
         <div class="mb-4">
           <select class="form-control" *ngIf="categories.length > 0">
             <option value="">Select category ID</option>
             <option
-              [value]="category.categoryid"
+              [value]="category.categoryId"
               *ngFor="let category of categories"
             >
               {{ category.categoryName }}
