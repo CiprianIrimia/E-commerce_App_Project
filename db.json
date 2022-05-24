@@ -3,38 +3,48 @@
     {
       "id": 1001,
       "productName": "White loaf",
-      "categoryId": "fresh bread",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 300,
       "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
       "image": "src/assets/images/Products images/franzela_alba_proaspata-300.jpg",
       "stockQuantity": 700,
-      "price": 1.5
+      "price": 1.5,
+      "categoryId": 1
     },
     {
       "id": 1002,
       "productName": "White loaf",
-      "category": "fresh bread",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 400,
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores similique soluta est! Officia corporis dolorum eaque repellendus! ",
       "image": "src/assets/images/Products images/franzela_alba_proaspata-400.jpg",
       "stockQuantity": 1700,
-      "price": 2.5
+      "price": 2.5,
+      "categoryId": 1
     },
     {
       "id": 1003,
       "productName": "White loaf",
-      "category": "fresh bread",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 500,
       "description": "Corporis ab officia voluptatibus? Ducimus, alias ex odio enim voluptatibus necessitatibus at porro. ",
       "image": "src/assets/images/Products images/franzela_alba_proaspata-500.jpg",
       "stockQuantity": 400,
-      "price": 3.2
+      "price": 3.2,
+      "categoryId": 1
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "categoryName": "fresh"
+    },
+    {
+      "id": "2",
+      "categoryName": "packaged"
     }
   ]
 }
