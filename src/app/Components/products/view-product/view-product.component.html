@@ -8,45 +8,58 @@
   </div>
 </div>
 
+<!--Loading spinner-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<!--Error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-danger fw-bold">{{ errorMessage }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--View product details-->
 <div class="container" *ngIf="!loading && isNotEmpty()">
   <div class="row">
     <div class="col-sm-4 mb-5">
-      <img
-        src="assets/images/Products images/franzela_alba_proaspata_300.jpg"
-        class="product-image"
-        alt=""
-      />
+      <img [src]="product.image" class="product-image" alt="" />
     </div>
     <div class="col-sm-6 mb-2">
       <ul class="list-group">
         <li class="list-group-item">
-          Product name: <span class="fw-bold"> White loaf</span>
+          Product name: <span class="fw-bold"> {{ product.productName }}</span>
         </li>
         <li class="list-group-item">
-          Category name: <span class="fw-bold"> Fresh </span>
+          Category name:
+          <span class="fw-bold"> {{ product.categoryName }} </span>
         </li>
         <li class="list-group-item">
-          Assortment: <span class="fw-bold"> Loaf</span>
+          Assortment: <span class="fw-bold"> {{ product.assortment }}</span>
         </li>
         <li class="list-group-item">
-          Flour type: <span class="fw-bold"> Black</span>
+          Flour type: <span class="fw-bold"> {{ product.flourType }}</span>
         </li>
         <li class="list-group-item">
           Description:
           <span class="fw-bold">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-            deleniti repudiandae magnam ratione et iste inventore aliquid!
+            {{ product.description }}
           </span>
         </li>
         <li class="list-group-item">
-          Weight: <span class="fw-bold"> 300 gr.</span>
+          Weight: <span class="fw-bold"> {{ product.weight }} gr.</span>
         </li>
         <li class="list-group-item">
-          Price: <span class="fw-bold"> 1.5 Lei</span>
+          Price: <span class="fw-bold"> {{ product.price }} Lei</span>
         </li>
         <li class="list-group-item">
-          Stock quantity: <span class="fw-bold"> 700 pcs.</span>
+          Stock quantity:
+          <span class="fw-bold"> {{ product.stockQuantity }} pcs.</span>
         </li>
       </ul>
 

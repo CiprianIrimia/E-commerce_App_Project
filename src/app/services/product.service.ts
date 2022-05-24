@@ -60,7 +60,7 @@ export class ProductService {
 
   //GET Single Group
   public getCategory(product: prodCategory): Observable<prodCategory> {
-    let dataUrl: string = `${this.serverUrl}/categories/${product.categoryId}`;
+    let dataUrl: string = `${this.serverUrl}/categories/${product.categoryName}`;
     return this.httpClient
       .get<prodCategory>(dataUrl)
       .pipe(catchError(this.handleError));

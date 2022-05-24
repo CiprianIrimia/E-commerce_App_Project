@@ -9,4 +9,5 @@ export interface prodInterface {
   stockQuantity: string;
   price: string;
   categoryId: string;
+  categoryName: string;
 }
