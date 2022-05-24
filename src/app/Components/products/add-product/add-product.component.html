@@ -89,7 +89,12 @@
           />
         </div>
         <div class="mb-4">
-          <select class="form-control" *ngIf="categories.length > 0">
+          <select
+            [(ngModel)]="product.categoryId"
+            name="categoryId"
+            class="form-control"
+            *ngIf="categories.length > 0"
+          >
             <option value="">Select category ID</option>
             <option
               [value]="category.categoryId"
