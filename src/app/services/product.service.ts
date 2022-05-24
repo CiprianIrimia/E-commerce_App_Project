@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, throwError } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { prodInterface } from '../models/prodInterface';
 
 @Injectable({
@@ -13,7 +13,16 @@ export class ProductService {
 
   public getAllProducts(): Observable<prodInterface[]> {
     let dataUrl: string = `${this.serverUrl}/products`;
-    return this.httpClient.get<prodInterface[]>(dataUrl).pipe();
+    return this.httpClient
+      .get<prodInterface[]>(dataUrl)
+      .pipe(catchError(this.handleError));
+  }
+
+  public getProduct(productId: string): Observable<prodInterface> {
+    let dataUrl: string = `${this.serverUrl}/products/${productId}`;
+    return this.httpClient
+      .get<prodInterface>(dataUrl)
+      .pipe(catchError(this.handleError));
   }
 
   public handleError(error: HttpErrorResponse) {
