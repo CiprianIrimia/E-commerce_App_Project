@@ -3,7 +3,7 @@
     {
       "id": 1001,
       "productName": "White loaf",
-      "category": "fresh bread",
+      "categoryId": "fresh bread",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 300,
