@@ -8,7 +8,7 @@ import { prodInterface } from '../models/prodInterface';
   providedIn: 'root',
 })
 export class ProductService {
-  private serverUrl: string = `http://localhost:5000/`;
+  private serverUrl: string = `http://localhost:5000`;
 
   constructor(private httpClient: HttpClient) {}
 

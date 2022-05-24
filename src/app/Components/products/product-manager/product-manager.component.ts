@@ -1,5 +1,7 @@
+import { error } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { prodCategory } from 'src/app/models/prodCategory';
+import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -9,10 +11,16 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductManagerComponent implements OnInit {
   public loading: boolean = false;
-  public products: prodCategory[] = [];
+  public products: prodInterface[] = [];
   public errorMessage: string | null = null;
 
   constructor(private productService: ProductService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loading = true;
+    this.productService.getAllProducts().subscribe((data: prodInterface[]) => {
+      this.products = data;
+      this.loading = false;
+    });
+  }
 }
