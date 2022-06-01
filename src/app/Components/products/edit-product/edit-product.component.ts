@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { prodCategory } from 'src/app/models/prodCategory';
 import { prodInterface } from 'src/app/models/prodInterface';
 
@@ -14,7 +15,11 @@ export class EditProductComponent implements OnInit {
   public errorMessage: string | null = null;
   public categories: prodCategory[] = [] as prodCategory[];
 
-  constructor() {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
+      this.productId = param.get('productId');
+    });
+  }
 }
