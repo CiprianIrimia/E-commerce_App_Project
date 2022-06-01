@@ -28,5 +28,12 @@
     "ourMissionParagraph": "The fundamental steps in the sustainable development of the company are our values, which inspire and support us in consolidating the company's identity, namely: integrity, honesty, respect and professionalism. From the first steps, Multipan-Bakery has been a success story. The bread factory is equipped with modern and high-performance equipment, assuring consumers that all finished products are thoroughly inspected by qualified personnel, reaching the market according to the requirements of European standards. our. Through the care and creativity of talented bakers, our company has managed to grow its portfolio of customers who are interested in consuming tasty and quality products. We continuously invest in the quality of the products and services offered, being accredited with the SR EN ISO 9001/2015 Quality Management System, the SR EN ISO 14001: 2015 Environmental Management System and the SR EN ISO 22000/2018 Safety Management System.",
     "redirectHome": "Home",
     "redirectProducts": "Products"
+  },
+  "productsNavbar": {
+    "productsNavbarTitle": "Products Manager"
+  },
+  "addProduct": {
+    "firstTitle": "Add New Product",
+    "redirectAboutUs": "Despre noi"
   }
 }

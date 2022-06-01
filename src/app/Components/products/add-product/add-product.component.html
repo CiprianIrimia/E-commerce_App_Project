@@ -2,7 +2,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <p class="h4 fw-bold ms-5">Add New Product</p>
+      <p class="h4 fw-bold ms-5">{{ "addProduct.firstTitle" | translate }}</p>
       <p class="ms-5 fw-bold">
         Please insert all the details for your new product
       </p>
@@ -33,17 +33,15 @@
       <form (submit)="createSubmit()">
         <div class="mb-2">
           <input
-            required="true"
-            [(ngModel)]="product.productName"
-            name="productName"
             type="text"
+            name="productName"
             class="form-control"
+            [(ngModel)]="product.productName"
             placeholder="Product name"
           />
         </div>
         <div class="mb-2">
           <input
-            required="true"
             [(ngModel)]="product.flourType"
             name="flourType"
             type="text"
@@ -53,7 +51,6 @@
         </div>
         <div class="mb-2">
           <input
-            required="true"
             [(ngModel)]="product.assortment"
             name="assortment"
             type="text"
@@ -63,7 +60,6 @@
         </div>
         <div class="mb-2">
           <input
-            required="true"
             [(ngModel)]="product.weight"
             name="weight"
             type="number"
@@ -73,7 +69,6 @@
         </div>
         <div class="mb-2">
           <textarea
-            required="true"
             [(ngModel)]="product.description"
             name="description"
             type="text"
@@ -83,7 +78,6 @@
         </div>
         <div class="mb-2">
           <input
-            required="true"
             [(ngModel)]="product.image"
             name="image"
             type="text"
@@ -93,7 +87,6 @@
         </div>
         <div class="mb-2">
           <input
-            required="true"
             [(ngModel)]="product.stockQuantity"
             name="stockQuantity"
             type="number"
@@ -103,7 +96,6 @@
         </div>
         <div class="mb-2">
           <input
-            required="true"
             [(ngModel)]="product.price"
             name="price"
             type="number"
@@ -114,7 +106,6 @@
         <div class="mb-4">
           <label>Select category Id</label>
           <select
-            required="true"
             [(ngModel)]="product.categoryId"
             name="categoryId"
             class="form-control"
@@ -146,7 +137,3 @@
     </div>
   </div>
 </div>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore possimus,
-perferendis officia quis nemo veniam, eaque labore totam ab culpa delectus
-voluptates! Perspiciatis consequatur perferendis, molestiae officia libero
-eligendi accusantium.
