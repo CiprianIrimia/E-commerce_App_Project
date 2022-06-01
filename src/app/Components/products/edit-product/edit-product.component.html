@@ -14,36 +14,108 @@
     <div class="col-sm-4">
       <form>
         <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Product name" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Flour type" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Assortment" />
-        </div>
-        <div class="mb-2">
-          <input type="number" class="form-control" placeholder="Weight" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Description" />
-        </div>
-        <div class="mb-2">
-          <input type="text" class="form-control" placeholder="Image URL" />
+          <input
+            [(ngModel)]="product.productName"
+            [value]="product.productName"
+            required="true"
+            name="productName"
+            type="text"
+            class="form-control"
+            placeholder="Product name"
+          />
         </div>
         <div class="mb-2">
           <input
+            [(ngModel)]="product.flourType"
+            [value]="product.flourType"
+            required="true"
+            name="flourType"
+            type="text"
+            class="form-control"
+            placeholder="Flour type"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.assortment"
+            [value]="product.assortment"
+            required="true"
+            name="assortment"
+            type="text"
+            class="form-control"
+            placeholder="Assortment"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.weight"
+            [value]="product.weight"
+            required="true"
+            name="weight"
+            type="number"
+            class="form-control"
+            placeholder="Weight"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.description"
+            [value]="product.description"
+            required="true"
+            name="description"
+            type="text"
+            class="form-control"
+            placeholder="Description"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.image"
+            [value]="product.image"
+            required="true"
+            name="image"
+            type="text"
+            class="form-control"
+            placeholder="Image URL"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.stockQuantity"
+            [value]="product.stockQuantity"
+            required="true"
+            name="stockQuantity"
             type="number"
             class="form-control"
             placeholder="Stock quantity"
           />
         </div>
         <div class="mb-2">
-          <input type="number" class="form-control" placeholder="Price" />
+          <input
+            [(ngModel)]="product.price"
+            [value]="product.price"
+            required="true"
+            name="price"
+            type="number"
+            class="form-control"
+            placeholder="Price"
+          />
         </div>
         <div class="mb-4">
-          <select class="form-control">
-            <option value="">Select category ID</option>
+          <label>Select category Id</label>
+          <select
+            [(ngModel)]="product.categoryId"
+            [value]="product.categoryId"
+            name="categoryId"
+            class="form-control"
+            required="true"
+          >
+            <option
+              [value]="category.categoryId"
+              *ngFor="let category of categories"
+            >
+              {{ category.categoryName }}
+            </option>
           </select>
         </div>
         <div class="mb-2">
@@ -60,12 +132,7 @@
       </form>
     </div>
     <div class="col-sm-4">
-      <img
-        src="assets/images/Products images/franzela_alba_proaspata_300.jpg"
-        class="product-image"
-        alt=""
-      />
+      <img [src]="product.image" class="product-image" alt="" />
     </div>
   </div>
 </div>
-<pre>{{ product | json }}</pre>

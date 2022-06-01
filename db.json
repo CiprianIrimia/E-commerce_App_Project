@@ -10,7 +10,7 @@
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
       "stockQuantity": 700,
       "price": 1.5,
-      "categoryName": "fresh"
+      "categoryId": "1-fresh"
     },
     {
       "id": 1002,
@@ -22,7 +22,7 @@
       "image": "/assets/images/Products images/franzela_alba_proaspata_400.jpg",
       "stockQuantity": 1320,
       "price": 2.5,
-      "categoryName": "fresh"
+      "categoryId": "1-fresh"
     },
     {
       "id": 1003,
@@ -34,7 +34,7 @@
       "image": "/assets/images/Products images/franzaela_alba_proaspata_500.jpg",
       "stockQuantity": 400,
       "price": 3.2,
-      "categoryName": "fresh"
+      "categoryId": "1-fresh"
     },
     {
       "productName": "Black bread",
