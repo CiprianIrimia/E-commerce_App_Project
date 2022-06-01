@@ -22,10 +22,26 @@ export class EditProductComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.loading = true;
     //GET the contact ID
     this.activatedRoute.paramMap.subscribe((param: ParamMap) => {
       this.productId = param.get('productId');
     });
     //GET the contact DETAILS
+    if (this.productId) {
+      this.productService.getProduct(this.productId).subscribe(
+        (data: prodInterface) => {
+          this.product = data;
+          this.loading = false;
+          this.productService.getAllCategories().subscribe((data) => {
+            this.categories = data;
+          });
+        },
+        (error) => {
+          this.errorMessage = error;
+          this.loading = false;
+        }
+      );
+    }
   }
 }
