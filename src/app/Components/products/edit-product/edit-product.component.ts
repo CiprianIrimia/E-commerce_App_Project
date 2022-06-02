@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { prodCategory } from 'src/app/models/prodCategory';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
@@ -18,7 +18,8 @@ export class EditProductComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -40,6 +41,19 @@ export class EditProductComponent implements OnInit {
         (error) => {
           this.errorMessage = error;
           this.loading = false;
+        }
+      );
+    }
+  }
+  submitUpdate() {
+    if (this.productId) {
+      this.productService.updateProduct(this.product, this.productId).subscribe(
+        (data: prodInterface) => {
+          this.router.navigate(['products']).then();
+        },
+        (error) => {
+          this.errorMessage = error;
+          this.router.navigate([`products/edit/${this.productId}`]).then();
         }
       );
     }

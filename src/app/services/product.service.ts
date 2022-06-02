@@ -73,7 +73,7 @@ export class ProductService {
       errorMessage = `Error : ${error.error.message}`;
     } else {
       //server error
-      errorMessage = `Status : ${error.status} \n Message: ${error.message}`;
+      errorMessage = `Status : ${error.status} / Message: ${error.message}`;
     }
 
     return throwError(errorMessage);

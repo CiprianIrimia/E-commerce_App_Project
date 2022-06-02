@@ -18,13 +18,15 @@ export class ProductManagerComponent implements OnInit {
 
   ngOnInit(): void {
     this.loading = true;
-    this.productService.getAllProducts().subscribe((data: prodInterface[]) => {
-      this.products = data;
-      this.loading = false;
-    });
-    // ,error:(error) => {
-    //   this.errorMessage = error;
-    //   this.loading = false
-    // });
+    this.productService.getAllProducts().subscribe(
+      (data: prodInterface[]) => {
+        this.products = data;
+        this.loading = false;
+      },
+      (error: string) => {
+        this.errorMessage = error;
+        this.loading = false;
+      }
+    );
   }
 }

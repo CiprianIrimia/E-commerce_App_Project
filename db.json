@@ -8,7 +8,7 @@
       "weight": 300,
       "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
-      "stockQuantity": 700,
+      "stockQuantity": 697,
       "price": 1.5,
       "categoryId": "1-fresh"
     },
@@ -20,7 +20,7 @@
       "weight": 400,
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores similique soluta est! Officia corporis dolorum eaque repellendus! ",
       "image": "/assets/images/Products images/franzela_alba_proaspata_400.jpg",
-      "stockQuantity": 1320,
+      "stockQuantity": 1589,
       "price": 2.5,
       "categoryId": "1-fresh"
     },
