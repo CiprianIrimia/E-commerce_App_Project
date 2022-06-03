@@ -27,12 +27,16 @@ export class ViewProductComponent implements OnInit {
     });
     if (this.productId) {
       this.loading = true;
-      this.productService
-        .getProduct(this.productId)
-        .subscribe((data: prodInterface) => {
+      this.productService.getProduct(this.productId).subscribe(
+        (data: prodInterface) => {
           this.product = data;
           this.loading = false;
-        });
+        },
+        (error: string) => {
+          this.errorMessage = error;
+          this.loading = false;
+        }
+      );
     }
   }
 
