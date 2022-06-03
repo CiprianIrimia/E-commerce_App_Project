@@ -100,5 +100,13 @@
       "categoryName": "packaged"
     }
   ],
-  "signupUsers": []
+  "signupUsers": [
+    {
+      "fullName": "Ciprian Irimia",
+      "mobile": 765444444,
+      "email": "test@test.com",
+      "password": "test123",
+      "id": 1
+    }
+  ]
 }
