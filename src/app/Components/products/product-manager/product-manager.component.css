@@ -28,3 +28,9 @@
 .list-group-item span {
   float: right;
 }
+
+.container.mt-3.mb-4 input {
+  background-color: #fffdf5;
+  width: 40%;
+  margin: 0 auto;
+}

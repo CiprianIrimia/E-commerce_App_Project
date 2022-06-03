@@ -64,6 +64,30 @@
       "categoryId": "1-fresh",
       "categoryName": "fresh",
       "id": 1005
+    },
+    {
+      "productName": "Test product",
+      "flourType": "black",
+      "assortment": "parizian",
+      "weight": 250,
+      "description": "A good bread with flour tasty",
+      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
+      "stockQuantity": 30,
+      "price": 5,
+      "categoryId": "2-packaged",
+      "id": 1006
+    },
+    {
+      "categoryId": "1-fresh",
+      "id": 1007,
+      "productName": "Test 2",
+      "flourType": "white",
+      "assortment": "Toast",
+      "weight": 600,
+      "description": "Tasty product",
+      "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
+      "stockQuantity": 360,
+      "price": 3
     }
   ],
   "categories": [
