@@ -114,6 +114,13 @@
       "email": "test3@yahoo.com",
       "password": "test123",
       "id": 2
+    },
+    {
+      "fullName": "Popescu Ioan",
+      "mobile": 77666555,
+      "email": "popescu@yahoo.com",
+      "password": "popescu123",
+      "id": 3
     }
   ]
 }

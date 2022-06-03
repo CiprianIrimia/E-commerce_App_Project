@@ -1,3 +1,20 @@
+<!--Loading spinner-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<!--Error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-danger fw-bold">
+          {{ errorMessage }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -6,12 +23,13 @@
           <h1>LOGIN</h1>
           <h6>Please enter email & password!</h6>
         </div>
-        <form>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"
               >Email address</label
             >
             <input
+              formControlName="email"
               type="email"
               class="form-control"
               id="exampleInputEmail1"
@@ -26,6 +44,7 @@
               >Password</label
             >
             <input
+              formControlName="password"
               type="password"
               class="form-control"
               id="exampleInputPassword1"
