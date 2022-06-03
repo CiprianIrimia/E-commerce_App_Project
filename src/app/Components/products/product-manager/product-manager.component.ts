@@ -13,6 +13,7 @@ export class ProductManagerComponent implements OnInit {
   public loading: boolean = false;
   public products: prodInterface[] = [];
   public errorMessage: string | null = null;
+  public search: any;
 
   constructor(private productService: ProductService) {}
 

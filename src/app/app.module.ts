@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Pipe } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
@@ -31,6 +31,8 @@ import { ViewProductComponent } from './Components/products/view-product/view-pr
 import { SpinnerComponent } from './Components/products/spinner/spinner.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,7 @@ import { FormsModule } from '@angular/forms';
     ViewProductComponent,
     SpinnerComponent,
     PageNotFoundComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +67,7 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     HttpClientModule,
     FormsModule,
+    Ng2SearchPipeModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
