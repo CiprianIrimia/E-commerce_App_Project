@@ -41,8 +41,9 @@ export class SignupComponent implements OnInit {
           this.router.navigate(['login']);
           this.loading = false;
         },
-        (error: string) => {
-          this.errorMessage = error;
+        (error) => {
+          this.errorMessage =
+            'Something went wrong with your server connection. Please try again later or contact your system administrator!';
           this.loading = false;
         }
       );
