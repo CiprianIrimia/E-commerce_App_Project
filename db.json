@@ -107,6 +107,13 @@
       "email": "test@test.com",
       "password": "test123",
       "id": 1
+    },
+    {
+      "fullName": "Test Test",
+      "mobile": 12345678,
+      "email": "test3@yahoo.com",
+      "password": "test123",
+      "id": 2
     }
   ]
 }
