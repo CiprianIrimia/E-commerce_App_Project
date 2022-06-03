@@ -1,10 +1,11 @@
+import { NgToastModule } from 'ng-angular-popup';
 import { NgModule, Pipe } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
@@ -68,6 +69,7 @@ import { SearchPipe } from './search.pipe';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgToastModule,
     Ng2SearchPipeModule,
     TranslateModule.forRoot({
       loader: {
