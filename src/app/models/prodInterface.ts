@@ -1,5 +1,5 @@
 export interface prodInterface {
-  id?: string;
+  id: string;
   productName: string;
   flourType: string;
   assortment: string;

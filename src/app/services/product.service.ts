@@ -8,6 +8,9 @@ import { prodInterface } from '../models/prodInterface';
   providedIn: 'root',
 })
 export class ProductService {
+  showMessage(_arg0: string) {
+    throw new Error('Method not implemented.');
+  }
   private serverUrl: string = `http://localhost:5000`;
 
   constructor(private httpClient: HttpClient) {}
@@ -43,7 +46,7 @@ export class ProductService {
       .pipe(catchError(this.handleError));
   }
 
-  public deleteProduct(productId: string): Observable<{}> {
+  public deleteProduct(productId: string | any): Observable<{}> {
     let dataUrl: string = `${this.serverUrl}/products/${productId}`;
     return this.httpClient
       .delete<{}>(dataUrl)

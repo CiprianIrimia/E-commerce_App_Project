@@ -99,7 +99,12 @@
               >
                 <i class="fa fa-pen"></i>
               </a>
-              <button class="btn btn-danger" title="Delete product">
+              <button
+                class="btn btn-danger my-1"
+                type="button"
+                title="Delete product"
+                (click)="clickDeleteProduct(product.id)"
+              >
                 <i class="fa fa-trash-alt"></i>
               </button>
             </div>

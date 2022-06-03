@@ -17,6 +17,10 @@ export class ProductManagerComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    this.getAllProductsFromServer();
+  }
+
+  getAllProductsFromServer() {
     this.loading = true;
     this.productService.getAllProducts().subscribe(
       (data: prodInterface[]) => {
@@ -28,5 +32,19 @@ export class ProductManagerComponent implements OnInit {
         this.loading = false;
       }
     );
+  }
+
+  public clickDeleteProduct(productId: string | undefined) {
+    if (productId) {
+      // console.log(`http://localhost:5000/products/${productId}`);
+      this.productService.deleteProduct(productId).subscribe(
+        () => {
+          this.getAllProductsFromServer();
+        },
+        (error) => {
+          this.errorMessage = error;
+        }
+      );
+    }
   }
 }
