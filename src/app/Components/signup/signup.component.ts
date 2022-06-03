@@ -8,6 +8,7 @@ import {
 } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-signup',

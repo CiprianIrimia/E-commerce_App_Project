@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +19,8 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,
-    private productService: ProductService
+    private productService: ProductService,
+    private toast: NgToastService
   ) {}
 
   ngOnInit(): void {
@@ -39,12 +41,20 @@ export class LoginComponent implements OnInit {
           );
         });
         if (user) {
-          alert('Login success');
+          this.toast.success({
+            detail: 'Success message',
+            summary: 'Login successfully!',
+            duration: 6000,
+          });
           this.loginForm.reset();
           this.router.navigate(['products']);
           this.loading = false;
         } else {
-          alert('User not found!');
+          this.toast.error({
+            detail: 'Error message',
+            summary: 'Login failed. User not found!',
+            duration: 6000,
+          });
         }
       },
       (error: string) => {
