@@ -1,0 +1,15 @@
+.row {
+  justify-content: center;
+  margin: 30px;
+}
+
+.card {
+  margin-top: 10px;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff9e2;
+}
+
+.text-center h6 {
+  font-size: small;
+}

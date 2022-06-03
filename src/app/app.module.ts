@@ -30,7 +30,7 @@ import { EditProductComponent } from './Components/products/edit-product/edit-pr
 import { ViewProductComponent } from './Components/products/view-product/view-product.component';
 import { SpinnerComponent } from './Components/products/spinner/spinner.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchPipe } from './search.pipe';
 
@@ -67,6 +67,7 @@ import { SearchPipe } from './search.pipe';
     RouterModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     Ng2SearchPipeModule,
     TranslateModule.forRoot({
       loader: {
