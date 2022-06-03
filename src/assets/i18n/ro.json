@@ -6,8 +6,7 @@
     "cart": "Cos",
     "signUp": "Inregistrare",
     "login": "Autentificare",
-    "googleAccount": "Contul Google",
-    "emailPassword": "Email & parola"
+    "logout": "Delogare"
   },
   "homepageCarousel": {
     "image1H3": "VEDEM LUMINA ZILEI",

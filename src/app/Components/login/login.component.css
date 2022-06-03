@@ -1,6 +1,6 @@
 .row {
   justify-content: center;
-  margin: 50px;
+  margin: 20px;
 }
 
 .card {
@@ -12,4 +12,12 @@
 
 .text-center h6 {
   font-size: small;
+}
+
+.col.h4.text-danger.fw-bold {
+  font-size: large;
+}
+
+.h4.text-danger.fw-bold {
+  margin: 0;
 }

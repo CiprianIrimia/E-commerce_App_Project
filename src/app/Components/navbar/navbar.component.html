@@ -56,9 +56,9 @@
             "navbar.signUp" | translate
           }}</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item">
           <a
-            class="nav-link dropdown-toggle"
+            class="nav-link"
             routerLink="login"
             id="navbarDropdownMenuLink"
             role="button"
@@ -67,26 +67,18 @@
           >
             {{ "navbar.login" | translate }}
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li>
-              <a class="dropdown-item" routerLink="#"
-                ><img
-                  src="https://img.icons8.com/color/48/000000/google-logo.png"
-                  style="width: 20px"
-                />
-                {{ "navbar.googleAccount" | translate }}</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="#"
-                ><img
-                  src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/000000/external-email-digital-marketing-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png"
-                  style="width: 20px"
-                />
-                {{ "navbar.emailPassword" | translate }}</a
-              >
-            </li>
-          </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink=""
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "navbar.logout" | translate }}
+          </a>
         </li>
         <li>
           <button

@@ -14,8 +14,7 @@ export class NavbarComponent {
   cart: string = '';
   signUp: string = '';
   login: string = '';
-  googleAccount: string = '';
-  emailPassword: string = '';
+  logout: string = '';
 
   ngOnInit(): void {}
 

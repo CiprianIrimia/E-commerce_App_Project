@@ -6,8 +6,7 @@
     "cart": "Cart",
     "signUp": "Sign Up",
     "login": "Login",
-    "googleAccount": "Google account",
-    "emailPassword": "Email & Password"
+    "logout": "Logout"
   },
   "homepageCarousel": {
     "image1H3": "WE SEE THE LIGHT OF THE DAY",

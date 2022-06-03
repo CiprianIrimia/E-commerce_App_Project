@@ -16,5 +16,8 @@
 
 .col.h4.text-danger.fw-bold {
   font-size: large;
-  margin-top: 0;
+}
+
+.h4.text-danger.fw-bold {
+  margin: 0;
 }
