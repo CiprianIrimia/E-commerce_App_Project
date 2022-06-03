@@ -24,7 +24,8 @@ export class SignupComponent implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,
-    private productService: ProductService
+    private productService: ProductService,
+    private toast: NgToastService
   ) {}
 
   ngOnInit(): void {
@@ -42,7 +43,11 @@ export class SignupComponent implements OnInit {
       .post<any>('http://localhost:5000/signupUsers', this.signupForm.value)
       .subscribe(
         (res) => {
-          alert('Signup successfull');
+          this.toast.success({
+            detail: 'Success message',
+            summary: 'SingUp successfully. Please login!',
+            duration: 7000,
+          });
           this.signupForm.reset();
           this.router.navigate(['login']);
           this.loading = false;
