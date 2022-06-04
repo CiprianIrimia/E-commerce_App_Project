@@ -56,6 +56,8 @@ export class LoginComponent implements OnInit {
             duration: 6000,
           });
         }
+        this.loading = false;
+        this.errorMessage = '';
       },
       (error: string) => {
         this.errorMessage =
