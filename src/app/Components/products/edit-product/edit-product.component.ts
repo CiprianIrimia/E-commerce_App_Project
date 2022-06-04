@@ -66,7 +66,7 @@ export class EditProductComponent implements OnInit {
           this.loading = false;
           this.toast.warning({
             detail: 'Warning message',
-            summary: 'Product details NOT modifyed',
+            summary: 'Product details NOT modified',
             duration: 6000,
           });
         }

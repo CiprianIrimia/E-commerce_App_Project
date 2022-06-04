@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1001,
-      "productName": "White loaf",
+      "productName": "White loafs",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 300,
@@ -159,6 +159,13 @@
       "email": "123@yahoo.com",
       "password": "test123",
       "id": 5
+    },
+    {
+      "fullName": "ereere",
+      "mobile": 324234234,
+      "email": "test222@test.com",
+      "password": "test222",
+      "id": 6
     }
   ]
 }

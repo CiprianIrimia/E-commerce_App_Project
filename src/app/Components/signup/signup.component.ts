@@ -56,6 +56,11 @@ export class SignupComponent implements OnInit {
           this.errorMessage =
             'Something went wrong with your server connection. Please try again later or contact your system administrator!';
           this.loading = false;
+          this.toast.error({
+            detail: 'Error message',
+            summary: 'Sign up fail!',
+            duration: 6000,
+          });
         }
       );
   }

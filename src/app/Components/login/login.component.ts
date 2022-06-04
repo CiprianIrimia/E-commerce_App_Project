@@ -63,6 +63,11 @@ export class LoginComponent implements OnInit {
         this.errorMessage =
           'Something went wrong with your server connection. Please try again later or contact your system administrator!';
         this.loading = false;
+        this.toast.error({
+          detail: 'Error message',
+          summary: 'Login fail!',
+          duration: 6000,
+        });
       }
     );
   }

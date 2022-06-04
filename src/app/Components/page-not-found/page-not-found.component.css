@@ -1,0 +1,10 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col img {
+  width: 70%;
+}
