@@ -34,7 +34,7 @@
       "weight": 500,
       "description": "Corporis ab officia voluptatibus? Ducimus, alias ex odio enim voluptatibus necessitatibus at porro. ",
       "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
-      "stockQuantity": 400,
+      "stockQuantity": 379,
       "price": 3.2,
       "categoryId": "1-fresh",
       "categoryName": "fresh"
@@ -88,6 +88,30 @@
       "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
       "stockQuantity": 360,
       "price": 3
+    },
+    {
+      "productName": "Black loaf",
+      "flourType": "white",
+      "assortment": "loaf",
+      "weight": 12,
+      "description": "fsddfsdfsdfsdfsd",
+      "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
+      "stockQuantity": 4,
+      "price": 2,
+      "categoryId": "2-packaged",
+      "id": 1008
+    },
+    {
+      "productName": "sd",
+      "flourType": "black",
+      "assortment": "baguette",
+      "weight": 1,
+      "description": "dfsdf",
+      "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
+      "stockQuantity": 1,
+      "price": 1,
+      "categoryId": "1-fresh",
+      "id": 1009
     }
   ],
   "categories": [

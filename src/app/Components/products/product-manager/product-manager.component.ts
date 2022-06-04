@@ -14,6 +14,8 @@ export class ProductManagerComponent implements OnInit {
   public products: prodInterface[] = [];
   public errorMessage: string | null = null;
   public search: any;
+  public redirectAboutUs: string = '';
+  public redirectLogin: string = '';
 
   constructor(private productService: ProductService) {}
 

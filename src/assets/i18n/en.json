@@ -33,6 +33,10 @@
   },
   "addProduct": {
     "firstTitle": "Add New Product",
-    "redirectAboutUs": "Despre noi"
+    "secondTitle": "Please insert all the details for your new product"
+  },
+  "productsManager": {
+    "redirectAboutUs": "About Us",
+    "redirectLogin": "Login"
   }
 }

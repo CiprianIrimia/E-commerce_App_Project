@@ -33,6 +33,10 @@
   },
   "addProduct": {
     "firstTitle": "Adaugati un nou produs",
-    "redirectAboutUs": "Despre noi"
+    "secondTitle": "Introduceti toate datele solicitate pentru noul produs"
+  },
+  "productsManager": {
+    "redirectAboutUs": "Despre noi",
+    "redirectLogin": "Autentificare"
   }
 }

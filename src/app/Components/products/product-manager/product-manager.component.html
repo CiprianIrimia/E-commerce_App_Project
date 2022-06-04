@@ -8,19 +8,6 @@
           <i class="fa fa-plus-circle"> New Product</i>
         </a>
       </p>
-      <!-- <div class="row mb-2" style="justify-content: center">
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col">
-              <input
-                type="submit"
-                class="btn btn-outline-dark"
-                value="Search"
-              />
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </div>
@@ -34,8 +21,9 @@
 <div *ngIf="!loading && errorMessage">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col" style="display: flex">
         <p class="h4 text-danger fw-bold">{{ errorMessage }}</p>
+        <img src="assets\images\Error server image.jpg" alt="" />
       </div>
     </div>
   </div>
@@ -115,3 +103,11 @@
     </div>
   </div>
 </div>
+<span class="redirect-buttons"
+  ><a class="products-manager-redirect-to-about-us" routerLink="/about-us"
+    >&LeftArrow; {{ "productsManager.redirectAboutUs" | translate }}</a
+  >
+  <a class="products-manager-redirect-to-login" routerLink="/login"
+    >{{ "productsManager.redirectLogin" | translate }} &RightArrow;</a
+  ></span
+>

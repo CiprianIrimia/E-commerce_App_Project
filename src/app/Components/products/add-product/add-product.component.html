@@ -1,15 +1,4 @@
 <app-products-navbar></app-products-navbar>
-<div class="container mt-3">
-  <div class="row">
-    <div class="col">
-      <p class="h4 fw-bold ms-5">{{ "addProduct.firstTitle" | translate }}</p>
-      <p class="ms-5 fw-bold">
-        Please insert all the details for your new product
-      </p>
-    </div>
-  </div>
-</div>
-
 <!--Loading spinner-->
 <div *ngIf="loading">
   <app-spinner></app-spinner>
@@ -22,6 +11,16 @@
       <div class="col">
         <p class="h4 text-danger fw-bold">{{ errorMessage }}</p>
       </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <p class="h4 fw-bold ms-5">{{ "addProduct.firstTitle" | translate }}</p>
+      <p class="ms-5 fw-bold">
+        {{ "addProduct.secondTitle" | translate }}
+      </p>
     </div>
   </div>
 </div>
