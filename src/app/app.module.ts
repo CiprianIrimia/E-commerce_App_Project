@@ -34,6 +34,7 @@ import { PageNotFoundComponent } from './Components/page-not-found/page-not-foun
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchPipe } from './search.pipe';
+import { ClientAreaComponent } from './Components/client-area/client-area.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SearchPipe } from './search.pipe';
     SpinnerComponent,
     PageNotFoundComponent,
     SearchPipe,
+    ClientAreaComponent,
   ],
   imports: [
     BrowserModule,

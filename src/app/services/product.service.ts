@@ -11,32 +11,32 @@ export class ProductService {
   showMessage(_arg0: string) {
     throw new Error('Method not implemented.');
   }
-  private serverUrl: string = `http://localhost:5000`;
+  serverUrl: string = `http://localhost:5000`;
 
   constructor(private httpClient: HttpClient) {}
 
-  public getAllProducts(): Observable<prodInterface[]> {
+  getAllProducts(): Observable<prodInterface[]> {
     let dataUrl: string = `${this.serverUrl}/products`;
     return this.httpClient
       .get<prodInterface[]>(dataUrl)
       .pipe(catchError(this.handleError));
   }
 
-  public getProduct(productId: string): Observable<prodInterface> {
+  getProduct(productId: string): Observable<prodInterface> {
     let dataUrl: string = `${this.serverUrl}/products/${productId}`;
     return this.httpClient
       .get<prodInterface>(dataUrl)
       .pipe(catchError(this.handleError));
   }
 
-  public createProduct(product: prodInterface): Observable<prodInterface> {
+  createProduct(product: prodInterface): Observable<prodInterface> {
     let dataUrl: string = `${this.serverUrl}/products`;
     return this.httpClient
       .post<prodInterface>(dataUrl, product)
       .pipe(catchError(this.handleError));
   }
 
-  public updateProduct(
+  updateProduct(
     product: prodInterface,
     productId: string
   ): Observable<prodInterface> {
@@ -46,7 +46,7 @@ export class ProductService {
       .pipe(catchError(this.handleError));
   }
 
-  public deleteProduct(productId: string | any): Observable<{}> {
+  deleteProduct(productId: number): Observable<{}> {
     let dataUrl: string = `${this.serverUrl}/products/${productId}`;
     return this.httpClient
       .delete<{}>(dataUrl)
@@ -54,7 +54,7 @@ export class ProductService {
   }
 
   //GET All Groups
-  public getAllCategories(): Observable<prodCategory[]> {
+  getAllCategories(): Observable<prodCategory[]> {
     let dataUrl: string = `${this.serverUrl}/categories`;
     return this.httpClient
       .get<prodCategory[]>(dataUrl)
@@ -62,14 +62,14 @@ export class ProductService {
   }
 
   //GET Single Group
-  public getCategory(product: prodCategory): Observable<prodCategory> {
+  getCategory(product: prodCategory): Observable<prodCategory> {
     let dataUrl: string = `${this.serverUrl}/categories/${product.categoryName}`;
     return this.httpClient
       .get<prodCategory>(dataUrl)
       .pipe(catchError(this.handleError));
   }
 
-  public handleError(error: HttpErrorResponse) {
+  handleError(error: HttpErrorResponse) {
     let errorMessage: string = '';
     if (error.error instanceof ErrorEvent) {
       //client error

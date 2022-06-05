@@ -2,7 +2,8 @@
   "navbar": {
     "home": "Home",
     "aboutUs": "About Us",
-    "products": "Products",
+    "adminArea": "Admin Area",
+    "clientArea": "Client Area",
     "cart": "Cart",
     "signUp": "Sign Up",
     "login": "Login",

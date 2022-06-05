@@ -1,5 +1,6 @@
 import { error } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { prodCategory } from 'src/app/models/prodCategory';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
@@ -37,11 +38,11 @@ export class ProductManagerComponent implements OnInit {
     );
   }
 
-  public clickDeleteProduct(productId: string | undefined) {
+  public clickDeleteProduct(productId: string | any) {
     if (productId) {
       // console.log(`http://localhost:5000/products/${productId}`);
       this.productService.deleteProduct(productId).subscribe(
-        () => {
+        (res) => {
           this.getAllProductsFromServer();
         },
         (error) => {

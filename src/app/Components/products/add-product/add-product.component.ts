@@ -4,6 +4,7 @@ import { prodCategory } from 'src/app/models/prodCategory';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
 import { NgToastService } from 'ng-angular-popup';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-product',

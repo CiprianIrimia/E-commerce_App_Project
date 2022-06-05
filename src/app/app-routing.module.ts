@@ -16,6 +16,7 @@ import { EditProductComponent } from './Components/products/edit-product/edit-pr
 import { ViewProductComponent } from './Components/products/view-product/view-product.component';
 import { ProductManagerComponent } from './Components/products/product-manager/product-manager.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
+import { ClientAreaComponent } from './Components/client-area/client-area.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'order-succes', component: OrderSuccessComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'client-area', component: ClientAreaComponent },
   { path: 'admin/products', component: AdminProductsComponent },
   { path: 'admin/orders', component: AdminOrdersComponent },
   { path: '**', component: PageNotFoundComponent },

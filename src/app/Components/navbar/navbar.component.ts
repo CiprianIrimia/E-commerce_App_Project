@@ -10,7 +10,8 @@ export class NavbarComponent {
 
   home: string = '';
   aboutUs: string = '';
-  products: string = '';
+  adminArea: string = '';
+  clientArea: string = '';
   cart: string = '';
   signUp: string = '';
   login: string = '';

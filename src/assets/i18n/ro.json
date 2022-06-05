@@ -2,7 +2,8 @@
   "navbar": {
     "home": "Acasa",
     "aboutUs": "Despre noi",
-    "products": "Produse",
+    "adminArea": "Zona Admin",
+    "clientArea": "Zona Client",
     "cart": "Cos",
     "signUp": "Inregistrare",
     "login": "Autentificare",
