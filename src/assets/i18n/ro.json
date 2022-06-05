@@ -3,7 +3,7 @@
     "home": "Acasa",
     "aboutUs": "Despre noi",
     "adminArea": "Zona Admin",
-    "clientArea": "Zona Client",
+    "clientArea": "Magazin",
     "cart": "Cos",
     "signUp": "Inregistrare",
     "login": "Autentificare",
@@ -27,17 +27,23 @@
     "ourMissionTitle": "Misiunea noastra",
     "ourMissionParagraph": "Pașii fundamentali în dezvoltarea durabilă a companiei sunt valorile noastre, care ne inspiră și ne susțin în a consolida identitatea companiei și anume: integritate, onestitate, respect și profesionalism.Înca de la primii pași, compania Multipan-Bakery a fost o poveste de succes. Fabrica de pâine este dotată cu utilaje moderne și performante, asigurând consumatorii ca toate produsele finite sunt controlate minuțios de personalul calificat, ajungând în piață conform cerințelor standardelor europene.Cu siguranță locuitorii județului Iași ne cunosc și ne apreciază, de aceea ne bucurăm de succesul produselor noastre. Prin grija și creativitatea talentaților brutari, compania noastră a reușit să-și mărească portofoliul de clienți care sunt interesați să consume produse gustoase și de calitate. Investim continuu în calitatea produselor si serviciilor oferite, fiind acreditata cu Sistemul de Management al Calitatii SR EN ISO 9001/2015, Sistemul de Management al Mediului SR EN ISO 14001:2015 și Sistemul de Management al Sigurantei SR EN ISO 22000/2018.",
     "redirectHome": "Prima pagina",
-    "redirectProducts": "Produse"
+    "redirectClientArea": "Magazin "
+  },
+  "clientNavbar": {
+    "clientNavbarTitle": "Magazin online"
+  },
+  "clientAreaRedirect": {
+    "redirectAboutUs": "Despre noi",
+    "redirectLogin": "Autentificare"
   },
   "productsNavbar": {
     "productsNavbarTitle": "Manager de produse"
   },
+  "productsManager": {
+    "redirectHome": "Prima pagina"
+  },
   "addProduct": {
     "firstTitle": "Adaugati un nou produs",
     "secondTitle": "Introduceti toate datele solicitate pentru noul produs"
-  },
-  "productsManager": {
-    "redirectAboutUs": "Despre noi",
-    "redirectLogin": "Autentificare"
   }
 }

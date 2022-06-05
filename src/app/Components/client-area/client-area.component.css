@@ -1,0 +1,74 @@
+.navbar.navbar-light {
+  background-color: blanchedalmond;
+}
+
+.navbar-brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.h4.fw-bold.ms-5 {
+  color: brown;
+}
+.row {
+  justify-content: space-between;
+}
+.btn.btn-danger.btn-sm {
+  float: right;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 20%;
+}
+
+.card.list-group-item-primary {
+  background-color: rgb(240, 240, 240);
+}
+
+.col-sm-1 {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-group-item span {
+  float: right;
+}
+
+.container.mt-3.mb-4 input {
+  background-color: #fffdf5;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.col img {
+  width: 50%;
+}
+
+.redirect-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-manager-redirect-to-about-us {
+  text-decoration: none;
+  color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 1px solid transparent;
+  background-color: #ffd774;
+  border-radius: 20px;
+  margin-top: 0;
+}
+
+.products-manager-redirect-to-login {
+  text-decoration: none;
+  color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 1px solid transparent;
+  background-color: #ffd774;
+  border-radius: 20px;
+  margin-top: 0;
+}

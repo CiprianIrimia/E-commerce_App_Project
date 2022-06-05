@@ -6,15 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent implements OnInit {
-  ourStoryTitle: string = '';
-  ourStoryParagraph: any = '';
-
-  ourMissionTitle: string = '';
-  ourMissionParagraph: string = '';
-
-  redirectHome: string = '';
-  redirectProducts: string = '';
-
   constructor() {}
 
   ngOnInit(): void {}

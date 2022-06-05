@@ -2,13 +2,13 @@
   "products": [
     {
       "id": 1001,
-      "productName": "White loafs",
+      "productName": "White loaf",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 300,
       "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
-      "stockQuantity": 697,
+      "stockQuantity": 121,
       "price": 1.5,
       "categoryId": "1-fresh",
       "categoryName": "fresh"

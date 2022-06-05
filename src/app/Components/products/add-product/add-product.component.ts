@@ -17,10 +17,6 @@ export class AddProductComponent implements OnInit {
   public errorMessage: string | null = null;
   public categories: prodCategory[] = [] as prodCategory[];
 
-  addProduct: string = '';
-  firstTitle: string = '';
-  secondTitle: string = '';
-
   constructor(
     private productService: ProductService,
     private router: Router,
