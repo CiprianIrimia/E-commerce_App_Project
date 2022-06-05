@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-homepage-carousel',
   templateUrl: './homepage-carousel.component.html',
+  styleUrls: ['./homepage-carousel.component.css'],
 })
 export class HomepageCarouselComponent {
   image1H3: string = '';
@@ -10,7 +11,7 @@ export class HomepageCarouselComponent {
   image2H3: string = '';
   image2P: string = '';
   image3H3: string = '';
-  image3P: string = ``;
+  image3P: string = '';
 
   images = [107, 337, 165].map((n) => `https://picsum.photos/id/${n}/1600/600`);
 

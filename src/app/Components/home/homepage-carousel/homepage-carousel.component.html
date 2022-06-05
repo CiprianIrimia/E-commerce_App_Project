@@ -5,8 +5,12 @@
         <img [src]="images[0]" alt="Random first slide" />
       </div>
       <div class="carousel-caption">
-        <h3>{{ "homepageCarousel.image1H3" | translate }}</h3>
-        <p>{{ "homepageCarousel.image1P" | translate }}</p>
+        <h3 class="carousel-caption-h3">
+          {{ "homepageCarousel.image1H3" | translate }}
+        </h3>
+        <p class="carousel-caption-p">
+          {{ "homepageCarousel.image1P" | translate }}
+        </p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -14,7 +18,9 @@
         <img [src]="images[1]" alt="Random second slide" />
       </div>
       <div class="carousel-caption">
-        <h3>{{ "homepageCarousel.image2H3" | translate }}</h3>
+        <h3>
+          {{ "homepageCarousel.image2H3" | translate }}
+        </h3>
         <p>{{ "homepageCarousel.image2P" | translate }}</p>
       </div>
     </ng-template>
@@ -23,7 +29,9 @@
         <img [src]="images[2]" alt="Random third slide" />
       </div>
       <div class="carousel-caption">
-        <h3>{{ "homepageCarousel.image3H3" | translate }}</h3>
+        <h3>
+          {{ "homepageCarousel.image3H3" | translate }}
+        </h3>
         <p>{{ "homepageCarousel.image3P" | translate }}</p>
       </div>
     </ng-template>
