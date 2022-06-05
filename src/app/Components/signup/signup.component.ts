@@ -30,10 +30,10 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
-      fullName: [''],
-      mobile: [''],
-      email: [''],
-      password: [''],
+      fullName: ['', Validators.required],
+      mobile: ['', Validators.required],
+      email: ['', Validators.required],
+      password: ['', Validators.required],
     });
   }
 
@@ -55,6 +55,7 @@ export class SignupComponent implements OnInit {
         (error) => {
           this.errorMessage =
             'Something went wrong with your server connection. Please try again later or contact your system administrator!';
+          this.signupForm.reset();
           this.loading = false;
           this.toast.error({
             detail: 'Error message',

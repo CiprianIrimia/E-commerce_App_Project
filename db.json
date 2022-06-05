@@ -166,6 +166,13 @@
       "email": "test222@test.com",
       "password": "test222",
       "id": 6
+    },
+    {
+      "fullName": "Iacob Ioan",
+      "mobile": 999999999,
+      "email": "iacob@gmail.com",
+      "password": "iacob",
+      "id": 7
     }
   ]
 }

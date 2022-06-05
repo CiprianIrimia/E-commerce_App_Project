@@ -50,6 +50,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['products']);
           this.loading = false;
         } else {
+          this.loginForm.reset();
           this.toast.error({
             detail: 'Error message',
             summary: 'Login failed. User not found!',
