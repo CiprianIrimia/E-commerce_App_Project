@@ -1,5 +1,5 @@
 import { error } from '@angular/compiler/src/util';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { prodInterface } from 'src/app/models/prodInterface';
@@ -17,6 +17,10 @@ export class ProductManagerComponent implements OnInit {
   public errorMessage: string | null = null;
   public search: any;
   public stockQuantityStatus: string = 'positive';
+
+  @Input() product: prodInterface | undefined;
+
+  @Output() deleteProduct: EventEmitter<prodInterface> = new EventEmitter();
 
   constructor(
     private productService: ProductService,

@@ -36,6 +36,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchPipe } from './search.pipe';
 import { ClientAreaComponent } from './Components/client-area/client-area.component';
 import { ProdClientDetailsComponent } from './Components/client-area/prod-client-details/prod-client-details.component';
+import { ConfirmationModalComponent } from './Components/confirmation-modal/confirmation-modal.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { ProdClientDetailsComponent } from './Components/client-area/prod-client
     SearchPipe,
     ClientAreaComponent,
     ProdClientDetailsComponent,
+    ConfirmationModalComponent,
   ],
   imports: [
     BrowserModule,

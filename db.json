@@ -1,6 +1,19 @@
 {
   "products": [
     {
+      "id": 1002,
+      "productName": "White loaf",
+      "flourType": "white",
+      "assortment": "loaf",
+      "weight": 400,
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores similique soluta est! Officia corporis dolorum eaque repellendus! ",
+      "image": "/assets/images/Products images/franzela_alba_proaspata_400.jpg",
+      "stockQuantity": 1589,
+      "price": 2.5,
+      "categoryId": "1-fresh",
+      "categoryName": "fresh"
+    },
+    {
       "id": 1001,
       "productName": "White loafs",
       "flourType": "white",
@@ -40,81 +53,28 @@
       "categoryName": "fresh"
     },
     {
-      "productName": "Black bread",
-      "flourType": "black",
-      "assortment": "round",
-      "weight": 340,
-      "description": "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum",
-      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
-      "stockQuantity": 450,
-      "price": 2.9,
-      "categoryId": "1-fresh",
-      "categoryName": "fresh",
-      "id": 1004
-    },
-    {
-      "id": 1001,
-      "productName": "White loafs",
-      "flourType": "white",
-      "assortment": "loaf",
-      "weight": 300,
-      "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
-      "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
-      "stockQuantity": 697,
-      "price": 1.5,
-      "categoryId": "1-fresh",
-      "categoryName": "packaged"
-    },
-    {
-      "id": 1002,
-      "productName": "White loaf",
-      "flourType": "white",
-      "assortment": "loaf",
-      "weight": 400,
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores similique soluta est! Officia corporis dolorum eaque repellendus! ",
-      "image": "/assets/images/Products images/franzela_alba_proaspata_400.jpg",
-      "stockQuantity": 1589,
-      "price": 2.5,
-      "categoryId": "1-fresh",
-      "categoryName": "fresh"
-    },
-    {
-      "id": 1003,
-      "productName": "White loaf",
-      "flourType": "white",
-      "assortment": "loaf",
-      "weight": 500,
-      "description": "Corporis ab officia voluptatibus? Ducimus, alias ex odio enim voluptatibus necessitatibus at porro. ",
-      "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
-      "stockQuantity": 379,
-      "price": 3.2,
-      "categoryId": "1-fresh",
-      "categoryName": "fresh"
-    },
-    {
-      "productName": "Black bread",
-      "flourType": "black",
-      "assortment": "round",
-      "weight": 340,
-      "description": "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum",
-      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
-      "stockQuantity": 450,
-      "price": 2.9,
-      "categoryId": "1-fresh",
-      "categoryName": "fresh",
-      "id": 1004
+      "productName": "Test product 4",
+      "flourType": "Test flour 3",
+      "assortment": "Test assourt 3",
+      "weight": 234324,
+      "description": "sdcasdcadscasdcsadc  asdcasdcasdcasdcasdc",
+      "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
+      "stockQuantity": 31,
+      "price": 2,
+      "categoryName": "packaged",
+      "id": 1005
     },
     {
       "productName": "Breadstick",
-      "flourType": "white",
-      "assortment": "baguette",
-      "weight": 340,
-      "description": "Baguette description",
-      "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
-      "stockQuantity": 120,
-      "price": 3,
+      "flourType": "black",
+      "assortment": "round",
+      "weight": 28,
+      "description": "xcvdfvfvdsfvsdfv",
+      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
+      "stockQuantity": 4,
+      "price": 9,
       "categoryName": "fresh",
-      "id": 1005
+      "id": 1006
     }
   ],
   "signupUsers": [
