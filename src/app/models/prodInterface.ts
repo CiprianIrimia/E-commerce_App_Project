@@ -8,6 +8,5 @@ export interface prodInterface {
   image: string;
   stockQuantity: string;
   price: string;
-  categoryId: string;
   categoryName: string;
 }

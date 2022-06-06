@@ -36,9 +36,9 @@ export class ProductManagerComponent implements OnInit {
     );
   }
 
-  public clickDeleteProduct(productId: string | any) {
+  public clickDeleteProduct(productId: string) {
     if (productId) {
-      // console.log(`http://localhost:5000/products/${productId}`);
+      //console.log(`http://localhost:5000/products/${productId}`);
       this.productService.deleteProduct(productId).subscribe(
         (res) => {
           this.getAllProductsFromServer();

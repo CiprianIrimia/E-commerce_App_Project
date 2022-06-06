@@ -2,13 +2,13 @@
   "products": [
     {
       "id": 1001,
-      "productName": "White loaf",
+      "productName": "White loafs",
       "flourType": "white",
       "assortment": "loaf",
       "weight": 300,
       "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
-      "stockQuantity": 121,
+      "stockQuantity": 697,
       "price": 1.5,
       "categoryId": "1-fresh",
       "categoryName": "fresh"
@@ -90,38 +90,15 @@
       "price": 3
     },
     {
-      "productName": "Black loaf",
-      "flourType": "white",
-      "assortment": "loaf",
-      "weight": 12,
-      "description": "fsddfsdfsdfsdfsd",
-      "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
-      "stockQuantity": 4,
-      "price": 2,
-      "categoryId": "2-packaged",
-      "id": 1008
-    },
-    {
-      "productName": "sd",
+      "productName": "White loaf",
       "flourType": "black",
       "assortment": "baguette",
-      "weight": 1,
-      "description": "dfsdf",
-      "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
-      "stockQuantity": 1,
-      "price": 1,
-      "categoryId": "1-fresh",
-      "id": 1009
-    }
-  ],
-  "categories": [
-    {
-      "categoryId": "1-fresh",
-      "categoryName": "fresh"
-    },
-    {
-      "categoryId": "2-packaged",
-      "categoryName": "packaged"
+      "weight": 3,
+      "description": "jl.l.jkl.jkl",
+      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
+      "stockQuantity": 3,
+      "price": 3,
+      "id": 1008
     }
   ],
   "signupUsers": [
@@ -166,13 +143,6 @@
       "email": "test222@test.com",
       "password": "test222",
       "id": 6
-    },
-    {
-      "fullName": "Iacob Ioan",
-      "mobile": 999999999,
-      "email": "iacob@gmail.com",
-      "password": "iacob",
-      "id": 7
     }
   ]
 }

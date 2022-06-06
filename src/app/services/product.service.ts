@@ -1,4 +1,8 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpErrorResponse,
+  HttpHeaders,
+} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, throwError } from 'rxjs';
 import { prodCategory } from '../models/prodCategory';
@@ -11,7 +15,12 @@ export class ProductService {
   showMessage(_arg0: string) {
     throw new Error('Method not implemented.');
   }
-  serverUrl: string = `http://localhost:5000`;
+  serverUrl: string = 'http://localhost:5000';
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+    }),
+  };
 
   constructor(private httpClient: HttpClient) {}
 
@@ -46,11 +55,10 @@ export class ProductService {
       .pipe(catchError(this.handleError));
   }
 
-  deleteProduct(productId: number): Observable<{}> {
+  deleteProduct(productId: string): Observable<any> {
     let dataUrl: string = `${this.serverUrl}/products/${productId}`;
-    return this.httpClient
-      .delete<{}>(dataUrl)
-      .pipe(catchError(this.handleError));
+    // console.log('product.service.ts :: deleteProduct :: ' + dataUrl);
+    return this.httpClient.delete<any>(dataUrl);
   }
 
   //GET All Groups
