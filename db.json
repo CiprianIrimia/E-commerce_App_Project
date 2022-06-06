@@ -87,18 +87,8 @@
       "description": "Tasty product",
       "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
       "stockQuantity": 360,
-      "price": 3
-    },
-    {
-      "productName": "White loaf",
-      "flourType": "black",
-      "assortment": "baguette",
-      "weight": 3,
-      "description": "jl.l.jkl.jkl",
-      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
-      "stockQuantity": 3,
       "price": 3,
-      "id": 1008
+      "categoryName": "toast"
     }
   ],
   "signupUsers": [

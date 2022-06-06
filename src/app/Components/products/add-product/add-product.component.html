@@ -102,7 +102,16 @@
             placeholder="Price"
           />
         </div>
-        <div class="mb-4">
+        <div class="mb-2">
+          <input
+            [(ngModel)]="product.categoryName"
+            name="categoryName"
+            type="number"
+            class="form-control"
+            placeholder="Price"
+          />
+        </div>
+        <!-- <div class="mb-4">
           <label>Select category Id</label>
           <select
             [(ngModel)]="product.categoryId"
@@ -117,7 +126,7 @@
               {{ category.categoryName }}
             </option>
           </select>
-        </div>
+        </div> -->
         <div class="mb-2">
           <input
             type="number"
