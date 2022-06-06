@@ -37,7 +37,6 @@ export class ProdClientDetailsComponent implements OnInit {
       );
     }
   }
-
   public isNotEmpty() {
     return Object.keys(this.product).length > 0;
   }

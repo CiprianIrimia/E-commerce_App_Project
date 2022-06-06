@@ -69,7 +69,12 @@
                 </li>
                 <li class="list-group-item">
                   Stock quantity:
-                  <span class="fw-bold"> {{ product.stockQuantity }} pcs.</span>
+                  <span
+                    class="fw-bold"
+                    [ngStyle]="{ 'background-color': getStockColor() }"
+                  >
+                    {{ product.stockQuantity }} pcs.</span
+                  >
                 </li>
               </ul>
             </div>

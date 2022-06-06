@@ -12,6 +12,7 @@ export class ClientAreaComponent implements OnInit {
   public products: prodInterface[] = [];
   public errorMessage: string | null = null;
   public search: any;
+  public stockQuantityStatus: string = 'positive';
 
   constructor(private productService: ProductService) {}
 
@@ -31,5 +32,8 @@ export class ClientAreaComponent implements OnInit {
         this.loading = false;
       }
     );
+  }
+  getStockColor() {
+    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
   }
 }

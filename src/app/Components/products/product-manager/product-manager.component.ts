@@ -1,9 +1,10 @@
 import { error } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { prodCategory } from 'src/app/models/prodCategory';
+
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-product-manager',
@@ -15,8 +16,12 @@ export class ProductManagerComponent implements OnInit {
   public products: prodInterface[] = [];
   public errorMessage: string | null = null;
   public search: any;
+  public stockQuantityStatus: string = 'positive';
 
-  constructor(private productService: ProductService) {}
+  constructor(
+    private productService: ProductService,
+    private toast: NgToastService
+  ) {}
 
   ngOnInit(): void {
     this.getAllProductsFromServer();
@@ -36,17 +41,32 @@ export class ProductManagerComponent implements OnInit {
     );
   }
 
-  public clickDeleteProduct(productId: string) {
+  clickDeleteProduct(productId: string) {
+    this.loading = true;
     if (productId) {
-      //console.log(`http://localhost:5000/products/${productId}`);
       this.productService.deleteProduct(productId).subscribe(
         (res) => {
+          this.toast.info({
+            detail: 'Success message',
+            summary: 'Product successfully deleted!',
+            duration: 6000,
+          });
           this.getAllProductsFromServer();
+          this.loading = false;
         },
         (error) => {
+          this.toast.error({
+            detail: 'Error message',
+            summary: 'Something went wrong!',
+            duration: 6000,
+          });
           this.errorMessage = error;
+          this.loading = false;
         }
       );
     }
+  }
+  getStockColor() {
+    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
   }
 }
