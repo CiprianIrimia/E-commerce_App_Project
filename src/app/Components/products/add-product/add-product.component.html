@@ -102,38 +102,21 @@
             placeholder="Price"
           />
         </div>
-        <div class="mb-2">
-          <input
-            [(ngModel)]="product.categoryName"
-            name="categoryName"
-            type="number"
-            class="form-control"
-            placeholder="Price"
-          />
-        </div>
-        <!-- <div class="mb-4">
-          <label>Select category Id</label>
+        <div class="mb-3">
+          <label for="categoryName">Select category name:</label>
           <select
-            [(ngModel)]="product.categoryId"
-            name="categoryId"
+            name="categoryName"
+            [(ngModel)]="product.categoryName"
             class="form-control"
-            *ngIf="categories.length > 0"
+            required="true"
           >
-            <option
-              [value]="category.categoryId"
-              *ngFor="let category of categories"
-            >
-              {{ category.categoryName }}
-            </option>
+            <option value="fresh">Fresh</option>
+            <option value="packaged">Packaged</option>
           </select>
-        </div> -->
+        </div>
+
         <div class="mb-2">
-          <input
-            type="number"
-            class="btn btn-success mb-5"
-            value="Create"
-            type="submit"
-          />
+          <input class="btn btn-success mb-5" value="Create" type="submit" />
           <a class="btn btn-primary mb-5 ms-2" routerLink="/products"
             >Close Form</a
           >

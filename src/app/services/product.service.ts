@@ -55,18 +55,9 @@ export class ProductService {
       .pipe(catchError(this.handleError));
   }
 
-  deleteProduct(productId: string): Observable<any> {
+  deleteProduct(productId: string): Observable<{}> {
     let dataUrl: string = `${this.serverUrl}/products/${productId}`;
-    // console.log('product.service.ts :: deleteProduct :: ' + dataUrl);
-    return this.httpClient.delete<any>(dataUrl);
-  }
-
-  //GET All Groups
-  getAllCategories(): Observable<prodCategory[]> {
-    let dataUrl: string = `${this.serverUrl}/categories`;
-    return this.httpClient
-      .get<prodCategory[]>(dataUrl)
-      .pipe(catchError(this.handleError));
+    return this.httpClient.delete<{}>(dataUrl);
   }
 
   //GET Single Group

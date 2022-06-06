@@ -1,0 +1,20 @@
+.h4.fw-bold.ms-5 {
+  color: brown;
+}
+
+.product-image {
+  width: 70%;
+  border: 1px solid grey;
+  border-radius: 20%;
+  margin-left: 50px;
+}
+
+.list-group-item span {
+  float: right;
+  text-align: center;
+}
+
+.col a {
+  margin-bottom: 20px;
+  float: right;
+}

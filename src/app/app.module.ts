@@ -35,6 +35,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchPipe } from './search.pipe';
 import { ClientAreaComponent } from './Components/client-area/client-area.component';
+import { ProdClientDetailsComponent } from './Components/client-area/prod-client-details/prod-client-details.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ClientAreaComponent } from './Components/client-area/client-area.compon
     PageNotFoundComponent,
     SearchPipe,
     ClientAreaComponent,
+    ProdClientDetailsComponent,
   ],
   imports: [
     BrowserModule,

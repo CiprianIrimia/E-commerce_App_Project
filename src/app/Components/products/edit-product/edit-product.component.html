@@ -116,34 +116,19 @@
             placeholder="Price"
           />
         </div>
-        <div class="mb-2">
-          <input
+        <div class="mb-4">
+          <label>Select category name</label>
+          <select
             [(ngModel)]="product.categoryName"
             [value]="product.categoryName"
-            required="true"
             name="categoryName"
-            type="text"
-            class="form-control"
-            placeholder="Category name"
-          />
-        </div>
-        <!-- <div class="mb-4">
-          <label>Select category Id</label>
-          <select
-            [(ngModel)]="product.categoryId"
-            [value]="product.categoryId"
-            name="categoryId"
             class="form-control"
             required="true"
           >
-            <option
-              [value]="category.categoryId"
-              *ngFor="let category of categories"
-            >
-              {{ category.categoryId }}
-            </option>
+            <option value="fresh">Fresh</option>
+            <option value="packaged">Packaged</option>
           </select>
-        </div> -->
+        </div>
         <div class="mb-2">
           <input
             type="number"

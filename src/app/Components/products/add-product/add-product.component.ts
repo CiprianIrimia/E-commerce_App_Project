@@ -15,7 +15,7 @@ export class AddProductComponent implements OnInit {
   public loading: boolean = false;
   public product: prodInterface = {} as prodInterface;
   public errorMessage: string | null = null;
-  public categories: prodCategory[] = [] as prodCategory[];
+  public products: prodInterface[] = [] as prodInterface[];
 
   constructor(
     private productService: ProductService,
@@ -24,8 +24,8 @@ export class AddProductComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.productService.getAllCategories().subscribe((data: prodCategory[]) => {
-      this.categories = data;
+    this.productService.getAllProducts().subscribe((data: prodInterface[]) => {
+      this.products = data;
     });
   }
 

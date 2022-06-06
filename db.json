@@ -11,7 +11,7 @@
       "stockQuantity": 697,
       "price": 1.5,
       "categoryId": "1-fresh",
-      "categoryName": "fresh"
+      "categoryName": "packaged"
     },
     {
       "id": 1002,
@@ -78,16 +78,15 @@
       "id": 1006
     },
     {
-      "categoryId": "1-fresh",
+      "productName": "White loaf",
+      "flourType": "black",
+      "assortment": "loaf",
+      "weight": 3,
+      "description": "testdfsdfdsfsdfvsdfvfdvdfvdsvfsdfv",
+      "image": "assets\\images\\Products images\\franzela_alba_proaspata_400.jpg",
+      "stockQuantity": 5,
+      "price": 5,
       "id": 1007,
-      "productName": "Test 2",
-      "flourType": "white",
-      "assortment": "Toast",
-      "weight": 600,
-      "description": "Tasty product",
-      "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
-      "stockQuantity": 360,
-      "price": 3,
       "categoryName": "toast"
     }
   ],

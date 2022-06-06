@@ -15,7 +15,7 @@ export class EditProductComponent implements OnInit {
   public productId: string | null = null;
   public product: prodInterface = {} as prodInterface;
   public errorMessage: string | null = null;
-  public categories: prodCategory[] = [] as prodCategory[];
+  public products: prodInterface[] = [] as prodInterface[];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -36,8 +36,8 @@ export class EditProductComponent implements OnInit {
         (data: prodInterface) => {
           this.product = data;
           this.loading = false;
-          this.productService.getAllCategories().subscribe((data) => {
-            this.categories = data;
+          this.productService.getAllProducts().subscribe((data) => {
+            this.products = data;
           });
         },
         (error) => {

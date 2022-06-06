@@ -17,6 +17,7 @@ import { ViewProductComponent } from './Components/products/view-product/view-pr
 import { ProductManagerComponent } from './Components/products/product-manager/product-manager.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { ClientAreaComponent } from './Components/client-area/client-area.component';
+import { ProdClientDetailsComponent } from './Components/client-area/prod-client-details/prod-client-details.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
@@ -25,7 +26,11 @@ const routes: Routes = [
   { path: 'products/add', component: AddProductComponent },
   { path: 'products/edit/:productId', component: EditProductComponent },
   { path: 'products/view/:productId', component: ViewProductComponent },
-  { path: 'client-area/view/:productId', component: ViewProductComponent },
+  {
+    path: 'client-area/view/:productId',
+    component: ProdClientDetailsComponent,
+  },
+  { path: 'client-area/edit/:productId', component: EditProductComponent },
 
   { path: 'about-us', component: AboutUsComponent },
   { path: 'cart', component: CartComponent },
