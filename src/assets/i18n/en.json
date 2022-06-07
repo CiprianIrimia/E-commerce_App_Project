@@ -30,7 +30,21 @@
     "redirectClientArea": "Shop "
   },
   "clientNavbar": {
-    "clientNavbarTitle": "Shop"
+    "clientNavbarTitle": "Products presentation & shop online"
+  },
+  "clientMain": {
+    "title": "Product Portfolio",
+    "newProductButton": "NEW PRODUCT",
+    "searchBar": "Find product",
+    "imageDisclosure": "*The image is informative and the product may differ",
+    "productNameTH": "Product name:",
+    "productAssortmentTH": "Assortment:",
+    "productWeightTH": "Weight:",
+    "productPriceTH": "Price:",
+    "productStockQtyTH": "Stock quantity:",
+    "productStockQtyPcs": "  (pcs)",
+    "productViewIconTitle": "View product details",
+    "productCartIconTitle": "Add to cart"
   },
   "clientAreaRedirect": {
     "redirectAboutUs": "About Us",

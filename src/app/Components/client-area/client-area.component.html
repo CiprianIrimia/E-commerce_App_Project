@@ -10,10 +10,7 @@
   <div class="row">
     <div class="col">
       <p class="h4 fw-bold ms-5">
-        Try Our Products
-        <a class="btn btn-danger btn-sm me-5" routerLink="/products/add">
-          <i class="fa fa-plus-circle"> New Product</i>
-        </a>
+        {{ "clientMain.title" | translate }}
       </p>
     </div>
   </div>
@@ -44,7 +41,7 @@
       type="text"
       class="form-control"
       [(ngModel)]="search"
-      placeholder="Find product"
+      placeholder="{{ 'clientMain.searchBar' | translate }}"
     />
   </div>
   <div class="row">
@@ -54,33 +51,42 @@
           <div class="row align-items-center">
             <div class="col-sm-4">
               <a [href]="product.image"
-                ><img class="product-image" [src]="product.image"
-              /></a>
+                ><img class="product-image" [src]="product.image" />
+              </a>
+              <p class="image-disclosure">
+                {{ "clientMain.imageDisclosure" | translate }}
+              </p>
             </div>
 
             <div class="col-sm-6">
               <ul class="list-group">
                 <li class="list-group-item">
-                  Product name:
+                  {{ "clientMain.productNameTH" | translate }}
                   <span class="fw-bold"> {{ product.productName }}</span>
                 </li>
                 <li class="list-group-item">
-                  Assortment:
+                  {{ "clientMain.productAssortmentTH" | translate }}
                   <span class="fw-bold"> {{ product.assortment }}</span>
                 </li>
                 <li class="list-group-item">
-                  Weight: <span class="fw-bold"> {{ product.weight }} gr.</span>
+                  {{ "clientMain.productWeightTH" | translate }}
+                  <span class="fw-bold"> {{ product.weight }} gr.</span>
                 </li>
                 <li class="list-group-item">
-                  Price: <span class="fw-bold"> {{ product.price }} Lei</span>
+                  {{ "clientMain.productPriceTH" | translate }}
+                  <span class="fw-bold"> {{ product.price }} Lei</span>
                 </li>
                 <li class="list-group-item">
-                  Stock quantity:
+                  {{ "clientMain.productStockQtyTH" | translate }}
+
                   <span
                     class="fw-bold"
                     [ngStyle]="{ 'background-color': getStockColor() }"
                   >
-                    {{ product.stockQuantity }} pcs.</span
+                    {{ product.stockQuantity }}
+                    <span class="productStockQtyPcs">
+                      {{ "clientMain.productStockQtyPcs" | translate }}
+                    </span></span
                   >
                 </li>
               </ul>
@@ -89,16 +95,16 @@
               <a
                 class="btn btn-warning mb-3"
                 routerLink="view/{{ product.id }}"
-                title="View product details"
+                title="{{ 'clientMain.productViewIconTitle' | translate }}"
               >
                 <i class="fa fa-eye"></i>
               </a>
               <a
-                class="btn btn-primary mb-3"
-                routerLink="edit/{{ product.id }}"
-                title="Edit product"
+                class="btn btn-info"
+                routerLink="cart/{{ product.id }}"
+                title="{{ 'clientMain.productCartIconTitle' | translate }}"
               >
-                <i class="fa fa-pen"></i>
+                <i class="bi bi-cart3"></i>
               </a>
             </div>
           </div>

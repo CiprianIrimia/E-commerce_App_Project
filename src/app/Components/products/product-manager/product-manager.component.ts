@@ -70,6 +70,7 @@ export class ProductManagerComponent implements OnInit {
       );
     }
   }
+
   getStockColor() {
     return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
   }

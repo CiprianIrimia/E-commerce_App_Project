@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
-import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { CheckOutComponent } from './Components/check-out/check-out.component';
@@ -30,7 +29,7 @@ const routes: Routes = [
     path: 'client-area/view/:productId',
     component: ProdClientDetailsComponent,
   },
-  { path: 'client-area/edit/:productId', component: EditProductComponent },
+  { path: 'client-area/cart/:productId', component: CartComponent },
 
   { path: 'about-us', component: AboutUsComponent },
   { path: 'cart', component: CartComponent },
@@ -39,8 +38,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'client-area', component: ClientAreaComponent },
-  { path: 'admin/products', component: AdminProductsComponent },
-  { path: 'admin/orders', component: AdminOrdersComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

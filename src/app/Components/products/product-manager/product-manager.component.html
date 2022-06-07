@@ -5,7 +5,9 @@
       <p class="h4 fw-bold ms-5">
         Product Portfolio
         <a class="btn btn-danger btn-sm me-5" routerLink="/products/add">
-          <i class="fa fa-plus-circle"> New Product</i>
+          <i class="fa fa-plus-circle">
+            {{ "clientMain.newProductButton" | translate }}</i
+          >
         </a>
       </p>
     </div>
@@ -49,6 +51,9 @@
               <a [href]="product.image"
                 ><img class="product-image" [src]="product.image"
               /></a>
+              <p class="image-disclosure">
+                {{ "clientMain.imageDisclosure" | translate }}
+              </p>
             </div>
 
             <div class="col-sm-6">
@@ -72,6 +77,7 @@
                   <span
                     class="fw-bold"
                     [ngStyle]="{ 'background-color': getStockColor() }"
+                    id="stockQuantityId"
                   >
                     {{ product.stockQuantity }} pcs.</span
                   >
@@ -94,7 +100,7 @@
                 <i class="fa fa-pen"></i>
               </a>
               <app-confirmation-modal
-                (clickEvent)="clickDeleteProduct(product.id)"
+                (click)="clickDeleteProduct(product.id)"
               ></app-confirmation-modal>
             </div>
           </div>
