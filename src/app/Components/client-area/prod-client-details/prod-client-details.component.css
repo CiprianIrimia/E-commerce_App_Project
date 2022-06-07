@@ -14,7 +14,13 @@
   text-align: center;
 }
 
-.col a {
+.col .btn-primary {
   margin-bottom: 20px;
+  float: left;
+}
+
+.col .btn-info {
   float: right;
+  background-color: lightsalmon;
+  width: 100px;
 }

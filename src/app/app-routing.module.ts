@@ -30,6 +30,10 @@ const routes: Routes = [
     component: ProdClientDetailsComponent,
   },
   { path: 'client-area/cart/:productId', component: CartComponent },
+  {
+    path: 'client-area/view/:productId/cart/:productId',
+    component: CartComponent,
+  },
 
   { path: 'about-us', component: AboutUsComponent },
   { path: 'cart', component: CartComponent },

@@ -2,8 +2,12 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <p class="h4 fw-bold ms-5">View Product</p>
-      <p class="ms-5 fw-bold">The selected product is displayed below</p>
+      <p class="h4 fw-bold ms-5">
+        {{ "viewProductManagerDetails.title" | translate }}
+      </p>
+      <p class="ms-5 fw-bold">
+        {{ "viewProductManagerDetails.subtitle" | translate }}
+      </p>
     </div>
   </div>
 </div>
@@ -33,32 +37,37 @@
     <div class="col-sm-6 mb-2">
       <ul class="list-group">
         <li class="list-group-item">
-          Product name: <span class="fw-bold"> {{ product.productName }}</span>
+          {{ "viewProductManagerDetails.productName" | translate }}
+          <span class="fw-bold"> {{ product.productName }}</span>
         </li>
         <li class="list-group-item">
-          Category name:
+          {{ "viewProductManagerDetails.categoryName" | translate }}
           <span class="fw-bold"> {{ product.categoryName }}</span>
         </li>
         <li class="list-group-item">
-          Assortment: <span class="fw-bold"> {{ product.assortment }}</span>
+          {{ "viewProductManagerDetails.assortment" | translate
+          }}<span class="fw-bold"> {{ product.assortment }}</span>
         </li>
         <li class="list-group-item">
-          Flour type: <span class="fw-bold"> {{ product.flourType }}</span>
+          {{ "viewProductManagerDetails.flourType" | translate }}
+          <span class="fw-bold"> {{ product.flourType }}</span>
         </li>
         <li class="list-group-item">
-          Description:
+          {{ "viewProductManagerDetails.description" | translate }}
           <span class="fw-bold">
             {{ product.description }}
           </span>
         </li>
         <li class="list-group-item">
-          Weight: <span class="fw-bold"> {{ product.weight }} gr.</span>
+          {{ "viewProductManagerDetails.weight" | translate }}
+          <span class="fw-bold"> {{ product.weight }} gr.</span>
         </li>
         <li class="list-group-item">
-          Price: <span class="fw-bold"> {{ product.price }} Lei</span>
+          {{ "viewProductManagerDetails.price" | translate }}
+          <span class="fw-bold"> {{ product.price }} Lei</span>
         </li>
         <li class="list-group-item">
-          Stock quantity:
+          {{ "viewProductManagerDetails.stockQty" | translate }}
           <span class="fw-bold"> {{ product.stockQuantity }} pcs.</span>
         </li>
       </ul>
@@ -67,7 +76,7 @@
         <div class="col">
           <a routerLink="/products" type="button" class="btn btn-primary">
             <i class="fa fa-arrow-alt-circle-left"></i>
-            Back</a
+            {{ "viewProductManagerDetails.backBtn" | translate }}</a
           >
         </div>
       </div>

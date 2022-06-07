@@ -2,8 +2,12 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <p class="h4 fw-bold ms-5">View Product</p>
-      <p class="ms-5 fw-bold">The selected product is displayed below</p>
+      <p class="h4 fw-bold ms-5">
+        {{ "viewClientProductDetails.title" | translate }}
+      </p>
+      <p class="ms-5 fw-bold">
+        {{ "viewClientProductDetails.subtitle" | translate }}
+      </p>
     </div>
   </div>
 </div>
@@ -33,32 +37,37 @@
     <div class="col-sm-6 mb-2">
       <ul class="list-group">
         <li class="list-group-item">
-          Product name: <span class="fw-bold"> {{ product.productName }}</span>
+          {{ "viewClientProductDetails.productName" | translate }}
+          <span class="fw-bold"> {{ product.productName }}</span>
         </li>
         <li class="list-group-item">
-          Category name:
+          {{ "viewClientProductDetails.categoryName" | translate }}
           <span class="fw-bold"> {{ product.categoryName }}</span>
         </li>
         <li class="list-group-item">
-          Assortment: <span class="fw-bold"> {{ product.assortment }}</span>
+          {{ "viewClientProductDetails.assortment" | translate }}
+          <span class="fw-bold"> {{ product.assortment }}</span>
         </li>
         <li class="list-group-item">
-          Flour type: <span class="fw-bold"> {{ product.flourType }}</span>
+          {{ "viewClientProductDetails.flourType" | translate }}
+          <span class="fw-bold"> {{ product.flourType }}</span>
         </li>
         <li class="list-group-item">
-          Description:
+          {{ "viewClientProductDetails.description" | translate }}
           <span class="fw-bold">
             {{ product.description }}
           </span>
         </li>
         <li class="list-group-item">
-          Weight: <span class="fw-bold"> {{ product.weight }} gr.</span>
+          {{ "viewClientProductDetails.weight" | translate }}
+          <span class="fw-bold"> {{ product.weight }} gr.</span>
         </li>
         <li class="list-group-item">
-          Price: <span class="fw-bold"> {{ product.price }} Lei</span>
+          {{ "viewClientProductDetails.price" | translate }}
+          <span class="fw-bold"> {{ product.price }} Lei</span>
         </li>
         <li class="list-group-item">
-          Stock quantity:
+          {{ "viewClientProductDetails.stockQty" | translate }}
           <span class="fw-bold"> {{ product.stockQuantity }} pcs.</span>
         </li>
       </ul>
@@ -66,9 +75,18 @@
       <div class="row mt-3">
         <div class="col">
           <a routerLink="/client-area" type="button" class="btn btn-primary">
-            <i class="fa fa-arrow-alt-circle-left"></i>
-            Back</a
+            <i class="fa fa-arrow-alt-circle-left" style="font-size: 23px"></i>
+            {{ "viewClientProductDetails.backBtn" | translate }}
+          </a>
+        </div>
+        <div class="col">
+          <a
+            class="btn btn-info"
+            routerLink="cart/{{ product.id }}"
+            title="{{ 'clientMain.productCartIconTitle' | translate }}"
           >
+            <i class="bi bi-cart4" style="font-size: 18px"></i>
+          </a>
         </div>
       </div>
     </div>

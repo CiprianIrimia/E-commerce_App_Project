@@ -27,7 +27,7 @@
     "ourMissionTitle": "Our mission",
     "ourMissionParagraph": "The fundamental steps in the sustainable development of the company are our values, which inspire and support us in consolidating the company's identity, namely: integrity, honesty, respect and professionalism. From the first steps, Multipan-Bakery has been a success story. The bread factory is equipped with modern and high-performance equipment, assuring consumers that all finished products are thoroughly inspected by qualified personnel, reaching the market according to the requirements of European standards. our. Through the care and creativity of talented bakers, our company has managed to grow its portfolio of customers who are interested in consuming tasty and quality products. We continuously invest in the quality of the products and services offered, being accredited with the SR EN ISO 9001/2015 Quality Management System, the SR EN ISO 14001: 2015 Environmental Management System and the SR EN ISO 22000/2018 Safety Management System.",
     "redirectHome": "Home",
-    "redirectClientArea": "Shop "
+    "redirectClientArea": "Products & Shop "
   },
   "clientNavbar": {
     "clientNavbarTitle": "Products presentation & shop online"
@@ -36,7 +36,7 @@
     "title": "Product Portfolio",
     "newProductButton": "NEW PRODUCT",
     "searchBar": "Find product",
-    "imageDisclosure": "*The image is informative and the product may differ",
+    "imageDisclaimer": "*The image is informative and the product may differ",
     "productNameTH": "Product name:",
     "productAssortmentTH": "Assortment:",
     "productWeightTH": "Weight:",
@@ -46,18 +46,49 @@
     "productViewIconTitle": "View product details",
     "productCartIconTitle": "Add to cart"
   },
+  "viewClientProductDetails": {
+    "title": "View Product",
+    "subtitle": "The selected product is displayed below",
+    "productName": "Product names:",
+    "categoryName": "Category name:",
+    "assortment": "Assortment:",
+    "flourType": "Flour type:",
+    "description": "Description:",
+    "weight": "Weight:",
+    "price": "Price:",
+    "stockQty": "Stock quantity:",
+    "backBtn": "Back"
+  },
   "clientAreaRedirect": {
     "redirectAboutUs": "About Us",
     "redirectLogin": "Login"
   },
-  "productsNavbar": {
+  "productsManagerNavbar": {
     "productsNavbarTitle": "Products Manager"
   },
-  "productsManager": {
+  "productsManagerCard": {
+    "productEditIconTitle": "Edit product",
+    "productDeleteIconTitle": "Delete product"
+  },
+
+  "productsManagerRedirect": {
     "redirectHome": "Home"
   },
   "addProduct": {
     "firstTitle": "Add New Product",
     "secondTitle": "Please insert all the details for your new product"
+  },
+  "viewProductManagerDetails": {
+    "title": "View Product",
+    "subtitle": "The selected product is displayed below",
+    "productName": "Product names:",
+    "categoryName": "Category name:",
+    "assortment": "Assortment:",
+    "flourType": "Flour type:",
+    "description": "Description:",
+    "weight": "Weight:",
+    "price": "Price:",
+    "stockQty": "Stock quantity:",
+    "backBtn": "Back"
   }
 }

@@ -157,6 +157,18 @@
       "price": 2,
       "categoryName": "packaged",
       "id": 1013
+    },
+    {
+      "productName": "Packaged bread",
+      "flourType": "black",
+      "assortment": "loaf",
+      "weight": 500,
+      "description": "Packed in plastic bag hand-made rye bread diet",
+      "image": "\\assets\\images\\Products images\\paine_neagra_cu_seminte_feliata_500.jpg",
+      "stockQuantity": 123,
+      "price": 5,
+      "categoryName": "packaged",
+      "id": 1014
     }
   ],
   "signupUsers": [

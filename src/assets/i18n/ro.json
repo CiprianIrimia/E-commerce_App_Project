@@ -27,37 +27,67 @@
     "ourMissionTitle": "Misiunea noastra",
     "ourMissionParagraph": "Pașii fundamentali în dezvoltarea durabilă a companiei sunt valorile noastre, care ne inspiră și ne susțin în a consolida identitatea companiei și anume: integritate, onestitate, respect și profesionalism.Înca de la primii pași, compania Multipan-Bakery a fost o poveste de succes. Fabrica de pâine este dotată cu utilaje moderne și performante, asigurând consumatorii ca toate produsele finite sunt controlate minuțios de personalul calificat, ajungând în piață conform cerințelor standardelor europene.Cu siguranță locuitorii județului Iași ne cunosc și ne apreciază, de aceea ne bucurăm de succesul produselor noastre. Prin grija și creativitatea talentaților brutari, compania noastră a reușit să-și mărească portofoliul de clienți care sunt interesați să consume produse gustoase și de calitate. Investim continuu în calitatea produselor si serviciilor oferite, fiind acreditata cu Sistemul de Management al Calitatii SR EN ISO 9001/2015, Sistemul de Management al Mediului SR EN ISO 14001:2015 și Sistemul de Management al Sigurantei SR EN ISO 22000/2018.",
     "redirectHome": "Prima pagina",
-    "redirectClientArea": "Prezentare de produse & magazin online"
+    "redirectClientArea": "Produse & magazin"
   },
   "clientNavbar": {
-    "clientNavbarTitle": "Magazin online"
+    "clientNavbarTitle": "Prezentare de produse & magazin online"
   },
   "clientMain": {
     "title": "Portofoliul de produse",
     "newProductButton": "PRODUS NOU",
     "searchBar": "Gasiti produsul dorit",
-    "imageDisclosure": "*Imagine are caracter informativ iar produsul poate diferi",
+    "imageDisclaimer": "*Imaginea are caracter informativ iar produsul poate diferi",
     "productNameTH": "Denumire produs:",
     "productAssortmentTH": "Sortiment:",
     "productWeightTH": "Gramaj:",
     "productPriceTH": "Pret:",
-    "productStockQtyTH": "Bucati in stoc:",
+    "productStockQtyTH": "Disponibil in stoc:",
     "productStockQtyPcs": "  (buc.)",
     "productViewIconTitle": "Detalii produs",
     "productCartIconTitle": "Adaugati in cos"
+  },
+  "viewClientProductDetails": {
+    "title": "Vizualizare Produs",
+    "subtitle": "Produsul selectat este detaliat mai jos",
+    "productName": "Denumire produs:",
+    "categoryName": "Denumire categorie:",
+    "assortment": "Denumire sortiment:",
+    "flourType": "Tipul de faina:",
+    "description": "Descriere produs:",
+    "weight": "Gramaj:",
+    "price": "Pret:",
+    "stockQty": "Disponibil in stoc:",
+    "backBtn": "Inapoi"
   },
   "clientAreaRedirect": {
     "redirectAboutUs": "Despre noi",
     "redirectLogin": "Autentificare"
   },
-  "productsNavbar": {
+  "productsManagerNavbar": {
     "productsNavbarTitle": "Manager de produse"
   },
-  "productsManager": {
+  "productsManagerCard": {
+    "productEditIconTitle": "Editeaza produsul",
+    "productDeleteIconTitle": "Sterge produsul"
+  },
+  "productsManagerRedirect": {
     "redirectHome": "Prima pagina"
   },
   "addProduct": {
     "firstTitle": "Adaugati un nou produs",
     "secondTitle": "Introduceti toate datele solicitate pentru noul produs"
+  },
+  "viewProductManagerDetails": {
+    "title": "Vizualizare Produs",
+    "subtitle": "Produsul selectat este detaliat mai jos",
+    "productName": "Denumire produs:",
+    "categoryName": "Denumire categorie:",
+    "assortment": "Denumire sortiment:",
+    "flourType": "Tipul de faina:",
+    "description": "Descriere produs:",
+    "weight": "Gramaj:",
+    "price": "Pret:",
+    "stockQty": "Disponibil in stoc:",
+    "backBtn": "Inapoi"
   }
 }
