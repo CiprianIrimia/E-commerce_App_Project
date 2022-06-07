@@ -44,10 +44,24 @@
   margin: 0 auto;
 }
 
+.card-body {
+  min-height: 250px;
+}
+
+.row.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .col-sm-4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.col-sm-6 {
+  margin-top: 20px;
 }
 
 .col img {
@@ -59,6 +73,8 @@
   line-height: 1;
   text-align: center;
   margin-top: 3px;
+  text-decoration: none;
+  color: black;
 }
 
 .productStockQtyPcs {

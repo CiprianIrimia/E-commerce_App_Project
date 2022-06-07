@@ -8,7 +8,7 @@
       "weight": 400,
       "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores similique soluta est! Officia corporis dolorum eaque repellendus! ",
       "image": "/assets/images/Products images/franzela_alba_proaspata_400.jpg",
-      "stockQuantity": 1589,
+      "stockQuantity": 0,
       "price": 2.5,
       "categoryName": "fresh"
     },
@@ -157,18 +157,6 @@
       "price": 2,
       "categoryName": "packaged",
       "id": 1013
-    },
-    {
-      "productName": "sd",
-      "flourType": "black",
-      "assortment": "baguette",
-      "weight": 1,
-      "description": "dfsdf",
-      "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
-      "stockQuantity": 1,
-      "price": 1,
-      "categoryName": "fresh",
-      "id": 1014
     }
   ],
   "signupUsers": [
@@ -213,6 +201,13 @@
       "email": "test222@test.com",
       "password": "test222",
       "id": 6
+    },
+    {
+      "fullName": "Testuser1",
+      "mobile": 111222,
+      "email": "testuser1@yahoo.com",
+      "password": "testuser1",
+      "id": 7
     }
   ]
 }

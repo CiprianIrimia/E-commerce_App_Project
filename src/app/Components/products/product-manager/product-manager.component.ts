@@ -16,16 +16,19 @@ export class ProductManagerComponent implements OnInit {
   public products: prodInterface[] = [];
   public errorMessage: string | null = null;
   public search: any;
+  public getStock: number = 0;
   public stockQuantityStatus: string = 'positive';
 
-  @Input() product: prodInterface | undefined;
+  @Input() product: prodInterface | any;
 
   @Output() deleteProduct: EventEmitter<prodInterface> = new EventEmitter();
 
   constructor(
     private productService: ProductService,
     private toast: NgToastService
-  ) {}
+  ) {
+    this.stockQuantityStatus = this.getStock > 0 ? 'positive' : 'negative';
+  }
 
   ngOnInit(): void {
     this.getAllProductsFromServer();
@@ -71,7 +74,7 @@ export class ProductManagerComponent implements OnInit {
     }
   }
 
-  getStockColor() {
-    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
+  getColor() {
+    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff8888';
   }
 }

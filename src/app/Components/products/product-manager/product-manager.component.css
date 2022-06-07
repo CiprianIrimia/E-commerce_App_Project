@@ -35,6 +35,16 @@
   margin: 0 auto;
 }
 
+.card-body {
+  min-height: 250px;
+}
+
+.row.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .col-sm-4 {
   display: flex;
   flex-direction: column;
