@@ -17,8 +17,12 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <p class="h4 fw-bold ms-5">Edit Product</p>
-      <p class="ms-5 fw-bold">The selected product is edited below</p>
+      <p class="h4 fw-bold ms-5">
+        {{ "editProductManagerDetails.title" | translate }}
+      </p>
+      <p class="ms-5 fw-bold">
+        {{ "editProductManagerDetails.subtitle" | translate }}
+      </p>
     </div>
   </div>
 </div>
@@ -29,6 +33,9 @@
     <div class="col-sm-4">
       <form (submit)="submitUpdate()">
         <div class="mb-2">
+          <label for="productName">{{
+            "editProductManagerDetails.productName" | translate
+          }}</label>
           <input
             [(ngModel)]="product.productName"
             [value]="product.productName"
@@ -40,6 +47,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="flourType">{{
+            "editProductManagerDetails.flourType" | translate
+          }}</label>
           <input
             [(ngModel)]="product.flourType"
             [value]="product.flourType"
@@ -51,6 +61,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="assortment">{{
+            "editProductManagerDetails.assortment" | translate
+          }}</label>
           <input
             [(ngModel)]="product.assortment"
             [value]="product.assortment"
@@ -62,6 +75,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="weight">{{
+            "editProductManagerDetails.productName" | translate
+          }}</label>
           <input
             [(ngModel)]="product.weight"
             [value]="product.weight"
@@ -73,6 +89,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="description">{{
+            "editProductManagerDetails.description" | translate
+          }}</label>
           <input
             [(ngModel)]="product.description"
             [value]="product.description"
@@ -84,6 +103,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="image">{{
+            "editProductManagerDetails.image" | translate
+          }}</label>
           <input
             [(ngModel)]="product.image"
             [value]="product.image"
@@ -95,6 +117,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="stockQuantity">{{
+            "editProductManagerDetails.stockQuantity" | translate
+          }}</label>
           <input
             [(ngModel)]="product.stockQuantity"
             [value]="product.stockQuantity"
@@ -106,6 +131,9 @@
           />
         </div>
         <div class="mb-2">
+          <label for="price">{{
+            "editProductManagerDetails.price" | translate
+          }}</label>
           <input
             [(ngModel)]="product.price"
             [value]="product.price"
@@ -117,7 +145,9 @@
           />
         </div>
         <div class="mb-4">
-          <label>Select category name</label>
+          <label>{{
+            "editProductManagerDetails.categoryName" | translate
+          }}</label>
           <select
             [(ngModel)]="product.categoryName"
             [value]="product.categoryName"
@@ -125,8 +155,12 @@
             class="form-control"
             required="true"
           >
-            <option value="fresh">Fresh</option>
-            <option value="packaged">Packaged</option>
+            <option selected value="fresh">
+              {{ "editProductManagerDetails.categoryNameFresh" | translate }}
+            </option>
+            <option value="packaged">
+              {{ "editProductManagerDetails.categoryNamePackaged" | translate }}
+            </option>
           </select>
         </div>
         <div class="mb-2">

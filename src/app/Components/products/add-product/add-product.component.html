@@ -36,7 +36,7 @@
             name="productName"
             class="form-control"
             [(ngModel)]="product.productName"
-            placeholder="Product name"
+            placeholder="{{ 'addProduct.productName' | translate }}"
           />
         </div>
         <div class="mb-2">
@@ -45,7 +45,7 @@
             name="flourType"
             type="text"
             class="form-control"
-            placeholder="Flour type"
+            placeholder="{{ 'addProduct.flourType' | translate }}"
           />
         </div>
         <div class="mb-2">
@@ -54,7 +54,7 @@
             name="assortment"
             type="text"
             class="form-control"
-            placeholder="Assortment"
+            placeholder="{{ 'addProduct.assortment' | translate }}"
           />
         </div>
         <div class="mb-2">
@@ -63,7 +63,7 @@
             name="weight"
             type="number"
             class="form-control"
-            placeholder="Weight"
+            placeholder="{{ 'addProduct.weight' | translate }}"
           />
         </div>
         <div class="mb-2">
@@ -72,7 +72,7 @@
             name="description"
             type="text"
             class="form-control"
-            placeholder="Description"
+            placeholder="{{ 'addProduct.description' | translate }}"
           ></textarea>
         </div>
         <div class="mb-2">
@@ -81,7 +81,7 @@
             name="image"
             type="text"
             class="form-control"
-            placeholder="Image URL"
+            placeholder="{{ 'addProduct.image' | translate }}"
           />
         </div>
         <div class="mb-2">
@@ -90,7 +90,7 @@
             name="stockQuantity"
             type="number"
             class="form-control"
-            placeholder="Stock quantity"
+            placeholder="{{ 'addProduct.stockQuantity' | translate }}"
           />
         </div>
         <div class="mb-2">
@@ -99,19 +99,25 @@
             name="price"
             type="number"
             class="form-control"
-            placeholder="Price"
+            placeholder="{{ 'addProduct.price' | translate }}"
           />
         </div>
         <div class="mb-3">
-          <label for="categoryName">Select category name:</label>
+          <label for="categoryName">{{
+            "addProduct.categoryName" | translate
+          }}</label>
           <select
             name="categoryName"
             [(ngModel)]="product.categoryName"
             class="form-control"
             required="true"
           >
-            <option value="fresh">Fresh</option>
-            <option value="packaged">Packaged</option>
+            <option value="fresh">
+              {{ "addProduct.categoryNameFresh" | translate }}
+            </option>
+            <option value="packaged">
+              {{ "addProduct.categoryNamePackaged" | translate }}
+            </option>
           </select>
         </div>
 

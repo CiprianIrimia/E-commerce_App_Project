@@ -76,7 +76,18 @@
   },
   "addProduct": {
     "firstTitle": "Add New Product",
-    "secondTitle": "Please insert all the details for your new product"
+    "secondTitle": "Please insert all the details for your new product",
+    "productName": "Product name",
+    "flourType": "Flour type",
+    "assortment": "Assortment",
+    "weight": "Weight",
+    "description": "Description",
+    "image": "Image URL",
+    "stockQuantity": "Stock Quantity",
+    "price": "Price",
+    "categoryName": "Select category name:",
+    "categoryNameFresh": "Fresh",
+    "categoryNamePackaged": "Packaged"
   },
   "viewProductManagerDetails": {
     "title": "View Product",
@@ -90,5 +101,20 @@
     "price": "Price:",
     "stockQty": "Stock quantity:",
     "backBtn": "Back"
+  },
+  "editProductManagerDetails": {
+    "title": "Edit Product",
+    "subtitle": "The selected product is edited below",
+    "productName": "Product name:",
+    "flourType": "Flour type:",
+    "assortment": "Assortment:",
+    "weight": "Weight:",
+    "description": "Description:",
+    "image": "Image URL:",
+    "stockQuantity": "Stock quantity:",
+    "price": "Price:",
+    "categoryName": "Select category:",
+    "categoryNameFresh": "Fresh",
+    "categoryNamePackaged": "Packaged"
   }
 }

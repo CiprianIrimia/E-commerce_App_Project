@@ -75,7 +75,18 @@
   },
   "addProduct": {
     "firstTitle": "Adaugati un nou produs",
-    "secondTitle": "Introduceti toate datele solicitate pentru noul produs"
+    "secondTitle": "Introduceti toate datele solicitate pentru noul produs",
+    "productName": "Denumire produs",
+    "flourType": "Tipul de faina",
+    "assortment": "Sortiment",
+    "weight": "Gramaj",
+    "description": "Descriere produs",
+    "image": "Imagine produs (URL)",
+    "stockQuantity": "Stoc",
+    "price": "Pret",
+    "categoryName": "Selectati numele categoriei:",
+    "categoryNameFresh": "Proaspata",
+    "categoryNamePackaged": "Ambalata"
   },
   "viewProductManagerDetails": {
     "title": "Vizualizare Produs",
@@ -89,5 +100,20 @@
     "price": "Pret:",
     "stockQty": "Disponibil in stoc:",
     "backBtn": "Inapoi"
+  },
+  "editProductManagerDetails": {
+    "title": "Editare Produs",
+    "subtitle": "Produsul selectat este editat mai jos",
+    "productName": "Denumire produs:",
+    "flourType": "Tipul de faina:",
+    "assortment": "Sortiment:",
+    "weight": "Gramaj:",
+    "description": "Descriere:",
+    "image": "Imagine produs (URL):",
+    "stockQuantity": "Stoc:",
+    "price": "Pret:",
+    "categoryName": "Denumire categorie:",
+    "categoryNameFresh": "Proaspata",
+    "categoryNamePackaged": "Ambalata"
   }
 }

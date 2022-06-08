@@ -7,3 +7,7 @@
   border: 1px solid grey;
   border-radius: 20%;
 }
+
+.form-control {
+  background-color: #fff9e2;
+}
