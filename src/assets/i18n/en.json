@@ -120,5 +120,8 @@
     "categoryNamePackaged": "Packaged",
     "updateBtn": "Update",
     "closeEditForm": "Close Editing Form"
+  },
+  "pageNotFound": {
+    "message": "ERROR 404 - Page Not Found!"
   }
 }

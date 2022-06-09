@@ -17,10 +17,12 @@ import { ProductManagerComponent } from './Components/products/product-manager/p
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { ClientAreaComponent } from './Components/client-area/client-area.component';
 import { ProdClientDetailsComponent } from './Components/client-area/prod-client-details/prod-client-details.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: HomeComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
 
+  { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductManagerComponent },
   { path: 'products/add', component: AddProductComponent },
   { path: 'products/edit/:productId', component: EditProductComponent },
@@ -34,7 +36,13 @@ const routes: Routes = [
     path: 'client-area/view/:productId/cart/:productId',
     component: CartComponent,
   },
-
+  { path: 'admin', component: LoginComponent },
+  {
+    path: 'admin',
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('./modules/admin/admin.module').then((m) => m.AdminModule),
+  },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'check-out', component: CheckOutComponent },

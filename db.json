@@ -232,6 +232,27 @@
       "email": "testuser1@yahoo.com",
       "password": "testuser1",
       "id": 7
+    },
+    {
+      "fullName": "test2",
+      "mobile": 9090909,
+      "email": "test2@yahoo.com",
+      "password": "test2123",
+      "id": 9
+    },
+    {
+      "fullName": "Ciprian Irimia",
+      "mobile": 765475067,
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": 10
+    },
+    {
+      "fullName": "Irimia Ciprian",
+      "mobile": 765475000,
+      "email": "admin2@gmail.com",
+      "password": "admin321",
+      "id": 11
     }
   ]
 }

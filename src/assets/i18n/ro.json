@@ -119,5 +119,8 @@
     "categoryNamePackaged": "Ambalata",
     "updateBtn": "Modifica",
     "closeEditForm": "Inchide"
+  },
+  "pageNotFound": {
+    "message": "EROARE 404 - Pagina nu a fost gasita!"
   }
 }

@@ -1,9 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {
+  FormGroup,
+  FormBuilder,
+  Validators,
+  FormControl,
+} from '@angular/forms';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 import { NgToastService } from 'ng-angular-popup';
+import { compileClassMetadata } from '@angular/compiler';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +18,11 @@ import { NgToastService } from 'ng-angular-popup';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  public loginForm!: FormGroup;
+  loginForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl(''),
+  });
+
   public loading: boolean = false;
   public errorMessage: string | null = null;
 
@@ -20,7 +31,8 @@ export class LoginComponent implements OnInit {
     private http: HttpClient,
     private router: Router,
     private productService: ProductService,
-    private toast: NgToastService
+    private toast: NgToastService,
+    private auth: AuthService
   ) {}
 
   ngOnInit(): void {
@@ -28,13 +40,33 @@ export class LoginComponent implements OnInit {
       email: ['', Validators.required],
       password: ['', Validators.required],
     });
+    if (this.auth.isLoggedIn()) {
+      this.router.navigate(['/admin']);
+    }
   }
 
-  login() {
+  onSubmit(): void {
+    if (this.loginForm.valid) {
+      console.log(this.loginForm.value);
+      this.checkUser();
+      this.auth.login(this.loginForm.value).subscribe(
+        (result) => {
+          console.log(result);
+          this.router.navigate(['products']);
+        },
+        () => {
+          console.log(this.loginForm.value);
+          this.router.navigate(['client-area']);
+        }
+      );
+    }
+  }
+  checkUser(): void {
+    // console.log(this.loginForm.value);
     this.loading = true;
     this.http.get<any>('http://localhost:5000/signupUsers').subscribe(
-      (res) => {
-        const user = res.find((a: any) => {
+      (result) => {
+        const user = result.find((a: any) => {
           return (
             a.email === this.loginForm.value.email &&
             a.password === this.loginForm.value.password
@@ -47,7 +79,6 @@ export class LoginComponent implements OnInit {
             duration: 6000,
           });
           this.loginForm.reset();
-          this.router.navigate(['products']);
           this.loading = false;
         } else {
           this.loginForm.reset();
@@ -56,6 +87,7 @@ export class LoginComponent implements OnInit {
             summary: 'Login failed. User not found!',
             duration: 6000,
           });
+          this.router.navigate(['login']);
         }
         this.loading = false;
         this.errorMessage = '';
