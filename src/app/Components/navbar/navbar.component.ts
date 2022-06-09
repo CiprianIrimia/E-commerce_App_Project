@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class NavbarComponent {
   @Output() lang: EventEmitter<string> = new EventEmitter();
 
-  constructor(private auth: AuthService) {}
+  constructor(private auth: AuthService, private toast: NgToastService) {}
 
   ngOnInit(): void {}
 
@@ -19,5 +20,10 @@ export class NavbarComponent {
 
   logout(): void {
     this.auth.logout();
+    return this.toast.info({
+      detail: 'Info message',
+      summary: 'Logout successfully!',
+      duration: 6000,
+    });
   }
 }
