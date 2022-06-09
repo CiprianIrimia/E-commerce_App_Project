@@ -44,3 +44,11 @@
 .lang-button:hover {
   background-color: rgb(255, 255, 255);
 }
+
+.active {
+  font-size: medium;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 7px;
+  width: fit-content;
+}
