@@ -18,7 +18,7 @@
       "flourType": "white",
       "assortment": "loaf",
       "weight": 300,
-      "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy",
+      "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy.",
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
       "stockQuantity": 697,
       "price": 1.5,
@@ -163,12 +163,24 @@
       "flourType": "black",
       "assortment": "loaf",
       "weight": 500,
-      "description": "Packed in plastic bag hand-made rye bread diet",
+      "description": "Packed in plastic bag hand-made rye bread diet. Tasty!",
       "image": "\\assets\\images\\Products images\\paine_neagra_cu_seminte_feliata_500.jpg",
       "stockQuantity": 123,
       "price": 5,
       "categoryName": "packaged",
       "id": 1014
+    },
+    {
+      "productName": "Paine alba feliata",
+      "flourType": "white",
+      "assortment": "loaf",
+      "weight": 250,
+      "description": "A great product for every day.",
+      "image": "\\assets\\images\\Products images\\paine_neagra_cu_seminte_feliata_500.jpg",
+      "stockQuantity": 200,
+      "price": 6,
+      "categoryName": "packaged",
+      "id": 1015
     }
   ],
   "signupUsers": [

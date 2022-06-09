@@ -121,11 +121,15 @@
           </select>
         </div>
 
-        <div class="mb-2">
-          <input class="btn btn-success mb-5" value="Create" type="submit" />
-          <a class="btn btn-primary mb-5 ms-2" routerLink="/products"
-            >Close Form</a
-          >
+        <div class="mb-2" style="display: flex; justify-content: space-between">
+          <a class="btn btn-primary mb-5" routerLink="/products">{{
+            "addProduct.closeBtn" | translate
+          }}</a
+          ><input
+            class="btn btn-success mb-5"
+            value="{{ 'addProduct.createBtn' | translate }}"
+            type="submit"
+          />
         </div>
       </form>
     </div>

@@ -11,7 +11,8 @@
 
 .navbar-brand span .register-mark {
   font-size: small;
-  margin: 0 auto;
+  margin-left: 0;
+  padding-bottom: 10px;
 }
 
 .collapse.navbar-collapse {

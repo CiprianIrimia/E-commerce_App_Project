@@ -87,7 +87,9 @@
     "price": "Price",
     "categoryName": "Select category name:",
     "categoryNameFresh": "Fresh",
-    "categoryNamePackaged": "Packaged"
+    "categoryNamePackaged": "Packaged",
+    "closeBtn": "Close Form",
+    "createBtn": "Create"
   },
   "viewProductManagerDetails": {
     "title": "View Product",
@@ -115,6 +117,8 @@
     "price": "Price:",
     "categoryName": "Select category:",
     "categoryNameFresh": "Fresh",
-    "categoryNamePackaged": "Packaged"
+    "categoryNamePackaged": "Packaged",
+    "updateBtn": "Update",
+    "closeEditForm": "Close Editing Form"
   }
 }

@@ -86,7 +86,9 @@
     "price": "Pret",
     "categoryName": "Selectati numele categoriei:",
     "categoryNameFresh": "Proaspata",
-    "categoryNamePackaged": "Ambalata"
+    "categoryNamePackaged": "Ambalata",
+    "closeBtn": "Inchide",
+    "createBtn": "Creare produs"
   },
   "viewProductManagerDetails": {
     "title": "Vizualizare Produs",
@@ -114,6 +116,8 @@
     "price": "Pret:",
     "categoryName": "Denumire categorie:",
     "categoryNameFresh": "Proaspata",
-    "categoryNamePackaged": "Ambalata"
+    "categoryNamePackaged": "Ambalata",
+    "updateBtn": "Modifica",
+    "closeEditForm": "Inchide"
   }
 }
