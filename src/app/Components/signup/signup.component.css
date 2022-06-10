@@ -21,3 +21,7 @@
 .h4.text-danger.fw-bold {
   margin: 0;
 }
+
+.form-control {
+  margin-bottom: 7px;
+}

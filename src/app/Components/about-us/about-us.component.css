@@ -1,6 +1,18 @@
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center .ourStory-iframe {
+  margin-top: 5px;
+  border: 7px solid #ffd774;
+  padding: 2px;
+}
+
 .img-1-about-us {
   width: 65%;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 15px;
   float: right;
   border-radius: 20px;
