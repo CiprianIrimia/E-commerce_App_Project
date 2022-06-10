@@ -45,22 +45,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  onSubmit(): void {
-    if (this.loginForm.valid) {
-      console.log(this.loginForm.value);
-      this.checkUser();
-      this.auth.login(this.loginForm.value).subscribe(
-        (result) => {
-          console.log(result);
-          this.router.navigate(['products']);
-        },
-        () => {
-          console.log(this.loginForm.value);
-          this.router.navigate(['client-area']);
-        }
-      );
-    }
-  }
   checkUser(): void {
     // console.log(this.loginForm.value);
     this.loading = true;
@@ -103,5 +87,22 @@ export class LoginComponent implements OnInit {
         });
       }
     );
+  }
+
+  onSubmit(): void {
+    if (this.loginForm.valid) {
+      console.log(this.loginForm.value);
+      this.checkUser();
+      this.auth.login(this.loginForm.value).subscribe(
+        (result) => {
+          console.log(result);
+          this.router.navigate(['products']);
+        },
+        () => {
+          console.log(this.loginForm.value);
+          this.router.navigate(['client-area']);
+        }
+      );
+    }
   }
 }

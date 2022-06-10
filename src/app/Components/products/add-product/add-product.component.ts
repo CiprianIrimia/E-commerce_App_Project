@@ -36,7 +36,7 @@ export class AddProductComponent implements OnInit {
         this.toast.success({
           detail: 'Success message',
           summary: 'New product successfully added!',
-          duration: 6000,
+          duration: 5000,
         });
         this.router.navigate(['products']).then();
         this.loading = false;
@@ -48,7 +48,7 @@ export class AddProductComponent implements OnInit {
         this.toast.warning({
           detail: 'Warning message',
           summary: 'No product added!',
-          duration: 6000,
+          duration: 5000,
         });
       }
     );

@@ -55,7 +55,7 @@ export class EditProductComponent implements OnInit {
           this.toast.info({
             detail: 'Success message',
             summary: 'Product updated successfully!',
-            duration: 6000,
+            duration: 5000,
           });
           this.router.navigate(['products']).then();
           this.loading = false;
@@ -67,7 +67,7 @@ export class EditProductComponent implements OnInit {
           this.toast.warning({
             detail: 'Warning message',
             summary: 'Product details NOT modified',
-            duration: 6000,
+            duration: 5000,
           });
         }
       );

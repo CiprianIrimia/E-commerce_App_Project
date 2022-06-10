@@ -45,9 +45,13 @@
   background-color: rgb(255, 255, 255);
 }
 
+.nav-link:hover {
+  font-size: medium;
+}
+
 .active {
   font-size: medium;
-  border: 1px solid black;
+  border: 1px solid rgb(97, 97, 97);
   border-radius: 20px;
   padding: 7px;
   width: fit-content;

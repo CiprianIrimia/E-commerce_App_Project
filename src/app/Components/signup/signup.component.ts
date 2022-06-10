@@ -46,7 +46,7 @@ export class SignupComponent implements OnInit {
           this.toast.success({
             detail: 'Success message',
             summary: 'SingUp successfully. Please login!',
-            duration: 7000,
+            duration: 5000,
           });
           this.signupForm.reset();
           this.router.navigate(['login']);
@@ -60,7 +60,7 @@ export class SignupComponent implements OnInit {
           this.toast.error({
             detail: 'Error message',
             summary: 'Sign up fail!',
-            duration: 6000,
+            duration: 5000,
           });
         }
       );

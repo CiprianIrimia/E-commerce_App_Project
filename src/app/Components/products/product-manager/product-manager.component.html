@@ -34,8 +34,13 @@
 <!--Cards-->
 
 <div class="container mt-3 mb-4" *ngIf="!loading && products.length > 0">
-  <div class="col">
+  <div
+    class="col"
+    style="display: flex; justify-content: center; align-items: center"
+  >
+    <i class="bi bi-search" style="margin-right: 3px; font-size: large"></i>
     <input
+      style="margin: 0"
       type="text"
       class="form-control"
       [(ngModel)]="search"
