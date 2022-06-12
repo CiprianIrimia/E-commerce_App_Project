@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
 import { NgToastService } from 'ng-angular-popup';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-product-manager',
@@ -18,6 +19,7 @@ export class ProductManagerComponent implements OnInit {
   public search: any;
   public getStock: number = 0;
   public stockQuantityStatus: string = 'positive';
+  public p: number = 1;
 
   @Input() product: prodInterface | any;
 
