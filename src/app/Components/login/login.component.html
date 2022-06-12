@@ -20,14 +20,14 @@
     <div class="col-md-6">
       <div class="card">
         <div class="text-center">
-          <h1>LOGIN</h1>
-          <h6>Please enter email & password!</h6>
+          <h1>{{ "login.title" | translate }}</h1>
+          <h6>{{ "login.subtitle" | translate }}</h6>
         </div>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
+            <label for="exampleInputEmail1" class="form-label">{{
+              "login.emailLabel" | translate
+            }}</label>
             <input
               formControlName="email"
               type="email"
@@ -37,7 +37,7 @@
               aria-describedby="emailHelp"
             />
             <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
+              {{ "login.emailAgree" | translate }}
             </div>
             <span
               class="text-danger"
@@ -45,13 +45,13 @@
                 loginForm.controls['email'].dirty &&
                 loginForm.hasError('required', 'email')
               "
-              >*Email is required*</span
+              >{{ "login.emailRequired" | translate }}</span
             >
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
-            >
+            <label for="exampleInputPassword1" class="form-label">{{
+              "login.passwordLabel" | translate
+            }}</label>
             <input
               formControlName="password"
               type="password"
@@ -64,7 +64,7 @@
                 loginForm.controls['password'].dirty &&
                 loginForm.hasError('required', 'password')
               "
-              >*Password is required*</span
+              >{{ "login.passwordRequired" | translate }}</span
             >
           </div>
           <button
@@ -72,12 +72,12 @@
             [disabled]="!loginForm.valid"
             class="btn btn-primary"
           >
-            Login
+            {{ "login.loginBtn" | translate }}
           </button>
         </form>
-        <a routerLink="/signup" style="margin-top: 10px"
-          >You are not registered? Click to signup!</a
-        >
+        <a routerLink="/signup" style="margin-top: 10px">{{
+          "login.signupRedirect" | translate
+        }}</a>
       </div>
     </div>
   </div>

@@ -123,5 +123,35 @@
   },
   "pageNotFound": {
     "message": "ERROR 404 - Page Not Found!"
+  },
+  "signup": {
+    "title": "SIGN UP",
+    "subtitle": "Please register!",
+    "nameTitle": "Full name",
+    "namePlaceholder": "Insert full name",
+    "nameRequired": "*Full name is required*",
+    "mobileTitle": "Mobile number",
+    "mobilePlaceholder": "Insert mobile number",
+    "mobileRequired": "*Mobile number is required*",
+    "emailTitle": "Email",
+    "emailPlaceholder": "Insert mobile number",
+    "emailAgree": "We'll never share your email with anyone else.",
+    "emailRequired": "*Email is required*",
+    "passwordTitle": "Password",
+    "passwordPlaceholder": "Insert your password",
+    "passwordRequired": "*Password is required*",
+    "signupBtn": "Sign up",
+    "loginRedirect": "Already registered? Click to login!"
+  },
+  "login": {
+    "title": "LOGIN",
+    "subtitle": "Please enter email & password!",
+    "emailLabel": "Email",
+    "emailAgree": "We'll never share your email with anyone else.",
+    "emailRequired": "*Email is required*",
+    "passwordLabel": "Password",
+    "passwordRequired": "*Password is required*",
+    "loginBtn": "Login",
+    "signupRedirect": "You are not registered? Click to signup!"
   }
 }

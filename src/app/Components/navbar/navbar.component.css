@@ -46,7 +46,8 @@
 }
 
 .nav-link:hover {
-  font-size: medium;
+  font-weight: 600;
+  color: red;
 }
 
 .active {
@@ -55,4 +56,8 @@
   border-radius: 20px;
   padding: 7px;
   width: fit-content;
+}
+
+.active:hover {
+  font-weight: 500;
 }

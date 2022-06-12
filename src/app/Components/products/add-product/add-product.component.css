@@ -11,3 +11,11 @@
 .form-control {
   background-color: #fff9e2;
 }
+
+.row {
+  width: 100%;
+}
+
+.col-sm-4 {
+  width: 40%;
+}

@@ -122,5 +122,35 @@
   },
   "pageNotFound": {
     "message": "EROARE 404 - Pagina nu a fost gasita!"
+  },
+  "signup": {
+    "title": "INREGISTRARE",
+    "subtitle": "Te rugam sa te inregistrezi!",
+    "nameTitle": "Nume si prenume",
+    "namePlaceholder": "Introduceti nume si prenume",
+    "nameRequired": "*Numele si prenumele sunt obligatorii*",
+    "mobileTitle": "Numar de telefon",
+    "mobilePlaceholder": "Introduceti numarul de telefon",
+    "mobileRequired": "*Numarul de telefon este obligatoriu*",
+    "emailTitle": "Email",
+    "emailPlaceholder": "Introduceti adresa de email",
+    "emailAgree": "Nu vom distribui nimanui adresa dumneavoastra de email",
+    "emailRequired": "*Adresa de email este obligatorie*",
+    "passwordTitle": "Parola",
+    "passwordPlaceholder": "Introduceti parola",
+    "passwordRequired": "*Parola este obligatorie*",
+    "signupBtn": "Inregistrare",
+    "loginRedirect": "Sunteti deja inregistrat? Apasati pentru a va autentifica!"
+  },
+  "login": {
+    "title": "AUTENTIFICARE",
+    "subtitle": "Va rugam sa introduceti email-ul & parola!",
+    "emailLabel": "Adresa de email",
+    "emailAgree": "Nu vom distribui nimanui adresa dumneavoastra de email",
+    "emailRequired": "*Adresa de email este obligatorie*",
+    "passwordLabel": "Parola",
+    "passwordRequired": "*Parola este obligatorie*",
+    "loginBtn": "Autentificare",
+    "signupRedirect": "Nu sunteti inregistrat? Apasati pentru iregistrare!"
   }
 }
