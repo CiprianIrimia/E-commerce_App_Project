@@ -50,7 +50,14 @@
     />
   </div>
   <div class="row">
-    <div class="col-md-6" *ngFor="let product of products | filter: search">
+    <div
+      class="col-md-6"
+      *ngFor="
+        let product of products
+          | filter: search
+          | paginate: { itemsPerPage: 6, currentPage: p }
+      "
+    >
       <div class="card list-group-item-primary shadow-lg my-3">
         <div class="card-body" style="border: 2px solid #ffbf1b">
           <div class="row align-items-center">
@@ -118,6 +125,7 @@
     </div>
   </div>
 </div>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
 <span class="redirect-buttons"
   ><a class="products-manager-redirect-to-about-us" routerLink="/about-us"
     >&LeftArrow; {{ "clientAreaRedirect.redirectAboutUs" | translate }}</a

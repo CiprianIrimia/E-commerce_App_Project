@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-client-area',
@@ -14,6 +15,7 @@ export class ClientAreaComponent implements OnInit {
   public errorMessage: string | null = null;
   public search: any;
   public stockQuantityStatus: string = 'positive';
+  public p: number = 1;
 
   constructor(private productService: ProductService) {}
 
