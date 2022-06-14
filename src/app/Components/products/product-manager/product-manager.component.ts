@@ -19,7 +19,7 @@ export class ProductManagerComponent implements OnInit {
   public search: any;
   public getStock: number = 0;
   public stockQuantityStatus: string = 'positive';
-  public p: number = 1;
+  public currentPage: number = 1;
 
   @Input() product: prodInterface | any;
 
@@ -78,5 +78,10 @@ export class ProductManagerComponent implements OnInit {
 
   getColor() {
     return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff8888';
+  }
+
+  onPageChange(page: number) {
+    this.currentPage = page;
+    window.scrollTo(0, 0);
   }
 }

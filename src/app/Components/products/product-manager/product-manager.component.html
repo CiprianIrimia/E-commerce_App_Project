@@ -53,7 +53,7 @@
       *ngFor="
         let product of products
           | filter: search
-          | paginate: { itemsPerPage: 6, currentPage: p }
+          | paginate: { itemsPerPage: 6, currentPage: currentPage }
       "
     >
       <div class="card list-group-item-primary shadow-lg my-3">
@@ -127,7 +127,9 @@
       </div>
     </div>
   </div>
-  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  <pagination-controls
+    (pageChange)="onPageChange($event)"
+  ></pagination-controls>
 </div>
 <span class="redirect-buttons"
   ><a class="products-manager-redirect-to-about-us" routerLink="/"

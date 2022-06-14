@@ -26,6 +26,30 @@
       "categoryName": "fresh"
     },
     {
+      "productName": "White bread",
+      "flourType": "white",
+      "assortment": "Toast",
+      "weight": 600,
+      "image": "assets\\images\\Products images\\paine_alba_feliata_600.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit iusto quisquam veritatis voluptate sed id.",
+      "stockQuantity": 234,
+      "price": 6,
+      "categoryName": "packaged",
+      "id": 1017
+    },
+    {
+      "productName": "Paine cu multicereale",
+      "flourType": "black",
+      "assortment": "loaf",
+      "weight": 400,
+      "description": "Breads such as this multigrain loaf include ingredients from a variety of our farms.",
+      "image": "assets\\images\\Products images\\paine_neagra_multi_seminte_350.jpg",
+      "stockQuantity": 800,
+      "price": 8,
+      "categoryName": "packaged",
+      "id": 1018
+    },
+    {
       "id": 1003,
       "productName": "White loaf",
       "flourType": "white",

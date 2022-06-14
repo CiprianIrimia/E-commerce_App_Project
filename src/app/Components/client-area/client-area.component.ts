@@ -15,7 +15,7 @@ export class ClientAreaComponent implements OnInit {
   public errorMessage: string | null = null;
   public search: any;
   public stockQuantityStatus: string = 'positive';
-  public p: number = 1;
+  public currentPage: number = 1;
 
   constructor(private productService: ProductService) {}
 
@@ -38,5 +38,10 @@ export class ClientAreaComponent implements OnInit {
   }
   getStockColor() {
     return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
+  }
+
+  onPageChange(page: number) {
+    this.currentPage = page;
+    window.scrollTo(0, 0);
   }
 }
