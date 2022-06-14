@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-client-area',
@@ -17,7 +18,10 @@ export class ClientAreaComponent implements OnInit {
   public stockQuantityStatus: string = 'positive';
   public currentPage: number = 1;
 
-  constructor(private productService: ProductService) {}
+  constructor(
+    private productService: ProductService,
+    private cartService: CartService
+  ) {}
 
   ngOnInit(): void {
     this.getAllProductsFromServer();
