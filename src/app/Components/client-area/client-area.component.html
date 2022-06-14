@@ -125,7 +125,10 @@
     </div>
   </div>
 </div>
-<pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>
+<pagination-controls
+  *ngIf="!errorMessage"
+  (pageChange)="onPageChange($event)"
+></pagination-controls>
 <span class="redirect-buttons"
   ><a class="products-manager-redirect-to-about-us" routerLink="/about-us"
     >&LeftArrow; {{ "clientAreaRedirect.redirectAboutUs" | translate }}</a
