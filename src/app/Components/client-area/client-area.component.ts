@@ -4,6 +4,7 @@ import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CartService } from 'src/app/services/cart.service';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-client-area',
@@ -20,7 +21,8 @@ export class ClientAreaComponent implements OnInit {
 
   constructor(
     private productService: ProductService,
-    private cartService: CartService
+    private cartService: CartService,
+    private toast: NgToastService
   ) {}
 
   ngOnInit(): void {
@@ -42,6 +44,16 @@ export class ClientAreaComponent implements OnInit {
   }
   getStockColor() {
     return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
+  }
+
+  addToCart(product: prodInterface) {
+    this.cartService.addToCart(product);
+    // window.alert('Your product has been added to the cart!');
+    this.toast.success({
+      detail: 'Success message',
+      summary: 'Product successfully added to cart!',
+      duration: 5000,
+    });
   }
 
   onPageChange(page: number) {

@@ -59,7 +59,7 @@ export class ProductManagerComponent implements OnInit {
           this.toast.info({
             detail: 'Success message',
             summary: 'Product successfully deleted!',
-            duration: 6000,
+            duration: 5000,
           });
           this.getAllProductsFromServer();
           this.loading = false;
@@ -68,7 +68,7 @@ export class ProductManagerComponent implements OnInit {
           this.toast.error({
             detail: 'Error message',
             summary: 'Something went wrong!',
-            duration: 6000,
+            duration: 5000,
           });
           this.errorMessage = error;
           this.loading = false;

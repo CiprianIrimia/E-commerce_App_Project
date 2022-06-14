@@ -111,13 +111,14 @@
               >
                 <i class="fa fa-eye"></i>
               </a>
-              <a
+              <button
+                type="button"
+                (click)="addToCart(product)"
                 class="btn btn-info"
-                routerLink="cart/{{ product.id }}"
                 title="{{ 'clientMain.productCartIconTitle' | translate }}"
               >
                 <i class="bi bi-cart3"></i>
-              </a>
+              </button>
             </div>
           </div>
         </div>
