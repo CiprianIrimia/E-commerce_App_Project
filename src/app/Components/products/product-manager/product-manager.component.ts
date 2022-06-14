@@ -1,6 +1,7 @@
 import { error } from '@angular/compiler/src/util';
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, from, pipe, fromEvent } from 'rxjs';
+import { map, filter, tap, retry } from 'rxjs/operators';
 
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
@@ -17,8 +18,8 @@ export class ProductManagerComponent implements OnInit {
   public products: prodInterface[] = [];
   public errorMessage: string | null = null;
   public search: any;
-  public getStock: number = 0;
-  public stockQuantityStatus: string = 'positive';
+  public getStock: number = 1;
+  public stockQuantityStatus: string = '';
   public currentPage: number = 1;
 
   @Input() product: prodInterface | any;
@@ -28,12 +29,12 @@ export class ProductManagerComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private toast: NgToastService
-  ) {
-    this.stockQuantityStatus = this.getStock > 0 ? 'positive' : 'negative';
-  }
+  ) {}
 
   ngOnInit(): void {
     this.getAllProductsFromServer();
+    this.getStockValue();
+    this.getColor();
   }
 
   getAllProductsFromServer() {
@@ -76,12 +77,32 @@ export class ProductManagerComponent implements OnInit {
     }
   }
 
-  getColor() {
-    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff8888';
-  }
-
   onPageChange(page: number) {
     this.currentPage = page;
     window.scrollTo(0, 0);
+  }
+
+  getStockValue() {
+    this.productService
+      .getAllProducts()
+      .pipe(
+        map((res: any) =>
+          res.map((data: any) => {
+            return {
+              getStock: data.stockQuantity,
+            };
+          })
+        )
+      )
+      .subscribe(console.log);
+  }
+
+  getColor() {
+    if (this.getStock > 0) {
+      this.stockQuantityStatus = 'positive';
+    } else {
+      this.stockQuantityStatus = 'negative';
+    }
+    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
   }
 }

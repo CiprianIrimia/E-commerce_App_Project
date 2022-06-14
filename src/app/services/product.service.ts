@@ -12,6 +12,7 @@ import { prodInterface } from '../models/prodInterface';
   providedIn: 'root',
 })
 export class ProductService {
+  product: any;
   showMessage(_arg0: string) {
     throw new Error('Method not implemented.');
   }
