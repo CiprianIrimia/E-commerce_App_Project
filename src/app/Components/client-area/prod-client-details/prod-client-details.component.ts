@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NgToastService } from 'ng-angular-popup';
 import { prodInterface } from 'src/app/models/prodInterface';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -16,7 +18,9 @@ export class ProdClientDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private cartService: CartService,
+    private toast: NgToastService
   ) {}
 
   ngOnInit(): void {
@@ -36,6 +40,16 @@ export class ProdClientDetailsComponent implements OnInit {
         }
       );
     }
+  }
+
+  addToCart(product: prodInterface) {
+    this.cartService.addToCart(product);
+    // window.alert('Your product has been added to the cart!');
+    this.toast.success({
+      detail: 'Success message',
+      summary: 'Product successfully added to cart!',
+      duration: 5000,
+    });
   }
   public isNotEmpty() {
     return Object.keys(this.product).length > 0;

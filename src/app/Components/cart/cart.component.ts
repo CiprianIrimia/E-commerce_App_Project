@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { CartService } from 'src/app/services/cart.service';
 import { NgToastService } from 'ng-angular-popup';
-import { AuthService } from 'src/app/services/auth.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -19,9 +17,7 @@ export class CartComponent implements OnInit {
 
   constructor(
     private cartService: CartService,
-    private toast: NgToastService,
-    private authService: AuthService,
-    private router: Router
+    private toast: NgToastService
   ) {}
 
   ngOnInit(): void {

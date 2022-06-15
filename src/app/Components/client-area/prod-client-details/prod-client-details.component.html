@@ -89,6 +89,7 @@
         <div class="col">
           <a
             class="btn btn-info"
+            (click)="addToCart(product)"
             routerLink="cart/{{ product.id }}"
             title="{{ 'clientMain.productCartIconTitle' | translate }}"
           >
