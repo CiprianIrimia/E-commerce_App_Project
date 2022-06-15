@@ -11,3 +11,73 @@
 .h4.fw-bold.ms-5 {
   color: brown;
 }
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+}
+
+.info h4 {
+  font-size: large;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.btn-success {
+  margin: 20px 0 200px 0;
+}
+
+ng-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3%;
+  border-bottom: 1px solid grey;
+  width: max-content;
+}
+
+.prodId {
+  margin-right: 10px;
+}
+
+.prodDetails {
+  margin-left: 15px;
+  min-width: 300px;
+  font-size: medium;
+}
+
+.quantitySection {
+  min-width: 110px;
+}
+
+.subtotal {
+  margin-top: 10px;
+  font-size: medium;
+}
+
+input {
+  text-align: center;
+  border: 2px solid lightsalmon;
+}
+
+.bi-check-circle {
+  margin-left: 10px;
+  font-size: larger;
+  color: lightseagreen;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

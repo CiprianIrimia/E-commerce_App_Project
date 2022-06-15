@@ -26,7 +26,7 @@ export class CartService {
       });
 
     if (exist!) {
-      exist.stockQuantity--;
+      exist.qty++;
       this.setCartData(locStorage);
     } else {
       if (locStorage) {

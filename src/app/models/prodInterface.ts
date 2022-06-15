@@ -3,10 +3,11 @@ export interface prodInterface {
   productName: string;
   flourType: string;
   assortment: string;
-  weight: string;
+  weight: number;
   description: string;
   image: string;
   stockQuantity: number;
-  price: string;
+  price: number;
   categoryName: string;
+  qty: number;
 }

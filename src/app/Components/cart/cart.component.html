@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light navbar-expand-sm">
   <div class="container">
-    <a class="navbar-brand" routerLink="/">
+    <a class="navbar-brand" routerLink="/client-area">
       <i class="bi bi-basket"></i>
       Order section
     </a>
@@ -32,7 +32,76 @@
   </div>
 </div>
 
-<div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.productName }}</span>
-  <span>{{ item.price }}</span>
+<div class="emptyCart" *ngIf="items.length < 1">
+  <div class="info">
+    <h4>
+      Your cart is empty!<img src="/assets/images/sad-face.jpg" width="40px" />
+    </h4>
+    <a routerLink="/client-area" class="btn btn-success">Go to the shop</a>
+  </div>
 </div>
+
+<ng-container *ngIf="items.length > 0">
+  <div class="cart" *ngFor="let item of items; let index = index">
+    <div class="prodId">
+      <p>
+        Product ID: <strong>{{ item.id }}</strong>
+      </p>
+    </div>
+    <div class="productImg">
+      <img [src]="item.image" alt="" class="img" width="200px" />
+    </div>
+    <div class="prodDetails">
+      <div class="prodDesc mb-3">
+        Product name: <strong>{{ item.productName }}</strong>
+      </div>
+      <div class="prodWeight mb-3">
+        Weight: <strong>{{ item.weight }}</strong>
+      </div>
+      <div class="prodPrice mb-3">
+        Price: <strong>{{ item.price }}</strong> Lei
+      </div>
+    </div>
+
+    <div class="quantitySection me-4">
+      <input
+        placeholder="Insert quantity"
+        type="number"
+        class="quantityNum"
+        [value]="item.qty"
+        (blur)="validateInput($event, index)"
+        style="width: 140px"
+      /><i
+        class="bi bi-check-circle"
+        type="button"
+        style="margin-left: 10px; font-size: larger"
+      >
+      </i>
+      <div class="subtotal">
+        Total: <strong>{{ item.price * item.qty }}</strong> Lei
+      </div>
+    </div>
+    <button
+      class="btn btn-danger my-1"
+      aria-hidden="true"
+      (click)="onDelete(index)"
+      title="Delete product from cart"
+    >
+      <i class="fa fa-trash"></i>
+    </button>
+  </div>
+
+  <div class="checkout">
+    <p>
+      Subtotal: <strong>{{ total }} Lei</strong>
+    </p>
+
+    <p>Shipping: <strong>0 Lei</strong></p>
+
+    <p style="color: red; font-size: medium; font-weight: bold">
+      Total: <strong>{{ total }} Lei</strong>
+    </p>
+
+    <button class="btn btn-success" (click)="onCheckout()">Check Out</button>
+  </div>
+</ng-container>
