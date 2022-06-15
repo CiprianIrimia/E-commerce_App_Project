@@ -58,7 +58,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="cart" routerLinkActive="active"
-            ><span class="itemCartNum">{{ itemInCart }}</span>
+            ><span class="itemCartNum" *ngIf="itemInCart > 0">{{
+              itemInCart
+            }}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

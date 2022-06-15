@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { CartService } from 'src/app/services/cart.service';
 import { NgToastService } from 'ng-angular-popup';
