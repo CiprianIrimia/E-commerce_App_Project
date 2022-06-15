@@ -63,7 +63,8 @@
 }
 
 .itemCartNum {
-  color: rgb(238, 0, 0);
+  color: rgb(212, 0, 0);
+  font-size: medium;
   border-radius: 30%;
-  background-color: rgb(223, 183, 122);
+  background-color: rgb(235, 235, 234);
 }

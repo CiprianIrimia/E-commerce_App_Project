@@ -8,7 +8,7 @@
       "weight": 300,
       "description": "Soft, fluffy core, crispy crust, golden in color, fragrant and only good to enjoy...",
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
-      "stockQuantity": 0,
+      "stockQuantity": 3200,
       "price": 2,
       "categoryId": "1-fresh",
       "categoryName": "fresh"
@@ -32,7 +32,7 @@
       "weight": 600,
       "image": "assets\\images\\Products images\\paine_alba_feliata_600.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit iusto quisquam veritatis voluptate sed id.",
-      "stockQuantity": 0,
+      "stockQuantity": 3456,
       "price": 6,
       "categoryName": "packaged",
       "id": 1017
@@ -58,7 +58,7 @@
       "description": "Corporis ab officia voluptatibus? Ducimus, alias ex odio enim voluptatibus necessitatibus at porro. ",
       "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
       "stockQuantity": 379,
-      "price": 3.2,
+      "price": 3,
       "categoryId": "1-fresh",
       "categoryName": "fresh"
     },
@@ -66,7 +66,7 @@
       "productName": "Test product 4",
       "flourType": "Test flour 3",
       "assortment": "Test assourt 3",
-      "weight": 234324,
+      "weight": 240,
       "description": "sdcasdcadscasdcsadc  asdcasdcasdcasdcasdc",
       "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
       "stockQuantity": 31,
@@ -118,7 +118,7 @@
       "description": "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum",
       "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
       "stockQuantity": 450,
-      "price": 2.9,
+      "price": 5,
       "categoryName": "fresh",
       "id": 1009
     },
