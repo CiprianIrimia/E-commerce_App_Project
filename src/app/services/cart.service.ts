@@ -18,15 +18,15 @@ export class CartService {
   addToCart(product: prodInterface) {
     const locStorage = this.getCartData();
 
-    let exi: prodInterface;
+    let exist: prodInterface;
 
     if (locStorage)
-      exi = locStorage.find((item: { id: string }) => {
+      exist = locStorage.find((item: { id: string }) => {
         return item.id === product.id;
       });
 
-    if (exi!) {
-      exi.stockQuantity++;
+    if (exist!) {
+      exist.stockQuantity--;
       this.setCartData(localStorage);
     } else {
       if (locStorage) {

@@ -181,18 +181,6 @@
       "price": 6,
       "categoryName": "packaged",
       "id": 1015
-    },
-    {
-      "image": "/assets/images\\Products images\\bagheta_alba_proaspata_420.jpg",
-      "productName": "Test product 5",
-      "flourType": "white",
-      "assortment": "Test assort 5",
-      "weight": 480,
-      "description": "Test product 5 description",
-      "stockQuantity": 1230,
-      "price": 4.5,
-      "categoryName": "fresh",
-      "id": 1016
     }
   ],
   "signupUsers": [
