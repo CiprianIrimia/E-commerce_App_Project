@@ -37,6 +37,8 @@ import { ClientAreaComponent } from './Components/client-area/client-area.compon
 import { ProdClientDetailsComponent } from './Components/client-area/prod-client-details/prod-client-details.component';
 import { ConfirmationModalComponent } from './Components/confirmation-modal/confirmation-modal.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { CartService } from './services/cart.service';
+import { ProductService } from './services/product.service';
 
 @NgModule({
   declarations: [

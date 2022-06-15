@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, retry } from 'rxjs';
 import { prodInterface } from '../models/prodInterface';
 import { ProductService } from './product.service';
 
@@ -6,12 +7,23 @@ import { ProductService } from './product.service';
   providedIn: 'root',
 })
 export class CartService {
-  items: prodInterface[] = [];
+  items: any = [];
+  numOfCartItems = new BehaviorSubject([]);
 
   constructor() {}
 
   addToCart(product: prodInterface) {
-    this.items.push(product);
+    const exist = this.items.find((item: { id: string }) => {
+      return item.id === product.id;
+    });
+
+    if (exist) {
+      exist.stockQuantity--;
+    } else {
+      this.items.push(product);
+      this.numOfCartItems.next(this.items);
+      console.log(this.items);
+    }
   }
 
   getItems() {
