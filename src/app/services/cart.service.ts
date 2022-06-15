@@ -7,31 +7,50 @@ import { ProductService } from './product.service';
   providedIn: 'root',
 })
 export class CartService {
-  items: any = [];
+  placeholder: any = [];
   numOfCartItems = new BehaviorSubject([]);
 
-  constructor() {}
+  constructor() {
+    const locStorage = this.getCartData();
+    if (locStorage) this.numOfCartItems.next(locStorage);
+  }
 
   addToCart(product: prodInterface) {
-    const exist = this.items.find((item: { id: string }) => {
-      return item.id === product.id;
-    });
+    const locStorage = this.getCartData();
 
-    if (exist) {
-      exist.stockQuantity--;
+    let exi: prodInterface;
+
+    if (locStorage)
+      exi = locStorage.find((item: { id: string }) => {
+        return item.id === product.id;
+      });
+
+    if (exi!) {
+      exi.stockQuantity++;
+      this.setCartData(localStorage);
     } else {
-      this.items.push(product);
-      this.numOfCartItems.next(this.items);
-      console.log(this.items);
+      if (locStorage) {
+        const newData = [...locStorage, product];
+        this.setCartData(newData);
+        this.numOfCartItems.next(this.getCartData());
+      }
+      this.placeholder.push(product);
+      this.setCartData(this.placeholder);
     }
-  }
+    // getItems() {
+    //   return this.items;
+    // }
 
-  getItems() {
-    return this.items;
+    // clearCart() {
+    //   this.items = [];
+    //   return this.items;
+    // }
   }
-
-  clearCart() {
-    this.items = [];
-    return this.items;
+  setCartData(data: any) {
+    localStorage.setItem('cart', JSON.stringify(data));
+    this.numOfCartItems.next(this.getCartData());
+  }
+  getCartData() {
+    return JSON.parse(localStorage.getItem('cart')!);
   }
 }

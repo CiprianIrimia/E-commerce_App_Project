@@ -56,7 +56,6 @@ export class ClientAreaComponent implements OnInit {
       summary: 'Product successfully added to cart!',
       duration: 5000,
     });
-    console.log(product);
   }
 
   onPageChange(page: number) {

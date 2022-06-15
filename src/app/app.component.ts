@@ -14,10 +14,9 @@ export class AppComponent {
   constructor(private translateService: TranslateService) {
     this.translateService.addLangs(this.supportLanguages);
     this.translateService.setDefaultLang('en');
-
-    // const browserLang: any = this.translateService.getBrowserLang();
-    // this.translateService.use(browserLang);
   }
+
+  ngOnInit() {}
 
   selectLang(lang: string) {
     this.translateService.use(lang);

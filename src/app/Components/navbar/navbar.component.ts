@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { NgToastService } from 'ng-angular-popup';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,10 +10,19 @@ import { NgToastService } from 'ng-angular-popup';
 })
 export class NavbarComponent {
   @Output() lang: EventEmitter<string> = new EventEmitter();
+  itemInCart!: number;
 
-  constructor(private auth: AuthService, private toast: NgToastService) {}
+  constructor(
+    private auth: AuthService,
+    private toast: NgToastService,
+    private cartService: CartService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cartService.numOfCartItems.subscribe((d) => {
+      this.itemInCart = d.length;
+    });
+  }
 
   selectLang(selectedLanguage: string) {
     this.lang.emit(selectedLanguage);

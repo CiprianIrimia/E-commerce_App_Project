@@ -8,7 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  items = this.cartService.getItems();
+  items = this.cartService.getCartData();
 
   constructor(private cartService: CartService) {}
 
