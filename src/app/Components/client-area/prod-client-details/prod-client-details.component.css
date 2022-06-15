@@ -1,3 +1,13 @@
+.navbar.navbar-light {
+  background-color: blanchedalmond;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
 .h4.fw-bold.ms-5 {
   color: brown;
 }

@@ -27,7 +27,7 @@ export class CartService {
 
     if (exist!) {
       exist.stockQuantity--;
-      this.setCartData(localStorage);
+      this.setCartData(locStorage);
     } else {
       if (locStorage) {
         const newData = [...locStorage, product];
