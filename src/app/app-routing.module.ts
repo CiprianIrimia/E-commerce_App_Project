@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './Components/page-not-found/page-not-foun
 import { ClientAreaComponent } from './Components/client-area/client-area.component';
 import { ProdClientDetailsComponent } from './Components/client-area/prod-client-details/prod-client-details.component';
 import { AuthGuard } from './guards/auth.guard';
+import { TrackOrdersComponent } from './Components/track-orders/track-orders.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'client-area', component: ClientAreaComponent },
+  { path: 'track-orders', component: TrackOrdersComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

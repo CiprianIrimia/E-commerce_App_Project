@@ -1,12 +1,8 @@
-import { error } from '@angular/compiler/src/util';
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
-import { Observable, from, pipe, fromEvent } from 'rxjs';
-import { map, filter, tap, retry } from 'rxjs/operators';
-
+import { map } from 'rxjs/operators';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { ProductService } from 'src/app/services/product.service';
 import { NgToastService } from 'ng-angular-popup';
-import { NgxPaginationModule } from 'ngx-pagination';
 
 @Component({
   selector: 'app-product-manager',

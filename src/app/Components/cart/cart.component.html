@@ -103,6 +103,12 @@
       Total: <strong>{{ total }} Lei</strong>
     </p>
 
-    <button class="btn btn-success" (click)="onCheckout()">Check Out</button>
+    <button
+      class="btn btn-success"
+      (click)="onCheckout()"
+      routerLink="/track-orders"
+    >
+      Check Out
+    </button>
   </div>
 </ng-container>

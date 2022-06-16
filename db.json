@@ -181,6 +181,54 @@
       "price": 6,
       "categoryName": "packaged",
       "id": 1015
+    },
+    {
+      "productName": "Test product 6",
+      "flourType": "whi",
+      "assortment": "loaf",
+      "weight": 500,
+      "description": "A good tasty product for every day",
+      "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
+      "stockQuantity": 100,
+      "price": 4,
+      "categoryName": "fresh",
+      "id": 1019
+    },
+    {
+      "productName": "Test product 7",
+      "flourType": "black",
+      "assortment": "toast",
+      "weight": 600,
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ipsa, soluta non harum assumenda omnis.",
+      "image": "\\assets\\images\\Products images\\paine_neagra_cu_seminte_feliata_500.jpg",
+      "stockQuantity": 230,
+      "price": 7,
+      "categoryName": "packaged",
+      "id": 1020
+    },
+    {
+      "productName": "Test product 8",
+      "flourType": "white",
+      "assortment": "round",
+      "weight": 250,
+      "description": "Optio enim rerum voluptatem, blanditiis quidem magnam",
+      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
+      "stockQuantity": 130,
+      "price": 4,
+      "categoryName": "fresh",
+      "id": 1021
+    },
+    {
+      "productName": "Test product 9",
+      "flourType": "white",
+      "assortment": "loaf",
+      "weight": 300,
+      "description": "Optio enim rerum voluptatem, blanditiis quidem magnamsdasd asdasdasdasd",
+      "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
+      "stockQuantity": 1000,
+      "price": 4,
+      "categoryName": "fresh",
+      "id": 1022
     }
   ],
   "signupUsers": [
