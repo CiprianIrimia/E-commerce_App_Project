@@ -10,7 +10,11 @@
   <div class="row">
     <div class="col mb-2" style="display: flex; justify-content: space-between">
       <p class="h4 fw-bold ms-5">{{ "cart.cartTitle" | translate }}</p>
-      <button class="btn btn-primary me-5" routerLink="/client-area">
+      <button
+        class="btn btn-primary me-5"
+        routerLink="/client-area"
+        *ngIf="!(items.length < 1)"
+      >
         {{ "cart.addProdBtn" | translate }}
       </button>
     </div>

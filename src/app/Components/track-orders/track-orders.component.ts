@@ -26,6 +26,6 @@ export class TrackOrdersComponent implements AfterViewInit {
         initialDoc: '/assets/images/pdf/pdfTest.pdf',
       },
       this.viewerRef.nativeElement
-    ).then((instance) => {});
+    ).then((_instance) => {});
   }
 }
