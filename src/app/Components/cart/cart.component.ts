@@ -32,8 +32,8 @@ export class CartComponent implements OnInit {
   onDelete(index: number) {
     this.items.splice(index, 1);
     this.cartService.setCartData(this.items);
-    this.toast.error({
-      detail: 'Warning message',
+    this.toast.info({
+      detail: 'Info message',
       summary: 'Product deleted!',
       duration: 3000,
     });
@@ -44,6 +44,11 @@ export class CartComponent implements OnInit {
     const qty = +event.target.value;
     if (isNaN(qty) || qty < 1) {
       event.target.value = this.items[index].qty;
+      this.toast.error({
+        detail: 'Error!',
+        summary: 'Add at least 1 product!',
+        duration: 5000,
+      });
       return;
     }
     this.qtyUpdated(qty, index);

@@ -153,5 +153,22 @@
     "passwordRequired": "*Password is required*",
     "loginBtn": "Login",
     "signupRedirect": "You are not registered? Click to signup!"
+  },
+  "cart": {
+    "cartNavbarTitle": "Order section",
+    "cartTitle": "Manage order",
+    "addProdBtn": "Add more products",
+    "emptyCartMsg": "Your cart is empty!",
+    "buyProdBtn": "Buy products",
+    "productID": "Product ID:",
+    "productName": "Product name:",
+    "weight": "Weight:",
+    "price": "Price:",
+    "qtyPlaceholder": "Insert quantity",
+    "validQtyTitle": "Validate quantity",
+    "confirmQtyBtn": "Confirm qty",
+    "deleteProdBtn": "Delete product from cart",
+    "shipping": "Shipping: ",
+    "checkoutBtn": "Check Out"
   }
 }

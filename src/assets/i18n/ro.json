@@ -152,5 +152,22 @@
     "passwordRequired": "*Parola este obligatorie*",
     "loginBtn": "Autentificare",
     "signupRedirect": "Nu sunteti inregistrat? Apasati pentru iregistrare!"
+  },
+  "cart": {
+    "cartNavbarTitle": "Sectiunea de comenzi",
+    "cartTitle": "Gestionare comanda",
+    "addProdBtn": "Adaugati produse in cos",
+    "emptyCartMsg": "Cosul dumneavoastra este gol!",
+    "buyProdBtn": "Cumparati produse",
+    "productID": "ID produs: ",
+    "productName": "Nume produs:",
+    "weight": "Greutate:",
+    "price": "Pret:",
+    "qtyPlaceholder": "Cantitate",
+    "validQtyTitle": "Validati cant.",
+    "confirmQtyBtn": "Confirmati cant.",
+    "deleteProdBtn": "Stergeti produsul din cos",
+    "shipping": "Taxe transport: ",
+    "checkoutBtn": "Trimiteti comanda"
   }
 }

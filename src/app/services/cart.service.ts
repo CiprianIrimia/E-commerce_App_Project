@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, retry } from 'rxjs';
 import { prodInterface } from '../models/prodInterface';
-import { ProductService } from './product.service';
 
 @Injectable({
   providedIn: 'root',
@@ -38,9 +37,6 @@ export class CartService {
       this.placeholder.push(product);
       this.setCartData(this.placeholder);
     }
-    // getItems() {
-    //   return this.items;
-    // }
   }
   setCartData(data: any) {
     localStorage.setItem('cart', JSON.stringify(data));

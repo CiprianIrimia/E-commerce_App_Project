@@ -2,16 +2,16 @@
   <div class="container">
     <a class="navbar-brand" routerLink="/client-area">
       <i class="bi bi-basket"></i>
-      Order section
+      {{ "cart.cartNavbarTitle" | translate }}
     </a>
   </div>
 </nav>
 <div class="container mt-3">
   <div class="row">
     <div class="col mb-2" style="display: flex; justify-content: space-between">
-      <p class="h4 fw-bold ms-5">Manage order</p>
+      <p class="h4 fw-bold ms-5">{{ "cart.cartTitle" | translate }}</p>
       <button class="btn btn-primary me-5" routerLink="/client-area">
-        Add more products
+        {{ "cart.addProdBtn" | translate }}
       </button>
     </div>
 
@@ -39,9 +39,12 @@
 <div class="emptyCart" *ngIf="items.length < 1">
   <div class="info">
     <h4>
-      Your cart is empty!<img src="/assets/images/sad-face.jpg" width="40px" />
+      {{ "cart.emptyCartMsg" | translate
+      }}<img src="/assets/images/sad-face.jpg" width="40px" />
     </h4>
-    <a routerLink="/client-area" class="btn btn-success">Buy products</a>
+    <a routerLink="/client-area" class="btn btn-success">{{
+      "cart.buyProdBtn" | translate
+    }}</a>
   </div>
 </div>
 
@@ -49,7 +52,7 @@
   <div class="cart" *ngFor="let item of items; let index = index">
     <div class="prodId">
       <p>
-        Product ID: <strong>{{ item.id }}</strong>
+        {{ "cart.productID" | translate }} <strong>{{ item.id }}</strong>
       </p>
     </div>
     <div class="productImg mb-2">
@@ -57,19 +60,20 @@
     </div>
     <div class="prodDetails">
       <div class="prodDesc mb-3">
-        Product name: <strong>{{ item.productName }}</strong>
+        {{ "cart.productName" | translate }}
+        <strong>{{ item.productName }}</strong>
       </div>
       <div class="prodWeight mb-3">
-        Weight: <strong>{{ item.weight }}</strong>
+        {{ "cart.weight" | translate }} <strong>{{ item.weight }} </strong>gr.
       </div>
       <div class="prodPrice mb-3">
-        Price: <strong>{{ item.price }}</strong> Lei
+        {{ "cart.price" | translate }} <strong>{{ item.price }}</strong> Lei
       </div>
     </div>
 
     <div class="quantitySection me-4">
       <input
-        placeholder="Insert quantity"
+        placeholder="{{ 'cart.qtyPlaceholder' | translate }}"
         type="number"
         class="quantityNum"
         [value]="item.qty"
@@ -79,8 +83,8 @@
         class="bi bi-check-circle"
         type="button"
         style="margin-left: 10px; font-size: 20px"
-        title="Validate quantity"
-        >Confirm qty
+        title="{{ 'cart.validQtyTitle' | translate }}"
+        >{{ "cart.confirmQtyBtn" | translate }}
       </i>
       <div class="subtotal">
         Total: <strong>{{ item.price * item.qty }}</strong> Lei
@@ -90,7 +94,7 @@
       class="btn btn-danger"
       aria-hidden="true"
       (click)="onDelete(index)"
-      title="Delete product from cart"
+      title="{{ 'cart.deleteProdBtn' | translate }}"
     >
       <i class="fa fa-trash"></i>
     </button>
@@ -98,13 +102,13 @@
 
   <div class="checkout">
     <p>
-      Subtotal: <strong>{{ total }} Lei</strong>
+      Subtotal: <strong>{{ total }} </strong>Lei
     </p>
 
-    <p>Shipping: <strong>0 Lei</strong></p>
+    <p>{{ "cart.shipping" | translate }}<strong>0 </strong>Lei</p>
 
     <p style="color: red; font-size: medium; font-weight: bold">
-      Total: <strong>{{ total }} Lei</strong>
+      Total: <strong>{{ total }} </strong>Lei
     </p>
 
     <button
@@ -112,7 +116,7 @@
       (click)="onCheckout()"
       routerLink="/track-orders"
     >
-      Check Out
+      {{ "cart.checkoutBtn" | translate }}
     </button>
   </div>
 </ng-container>
