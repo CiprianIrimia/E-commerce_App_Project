@@ -32,6 +32,9 @@
   "clientNavbar": {
     "clientNavbarTitle": "Products presentation & shop online"
   },
+  "spinner": {
+    "checkConnMsg": "CHECK SERVER CONNECTION..."
+  },
   "clientMain": {
     "title": "Product Portfolio",
     "newProductButton": "NEW PRODUCT",

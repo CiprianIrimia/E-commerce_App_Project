@@ -73,11 +73,6 @@ export class ProductManagerComponent implements OnInit {
     }
   }
 
-  onPageChange(page: number) {
-    this.currentPage = page;
-    window.scrollTo(0, 0);
-  }
-
   getStockValue() {
     this.productService
       .getAllProducts()
@@ -100,5 +95,10 @@ export class ProductManagerComponent implements OnInit {
       this.stockQuantityStatus = 'negative';
     }
     return this.stockQuantityStatus === 'positive' ? '#1db000' : 'red';
+  }
+
+  onPageChange(page: number) {
+    this.currentPage = page;
+    window.scrollTo(0, 0);
   }
 }

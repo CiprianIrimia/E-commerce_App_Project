@@ -316,18 +316,6 @@
       "categoryName": "fresh"
     },
     {
-      "productName": "Black bread",
-      "flourType": "black",
-      "assortment": "round",
-      "weight": 340,
-      "description": "Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum",
-      "image": "/assets/images/Products images/rotunda_neagra_proaspata_340.jpg",
-      "stockQuantity": 450,
-      "price": 5,
-      "categoryName": "fresh",
-      "id": 1027
-    },
-    {
       "productName": "Breadstick",
       "flourType": "white",
       "assortment": "baguette",
@@ -525,6 +513,13 @@
       "email": "irimiaoliviaelena2011@gmail.com",
       "password": "Ana",
       "id": 12
+    },
+    {
+      "fullName": "Nume prenume1",
+      "mobile": 90909090,
+      "email": "test",
+      "password": "test",
+      "id": 13
     }
   ]
 }

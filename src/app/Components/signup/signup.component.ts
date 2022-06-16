@@ -45,7 +45,7 @@ export class SignupComponent implements OnInit {
         (res) => {
           this.toast.success({
             detail: 'Success message',
-            summary: 'SingUp successfully. Please login!',
+            summary: 'Signup successfully. Please login!',
             duration: 5000,
           });
           this.signupForm.reset();

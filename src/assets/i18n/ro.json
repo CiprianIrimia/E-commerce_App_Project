@@ -32,6 +32,9 @@
   "clientNavbar": {
     "clientNavbarTitle": "Prezentare de produse & magazin online"
   },
+  "spinner": {
+    "checkConnMsg": "VERIFICAM CONEXIUNEA LA SERVER..."
+  },
   "clientMain": {
     "title": "Portofoliul de produse",
     "newProductButton": "PRODUS NOU",
