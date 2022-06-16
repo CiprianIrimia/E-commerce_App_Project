@@ -99,6 +99,6 @@ export class ProductManagerComponent implements OnInit {
     } else {
       this.stockQuantityStatus = 'negative';
     }
-    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
+    return this.stockQuantityStatus === 'positive' ? '#1db000' : 'red';
   }
 }

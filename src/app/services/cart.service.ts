@@ -9,6 +9,7 @@ import { ProductService } from './product.service';
 export class CartService {
   placeholder: any = [];
   numOfCartItems = new BehaviorSubject([]);
+  public items: prodInterface[] = [];
 
   constructor() {
     const locStorage = this.getCartData();
@@ -40,11 +41,6 @@ export class CartService {
     // getItems() {
     //   return this.items;
     // }
-
-    // clearCart() {
-    //   this.items = [];
-    //   return this.items;
-    // }
   }
   setCartData(data: any) {
     localStorage.setItem('cart', JSON.stringify(data));
@@ -52,5 +48,9 @@ export class CartService {
   }
   getCartData() {
     return JSON.parse(localStorage.getItem('cart')!);
+  }
+  emptyCart() {
+    this.placeholder = [];
+    this.getCartData();
   }
 }

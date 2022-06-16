@@ -12,6 +12,10 @@
   color: brown;
 }
 
+img {
+  border-radius: 20%;
+}
+
 .emptyCart {
   display: flex;
   flex-direction: column;
@@ -57,7 +61,7 @@ ng-container {
 }
 
 .quantitySection {
-  min-width: 110px;
+  min-width: 80px;
 }
 
 .subtotal {
@@ -68,6 +72,8 @@ ng-container {
 input {
   text-align: center;
   border: 2px solid lightsalmon;
+  height: 40px;
+  font-size: larger;
 }
 
 .bi-check-circle {

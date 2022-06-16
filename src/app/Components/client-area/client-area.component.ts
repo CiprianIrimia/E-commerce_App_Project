@@ -45,7 +45,7 @@ export class ClientAreaComponent implements OnInit {
     );
   }
   getStockColor() {
-    return this.stockQuantityStatus === 'positive' ? 'lightgreen' : '#ff9292';
+    return this.stockQuantityStatus === 'positive' ? '#1db000' : 'red';
   }
 
   addToCart(product: prodInterface) {

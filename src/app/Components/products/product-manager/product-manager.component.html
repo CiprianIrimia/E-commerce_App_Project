@@ -57,7 +57,7 @@
       "
     >
       <div class="card list-group-item-primary shadow-lg my-3">
-        <div class="card-body" style="border: 2px solid #ffbf1b">
+        <div class="card-body" style="border: 3px solid #ffebcd">
           <div class="row align-items-center">
             <div class="col-sm-4">
               <a [href]="product.image"
@@ -90,7 +90,7 @@
                   {{ "clientMain.productStockQtyTH" | translate }}
                   <span
                     class="fw-bold"
-                    [ngStyle]="{ 'background-color': getColor() }"
+                    [ngStyle]="{ color: getColor() }"
                     id="stockQuantityId"
                   >
                     {{ product.stockQuantity }}
@@ -103,14 +103,16 @@
             </div>
             <div class="col-sm-1">
               <a
-                class="btn btn-warning mb-3"
+                class="btn mb-3"
+                style="background-color: lightyellow"
                 routerLink="view/{{ product.id }}"
                 title="{{ 'clientMain.productViewIconTitle' | translate }}"
               >
                 <i class="fa fa-eye"></i>
               </a>
               <a
-                class="btn btn-primary mb-3"
+                class="btn mb-3"
+                style="background-color: lightblue"
                 routerLink="edit/{{ product.id }}"
                 title="{{
                   'productsManagerCard.productEditIconTitle' | translate

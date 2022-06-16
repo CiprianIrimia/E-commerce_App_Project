@@ -59,7 +59,7 @@
       "
     >
       <div class="card list-group-item-primary shadow-lg my-3">
-        <div class="card-body" style="border: 2px solid #ffbf1b">
+        <div class="card-body" style="border: 3px solid #ffebcd">
           <div class="row align-items-center">
             <div class="col-sm-4">
               <a [href]="product.image"
@@ -91,10 +91,7 @@
                 <li class="list-group-item">
                   {{ "clientMain.productStockQtyTH" | translate }}
 
-                  <span
-                    class="fw-bold"
-                    [ngStyle]="{ 'background-color': getStockColor() }"
-                  >
+                  <span class="fw-bold" [ngStyle]="{ color: getStockColor() }">
                     {{ product.stockQuantity }}
                     <span class="productStockQtyPcs">
                       {{ "clientMain.productStockQtyPcs" | translate }}
@@ -105,7 +102,8 @@
             </div>
             <div class="col-sm-1">
               <a
-                class="btn btn-warning mb-3"
+                class="btn mb-3"
+                style="background-color: lightyellow"
                 routerLink="view/{{ product.id }}"
                 title="{{ 'clientMain.productViewIconTitle' | translate }}"
               >
@@ -114,7 +112,8 @@
               <button
                 type="button"
                 (click)="addToCart(product)"
-                class="btn btn-info"
+                class="btn"
+                style="background-color: lightblue"
                 title="{{ 'clientMain.productCartIconTitle' | translate }}"
               >
                 <i class="bi bi-cart3"></i>

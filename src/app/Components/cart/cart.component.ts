@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { prodInterface } from 'src/app/models/prodInterface';
 import { CartService } from 'src/app/services/cart.service';
 import { NgToastService } from 'ng-angular-popup';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +14,7 @@ export class CartComponent implements OnInit {
   public errorMessage: string | null = null;
   public items: prodInterface[] = [];
   public total!: number;
-  user: any;
+  public user: any;
 
   constructor(
     private cartService: CartService,
@@ -34,14 +35,14 @@ export class CartComponent implements OnInit {
     this.toast.error({
       detail: 'Warning message',
       summary: 'Product deleted!',
-      duration: 5000,
+      duration: 3000,
     });
     this.getTotal(this.items);
   }
 
   validateInput(event: any, index: number) {
     const qty = +event.target.value;
-    if (qty < 1) {
+    if (isNaN(qty) || qty < 1) {
       event.target.value = this.items[index].qty;
       return;
     }
@@ -67,6 +68,8 @@ export class CartComponent implements OnInit {
   }
 
   onCheckout() {
+    this.cartService.emptyCart();
+    // alert('This is your final order?');
     this.toast.success({
       detail: 'Success message',
       summary: 'Your order was successfully exported!',

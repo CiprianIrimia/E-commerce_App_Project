@@ -14,6 +14,8 @@ import WebViewer from '@pdftron/webviewer';
   styleUrls: ['./track-orders.component.css'],
 })
 export class TrackOrdersComponent implements AfterViewInit {
+  public loading: boolean = false;
+  public errorMessage: string | null = null;
   @ViewChild('viewerPdf') viewerRef!: ElementRef;
   constructor() {}
 
