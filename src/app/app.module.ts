@@ -39,6 +39,7 @@ import { ConfirmationModalComponent } from './Components/confirmation-modal/conf
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CartService } from './services/cart.service';
 import { ProductService } from './services/product.service';
+import { jsPDF } from 'jspdf';
 
 @NgModule({
   declarations: [

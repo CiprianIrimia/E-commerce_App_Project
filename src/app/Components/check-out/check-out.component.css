@@ -1,0 +1,17 @@
+.content {
+  width: 595px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.table .table-striped {
+  max-width: 2480px;
+  width: 100%;
+}
+
+.stamp {
+  width: 100px;
+  height: 100px;
+  margin-left: 50%;
+}
