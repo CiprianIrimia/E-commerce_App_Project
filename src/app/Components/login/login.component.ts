@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import {
   FormGroup,
   FormBuilder,
@@ -9,7 +9,6 @@ import {
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 import { NgToastService } from 'ng-angular-popup';
-import { compileClassMetadata } from '@angular/compiler';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({

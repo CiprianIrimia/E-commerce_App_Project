@@ -10,7 +10,6 @@
       "image": "/assets/images/Products images/franzela_alba_proaspata_300.jpg",
       "stockQuantity": 3200,
       "price": 2,
-      "categoryId": "1-fresh",
       "categoryName": "fresh"
     },
     {
@@ -59,7 +58,6 @@
       "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
       "stockQuantity": 379,
       "price": 3,
-      "categoryId": "1-fresh",
       "categoryName": "fresh"
     },
     {
@@ -264,7 +262,6 @@
       "image": "/assets/images/Products images/franzela_alba_proaspata_500.jpg",
       "stockQuantity": 379,
       "price": 3,
-      "categoryId": "1-fresh",
       "categoryName": "fresh"
     },
     {
